@@ -1,0 +1,8 @@
+C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\bin\Debug\SistemaExperto.exe
+C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\bin\Debug\SistemaExperto.pdb
+C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Debug\SistemaExperto.csprojResolveAssemblyReference.cache
+C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Debug\SistemaExperto.Form1.resources
+C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Debug\SistemaExperto.Properties.Resources.resources
+C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Debug\SistemaExperto.csproj.GenerateResource.Cache
+C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Debug\SistemaExperto.exe
+C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Debug\SistemaExperto.pdb
