@@ -40,6 +40,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.PiezaActual = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -177,18 +178,30 @@
             this.tabPage2.Text = "Pagina 2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // PiezaActual
+            // 
+            this.PiezaActual.AutoSize = true;
+            this.PiezaActual.Location = new System.Drawing.Point(220, 9);
+            this.PiezaActual.Name = "PiezaActual";
+            this.PiezaActual.Size = new System.Drawing.Size(23, 13);
+            this.PiezaActual.TabIndex = 9;
+            this.PiezaActual.Text = "null";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 444);
+            this.ClientSize = new System.Drawing.Size(502, 354);
+            this.Controls.Add(this.PiezaActual);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Sistema Experto";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -206,6 +219,7 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Label PiezaActual;
     }
 }
 

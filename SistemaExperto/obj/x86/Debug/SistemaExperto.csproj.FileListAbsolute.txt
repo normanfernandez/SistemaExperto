@@ -6,3 +6,4 @@ C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Debug\SistemaE
 C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Debug\SistemaExperto.csproj.GenerateResource.Cache
 C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Debug\SistemaExperto.exe
 C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Debug\SistemaExperto.pdb
+C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Debug\SistemaExperto.Ventanas.CantidadPiezas.resources
