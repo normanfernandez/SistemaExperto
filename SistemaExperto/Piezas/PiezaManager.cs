@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace SistemaExperto.Piezas
 {
@@ -10,7 +7,7 @@ namespace SistemaExperto.Piezas
         private PiezaManager(int lim){ 
         }
 
-        public static LinkedList<Pieza> PiezaList;
+        public static LinkedList<Pieza> PiezaList = null;
 
         public static void Create(int lim)
         {

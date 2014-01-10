@@ -26,8 +26,8 @@ namespace SistemaExperto.Ventanas
 
         private void BotonConfirmarPieza_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
             Piezas.PiezaManager.Create(Int32.Parse(this.numericUpDown1.Value.ToString()));
+            CondicionalPieza form = new CondicionalPieza();
             this.Hide();
             form.ShowDialog();
             this.Close();
