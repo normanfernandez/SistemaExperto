@@ -5,6 +5,7 @@ using System.Text;
 
 namespace SistemaExperto.Piezas
 {
+
     class FormaPieza
     {
 

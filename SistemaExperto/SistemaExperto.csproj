@@ -91,7 +91,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Piezas\Piezas.png" />
+    <Content Include="Piezas\Imagenes\Piezas.png" />
+    <Content Include="Piezas\Imagenes\pieza_1.png" />
+    <Content Include="Piezas\Imagenes\pieza_2.png" />
+    <Content Include="Piezas\Imagenes\pieza_3.png" />
+    <Content Include="Piezas\Imagenes\pieza_4.png" />
+    <Content Include="Piezas\Imagenes\pieza_5.png" />
+    <Content Include="Piezas\Imagenes\pieza_6.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

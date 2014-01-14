@@ -12,24 +12,19 @@ using SistemaExperto.Piezas;
 namespace SistemaExperto
 {
     public partial class CondicionalPieza : Form
-    {
-        public CondicionalPieza()
-        {
-            _numeroPiezas = PiezaManager.PiezaList.Count;
-            piezas = PiezaManager.PiezaList.ToArray();
-            PiezaManager.PiezaList.Clear();
-            InitializeComponent();
-        }
+    {    
+        #region Atributos
+        private Pieza [] piezas;
+        private int _numeroPiezas;
+        private int _numeroPiezaActual = 0;
+        #endregion
 
+        #region Eventos
         private void Form1_Load(object sender, EventArgs e)
         {
            this.PiezaActual.Text = piezas[_numeroPiezaActual].NombrePieza 
                + " de " + _numeroPiezas.ToString();
         }
-
-        private Pieza [] piezas;
-        private int _numeroPiezas;
-        private int _numeroPiezaActual = 0;
 
         private void botonAlante_Click(object sender, EventArgs e)
         {
@@ -41,6 +36,7 @@ namespace SistemaExperto
                     _numeroPiezaActual++;
                     this.PiezaActual.Text = piezas[_numeroPiezaActual].NombrePieza
                         + " de " + _numeroPiezas.ToString();
+                    LimpiarCondiciones();
                 }
                 else 
                 {
@@ -52,6 +48,16 @@ namespace SistemaExperto
             {
                 MessageBox.Show(ise.Message, "Error!");
             }
+        }
+        #endregion
+
+        #region Metodos
+        public CondicionalPieza()
+        {
+            _numeroPiezas = PiezaManager.PiezaList.Count;
+            piezas = PiezaManager.PiezaList.ToArray();
+            PiezaManager.PiezaList.Clear();
+            InitializeComponent();
         }
 
         private void RevisarCondiciones()
@@ -66,8 +72,36 @@ namespace SistemaExperto
 
             #region Pagina 2
             //Se revisa que se haya elegido la forma de la pieza
-            
+            RadioButton[] piezaFormaArr = { rbPieza1, rbPieza2, rbPieza3, rbPieza4, rbPieza5, rbPieza6 };
+            bool check = piezaFormaArr.Any<RadioButton>(ch => ch.Checked);
+            if(!check)
+                throw new IncompleteSelectionException("Opciones Incompletas!");
             #endregion
         }
+
+        private void LimpiarCondiciones()
+        {
+            //Funcion que se encarga de limpiar los radio Buttons
+
+            #region Pagina 1
+            RadioButton[] arrPanel1 = {radioNo_1, radioSi_1};
+            RadioButton[] arrPanel2 = { radioNo_2, radioSi_2 };
+            RadioButton[] arrPanel3 = { radioNo_3, radioSi_3 };
+          
+            foreach (var rad in arrPanel1)
+                rad.Checked = false;
+            foreach (var rad in arrPanel2)
+                rad.Checked = false;
+            foreach (var rad in arrPanel3)
+                rad.Checked = false;
+            #endregion
+            
+            #region Pagina 2
+                RadioButton[] piezaFormaArr = { rbPieza1, rbPieza2, rbPieza3, rbPieza4, rbPieza5, rbPieza6 };
+                foreach (var rad in piezaFormaArr)
+                    rad.Checked = false;
+            #endregion
+        }
+        #endregion
     }
 }
