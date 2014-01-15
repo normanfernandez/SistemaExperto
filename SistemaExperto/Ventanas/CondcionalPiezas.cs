@@ -30,7 +30,7 @@ namespace SistemaExperto
         #region Eventos
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.PiezaActual.Text = Piezas.First().NombrePieza + " de " + Piezas.Count.ToString();
+            this.PiezaActual.Text = Piezas.First().NombreNumeroPieza + " de " + Piezas.Count.ToString();
         }
 
         private void botonAlante_Click(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace SistemaExperto
                 if (Piezas.Count > _numeroPiezaActual + 1)
                 {
                     _numeroPiezaActual++;
-                    this.PiezaActual.Text = Piezas[_numeroPiezaActual].NombrePieza
+                    this.PiezaActual.Text = Piezas[_numeroPiezaActual].NombreNumeroPieza
                         + " de " + Piezas.Count.ToString();
                     LimpiarCondiciones();
                     tabControl1.SelectTab("tabPage1");
@@ -56,7 +56,7 @@ namespace SistemaExperto
                         MessageBox.Show("Simetrica: " + (pieza.EsSimetrica.Value ? "Si\n" : "No\n") + 
                             "Incrustable: " + (pieza.EsIncrustable.Value ? "Si\n" : "No\n") + 
                             "Enlasable: " + (pieza.EsEnlasable.Value ? "Si\n" : "No\n") + 
-                            "Alfa: " + pieza.Alfa.ToString() +"\nBeta: " + pieza.Beta.ToString(), pieza.NombrePieza);
+                            "Alfa: " + pieza.Alfa.ToString() +"\nBeta: " + pieza.Beta.ToString(), pieza.NombreNumeroPieza);
                     this.Dispose();
                 }
             }
@@ -110,5 +110,10 @@ namespace SistemaExperto
             #endregion
         }
         #endregion
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

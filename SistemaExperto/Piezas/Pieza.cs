@@ -21,13 +21,14 @@ namespace SistemaExperto
         public Pieza(int num) 
         {
             this._numero = num;
-            this._nombre = "Pieza no." + num.ToString();
+            this._nombreNumero = "Pieza no." + num.ToString();
         }
         #endregion
 
         #region Atributos
         private int _numero;
         private string _nombre;
+        private string _nombreNumero;
         private int? _alfa;
         private int? _beta;
         private bool? _simetrica;
@@ -38,6 +39,7 @@ namespace SistemaExperto
         #region Metodos
         //Getters de los atributos
         public string NombrePieza { get { return _nombre; } }
+        public string NombreNumeroPieza { get { return _nombreNumero; } }
         public int NumeroPieza { get {return this._numero; } }
         public int? Alfa { get { return _alfa.HasValue ? _alfa : -1; } }
         public int? Beta { get { return _beta.HasValue ? _beta : -1; } }
@@ -57,7 +59,7 @@ namespace SistemaExperto
         {
             if (indice < 1 || indice > 6)
             /*Exception en caso de que utilicen valores incorrectos para el indice de piezas*/
-                throw new Exception("Valores de Indice incorrectos");            
+                throw new IncompleteSelectionException("Valores de Indice incorrectos");            
             int [][] arrConstantes = { PIEZA_1, PIEZA_2, PIEZA_3, PIEZA_4, PIEZA_5, PIEZA_6 };
             this._alfa = arrConstantes[indice - 1][0];
             this._beta = arrConstantes[indice - 1][1];

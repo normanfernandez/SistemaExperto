@@ -10,5 +10,9 @@ namespace SistemaExperto
         {
             System.Windows.Forms.MessageBox.Show("Opciones Incompletas!", "Error");
         }
+        public IncompleteSelectionException(string str) : base(str) 
+        {
+            System.Windows.Forms.MessageBox.Show(str, "Error");
+        }
     }
 }
