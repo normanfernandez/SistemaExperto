@@ -47,7 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IncompleteSelectionException.cs" />
-    <Compile Include="Piezas\FormaPieza.cs" />
     <Compile Include="Piezas\PiezaManager.cs" />
     <Compile Include="Ventanas\CantidadPiezas.cs">
       <SubType>Form</SubType>

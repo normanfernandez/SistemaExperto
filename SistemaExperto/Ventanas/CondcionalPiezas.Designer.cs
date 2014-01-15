@@ -44,16 +44,16 @@
             this.radioNo_2 = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label4 = new System.Windows.Forms.Label();
+            this.rbPieza2 = new System.Windows.Forms.RadioButton();
+            this.rbPieza6 = new System.Windows.Forms.RadioButton();
+            this.rbPieza5 = new System.Windows.Forms.RadioButton();
+            this.rbPieza4 = new System.Windows.Forms.RadioButton();
+            this.rbPieza3 = new System.Windows.Forms.RadioButton();
+            this.rbPieza1 = new System.Windows.Forms.RadioButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PiezaActual = new System.Windows.Forms.Label();
             this.botonAlante = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.rbPieza1 = new System.Windows.Forms.RadioButton();
-            this.rbPieza3 = new System.Windows.Forms.RadioButton();
-            this.rbPieza4 = new System.Windows.Forms.RadioButton();
-            this.rbPieza5 = new System.Windows.Forms.RadioButton();
-            this.rbPieza6 = new System.Windows.Forms.RadioButton();
-            this.rbPieza2 = new System.Windows.Forms.RadioButton();
-            this.label4 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -79,7 +79,6 @@
             this.radioSi_1.Name = "radioSi_1";
             this.radioSi_1.Size = new System.Drawing.Size(34, 17);
             this.radioSi_1.TabIndex = 1;
-            this.radioSi_1.TabStop = true;
             this.radioSi_1.Text = "Si";
             this.radioSi_1.UseVisualStyleBackColor = true;
             // 
@@ -155,7 +154,6 @@
             this.radioSi_3.Name = "radioSi_3";
             this.radioSi_3.Size = new System.Drawing.Size(34, 17);
             this.radioSi_3.TabIndex = 1;
-            this.radioSi_3.TabStop = true;
             this.radioSi_3.Text = "Si";
             this.radioSi_3.UseVisualStyleBackColor = true;
             // 
@@ -186,7 +184,6 @@
             this.radioSi_2.Name = "radioSi_2";
             this.radioSi_2.Size = new System.Drawing.Size(34, 17);
             this.radioSi_2.TabIndex = 1;
-            this.radioSi_2.TabStop = true;
             this.radioSi_2.Text = "Si";
             this.radioSi_2.UseVisualStyleBackColor = true;
             // 
@@ -228,6 +225,84 @@
             this.tabPage2.Text = "Pagina 2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(166, 19);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(144, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Elija que forma tiene su pieza";
+            // 
+            // rbPieza2
+            // 
+            this.rbPieza2.AutoSize = true;
+            this.rbPieza2.Location = new System.Drawing.Point(125, 159);
+            this.rbPieza2.Name = "rbPieza2";
+            this.rbPieza2.Size = new System.Drawing.Size(14, 13);
+            this.rbPieza2.TabIndex = 2;
+            this.rbPieza2.TabStop = true;
+            this.rbPieza2.UseVisualStyleBackColor = true;
+            // 
+            // rbPieza6
+            // 
+            this.rbPieza6.AutoSize = true;
+            this.rbPieza6.Location = new System.Drawing.Point(400, 159);
+            this.rbPieza6.Name = "rbPieza6";
+            this.rbPieza6.Size = new System.Drawing.Size(14, 13);
+            this.rbPieza6.TabIndex = 6;
+            this.rbPieza6.TabStop = true;
+            this.rbPieza6.UseVisualStyleBackColor = true;
+            // 
+            // rbPieza5
+            // 
+            this.rbPieza5.AutoSize = true;
+            this.rbPieza5.Location = new System.Drawing.Point(332, 159);
+            this.rbPieza5.Name = "rbPieza5";
+            this.rbPieza5.Size = new System.Drawing.Size(14, 13);
+            this.rbPieza5.TabIndex = 5;
+            this.rbPieza5.TabStop = true;
+            this.rbPieza5.UseVisualStyleBackColor = true;
+            // 
+            // rbPieza4
+            // 
+            this.rbPieza4.AutoSize = true;
+            this.rbPieza4.Location = new System.Drawing.Point(265, 159);
+            this.rbPieza4.Name = "rbPieza4";
+            this.rbPieza4.Size = new System.Drawing.Size(14, 13);
+            this.rbPieza4.TabIndex = 4;
+            this.rbPieza4.TabStop = true;
+            this.rbPieza4.UseVisualStyleBackColor = true;
+            // 
+            // rbPieza3
+            // 
+            this.rbPieza3.AutoSize = true;
+            this.rbPieza3.Location = new System.Drawing.Point(196, 159);
+            this.rbPieza3.Name = "rbPieza3";
+            this.rbPieza3.Size = new System.Drawing.Size(14, 13);
+            this.rbPieza3.TabIndex = 3;
+            this.rbPieza3.TabStop = true;
+            this.rbPieza3.UseVisualStyleBackColor = true;
+            // 
+            // rbPieza1
+            // 
+            this.rbPieza1.AutoSize = true;
+            this.rbPieza1.Location = new System.Drawing.Point(59, 159);
+            this.rbPieza1.Name = "rbPieza1";
+            this.rbPieza1.Size = new System.Drawing.Size(14, 13);
+            this.rbPieza1.TabIndex = 1;
+            this.rbPieza1.TabStop = true;
+            this.rbPieza1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(46, 55);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(398, 98);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // PiezaActual
             // 
             this.PiezaActual.AutoSize = true;
@@ -246,84 +321,6 @@
             this.botonAlante.Text = "Siguiente";
             this.botonAlante.UseVisualStyleBackColor = true;
             this.botonAlante.Click += new System.EventHandler(this.botonAlante_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(46, 55);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(398, 98);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // rbPieza1
-            // 
-            this.rbPieza1.AutoSize = true;
-            this.rbPieza1.Location = new System.Drawing.Point(59, 159);
-            this.rbPieza1.Name = "rbPieza1";
-            this.rbPieza1.Size = new System.Drawing.Size(14, 13);
-            this.rbPieza1.TabIndex = 1;
-            this.rbPieza1.TabStop = true;
-            this.rbPieza1.UseVisualStyleBackColor = true;
-            // 
-            // rbPieza3
-            // 
-            this.rbPieza3.AutoSize = true;
-            this.rbPieza3.Location = new System.Drawing.Point(196, 159);
-            this.rbPieza3.Name = "rbPieza3";
-            this.rbPieza3.Size = new System.Drawing.Size(14, 13);
-            this.rbPieza3.TabIndex = 2;
-            this.rbPieza3.TabStop = true;
-            this.rbPieza3.UseVisualStyleBackColor = true;
-            // 
-            // rbPieza4
-            // 
-            this.rbPieza4.AutoSize = true;
-            this.rbPieza4.Location = new System.Drawing.Point(265, 159);
-            this.rbPieza4.Name = "rbPieza4";
-            this.rbPieza4.Size = new System.Drawing.Size(14, 13);
-            this.rbPieza4.TabIndex = 3;
-            this.rbPieza4.TabStop = true;
-            this.rbPieza4.UseVisualStyleBackColor = true;
-            // 
-            // rbPieza5
-            // 
-            this.rbPieza5.AutoSize = true;
-            this.rbPieza5.Location = new System.Drawing.Point(332, 159);
-            this.rbPieza5.Name = "rbPieza5";
-            this.rbPieza5.Size = new System.Drawing.Size(14, 13);
-            this.rbPieza5.TabIndex = 4;
-            this.rbPieza5.TabStop = true;
-            this.rbPieza5.UseVisualStyleBackColor = true;
-            // 
-            // rbPieza6
-            // 
-            this.rbPieza6.AutoSize = true;
-            this.rbPieza6.Location = new System.Drawing.Point(400, 159);
-            this.rbPieza6.Name = "rbPieza6";
-            this.rbPieza6.Size = new System.Drawing.Size(14, 13);
-            this.rbPieza6.TabIndex = 5;
-            this.rbPieza6.TabStop = true;
-            this.rbPieza6.UseVisualStyleBackColor = true;
-            // 
-            // rbPieza2
-            // 
-            this.rbPieza2.AutoSize = true;
-            this.rbPieza2.Location = new System.Drawing.Point(125, 159);
-            this.rbPieza2.Name = "rbPieza2";
-            this.rbPieza2.Size = new System.Drawing.Size(14, 13);
-            this.rbPieza2.TabIndex = 6;
-            this.rbPieza2.TabStop = true;
-            this.rbPieza2.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(166, 19);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Elija que forma tiene su pieza";
             // 
             // CondicionalPieza
             // 

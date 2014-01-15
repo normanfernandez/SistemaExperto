@@ -12,35 +12,46 @@ using SistemaExperto.Piezas;
 namespace SistemaExperto
 {
     public partial class CondicionalPieza : Form
-    {    
+    {
+        #region Constructor
+        public CondicionalPieza()
+        {
+            this.Piezas = PiezaManager.PiezaList.ToList<Pieza>();
+            PiezaManager.PiezaList.Clear();
+            InitializeComponent();
+        }
+        #endregion
+
         #region Atributos
-        private Pieza [] piezas;
-        private int _numeroPiezas;
+        private List<Pieza> Piezas;
         private int _numeroPiezaActual = 0;
         #endregion
 
         #region Eventos
         private void Form1_Load(object sender, EventArgs e)
         {
-           this.PiezaActual.Text = piezas[_numeroPiezaActual].NombrePieza 
-               + " de " + _numeroPiezas.ToString();
+            this.PiezaActual.Text = Piezas.First().NombrePieza + " de " + Piezas.Count.ToString();
         }
 
         private void botonAlante_Click(object sender, EventArgs e)
         {
+            RadioButton[] piezaFormaArr = { rbPieza1, rbPieza2, rbPieza3, rbPieza4, rbPieza5, rbPieza6 };
             try
             {
                 RevisarCondiciones();
-                if (_numeroPiezas > _numeroPiezaActual + 1)
+                Piezas[_numeroPiezaActual].CrearAnguloPieza(piezaFormaArr.Single<RadioButton>(ch => ch.Checked).TabIndex);
+                if (Piezas.Count > _numeroPiezaActual + 1)
                 {
                     _numeroPiezaActual++;
-                    this.PiezaActual.Text = piezas[_numeroPiezaActual].NombrePieza
-                        + " de " + _numeroPiezas.ToString();
+                    this.PiezaActual.Text = Piezas[_numeroPiezaActual].NombrePieza
+                        + " de " + Piezas.Count.ToString();
                     LimpiarCondiciones();
+                    tabControl1.SelectTab("tabPage1");
                 }
                 else 
                 {
-                    MessageBox.Show("Done", "Done");
+                    foreach(var pieza in Piezas)
+                        MessageBox.Show("Alfa: " + pieza.Alfa.ToString() +"\nBeta: " + pieza.Beta.ToString(), pieza.NombrePieza);
                     this.Dispose();
                 }
             }
@@ -52,14 +63,6 @@ namespace SistemaExperto
         #endregion
 
         #region Metodos
-        public CondicionalPieza()
-        {
-            _numeroPiezas = PiezaManager.PiezaList.Count;
-            piezas = PiezaManager.PiezaList.ToArray();
-            PiezaManager.PiezaList.Clear();
-            InitializeComponent();
-        }
-
         private void RevisarCondiciones()
         {
             #region Pagina 1
@@ -73,8 +76,7 @@ namespace SistemaExperto
             #region Pagina 2
             //Se revisa que se haya elegido la forma de la pieza
             RadioButton[] piezaFormaArr = { rbPieza1, rbPieza2, rbPieza3, rbPieza4, rbPieza5, rbPieza6 };
-            bool check = piezaFormaArr.Any<RadioButton>(ch => ch.Checked);
-            if(!check)
+            if(!piezaFormaArr.Any<RadioButton>(ch => ch.Checked))
                 throw new IncompleteSelectionException("Opciones Incompletas!");
             #endregion
         }
