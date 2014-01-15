@@ -62,7 +62,7 @@ namespace SistemaExperto
             }
             catch(IncompleteSelectionException ise)
             {
-                MessageBox.Show(ise.Message, "Error!");
+                //Se muestra mensaje de error
             }
         }
         #endregion
@@ -75,14 +75,14 @@ namespace SistemaExperto
             if (!(radioNo_1.Checked ^ radioSi_1.Checked
                 && radioNo_2.Checked ^ radioSi_2.Checked
                 && radioNo_3.Checked ^ radioSi_3.Checked))
-                throw new IncompleteSelectionException("Opciones Incompletas!");
+                throw new IncompleteSelectionException();
             #endregion
 
             #region Pagina 2
             //Se revisa que se haya elegido la forma de la pieza
             RadioButton[] piezaFormaArr = { rbPieza1, rbPieza2, rbPieza3, rbPieza4, rbPieza5, rbPieza6 };
             if(!piezaFormaArr.Any<RadioButton>(ch => ch.Checked))
-                throw new IncompleteSelectionException("Opciones Incompletas!");
+                throw new IncompleteSelectionException();
             #endregion
         }
 

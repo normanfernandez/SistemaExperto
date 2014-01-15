@@ -1,17 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
 namespace SistemaExperto
 {
     public class IncompleteSelectionException : Exception
     {
-        public IncompleteSelectionException()
+        public IncompleteSelectionException() : base()
         {
-        }
-        public IncompleteSelectionException(string str) : base(str)
-        {
+            System.Windows.Forms.MessageBox.Show("Opciones Incompletas!", "Error");
         }
     }
 }
