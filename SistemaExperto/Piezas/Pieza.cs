@@ -28,28 +28,41 @@ namespace SistemaExperto
         #region Atributos
         private int _numero;
         private string _nombre;
-        private int ? _alfa;
-        private int ? _beta;
+        private int? _alfa;
+        private int? _beta;
+        private bool? _simetrica;
+        private bool? _incruste;
+        private bool? _enlace_tipo;
         #endregion
 
         #region Metodos
         //Getters de los atributos
         public string NombrePieza { get { return _nombre; } }
         public int NumeroPieza { get {return this._numero; } }
-        public int ? Alfa { get { return _alfa.HasValue ? _alfa : -1; } }
-        public int ? Beta { get { return _beta.HasValue ? _beta : -1; } }
+        public int? Alfa { get { return _alfa.HasValue ? _alfa : -1; } }
+        public int? Beta { get { return _beta.HasValue ? _beta : -1; } }
+        public bool? EsSimetrica { get { return _simetrica.HasValue ? _simetrica : null; } }
+        public bool? EsIncrustable { get { return _incruste.HasValue ? _incruste : null; } }
+        public bool? EsEnlasable { get { return _enlace_tipo.HasValue ? _enlace_tipo : null; } }
         //////////////////////////
 
+        //Metodos para dar valores
+        public void CrearCondicionalesPagina_1(bool sim, bool inc, bool enl) 
+        {
+            this._simetrica = sim;
+            this._incruste = inc;
+            this._enlace_tipo = enl;
+        }
         public void CrearAnguloPieza(int indice) 
         {
             if (indice < 1 || indice > 6)
             /*Exception en caso de que utilicen valores incorrectos para el indice de piezas*/
-                throw new Exception("Valores de Indice incorrectos");
+                throw new Exception("Valores de Indice incorrectos");            
             int [][] arrConstantes = { PIEZA_1, PIEZA_2, PIEZA_3, PIEZA_4, PIEZA_5, PIEZA_6 };
             this._alfa = arrConstantes[indice - 1][0];
             this._beta = arrConstantes[indice - 1][1];
         }
-
+        ///////////////////////////
         #endregion
     }
 }

@@ -40,6 +40,8 @@ namespace SistemaExperto
             {
                 RevisarCondiciones();
                 Piezas[_numeroPiezaActual].CrearAnguloPieza(piezaFormaArr.Single<RadioButton>(ch => ch.Checked).TabIndex);
+                Piezas[_numeroPiezaActual].CrearCondicionalesPagina_1(this.radioSi_1.Checked, 
+                    this.radioSi_2.Checked, this.radioSi_3.Checked);
                 if (Piezas.Count > _numeroPiezaActual + 1)
                 {
                     _numeroPiezaActual++;
@@ -51,7 +53,10 @@ namespace SistemaExperto
                 else 
                 {
                     foreach(var pieza in Piezas)
-                        MessageBox.Show("Alfa: " + pieza.Alfa.ToString() +"\nBeta: " + pieza.Beta.ToString(), pieza.NombrePieza);
+                        MessageBox.Show("Simetrica: " + (pieza.EsSimetrica.Value ? "Si\n" : "No\n") + 
+                            "Incrustable: " + (pieza.EsIncrustable.Value ? "Si\n" : "No\n") + 
+                            "Enlasable: " + (pieza.EsEnlasable.Value ? "Si\n" : "No\n") + 
+                            "Alfa: " + pieza.Alfa.ToString() +"\nBeta: " + pieza.Beta.ToString(), pieza.NombrePieza);
                     this.Dispose();
                 }
             }
