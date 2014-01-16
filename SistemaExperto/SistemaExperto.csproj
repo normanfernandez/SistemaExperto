@@ -46,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Idiomas\AbstractLanguage.cs" />
+    <Compile Include="Idiomas\EnglishLanguage.cs" />
+    <Compile Include="Idiomas\EspanolLanguage.cs" />
+    <Compile Include="Idiomas\SystemLanguage.cs" />
     <Compile Include="IncompleteSelectionException.cs" />
     <Compile Include="Piezas\PiezaManager.cs" />
     <Compile Include="Ventanas\CantidadPiezas.cs">

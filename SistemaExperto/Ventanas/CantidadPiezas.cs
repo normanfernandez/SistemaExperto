@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using SistemaExperto.Idiomas;
 
 namespace SistemaExperto.Ventanas
 {
@@ -31,6 +32,30 @@ namespace SistemaExperto.Ventanas
             this.Hide();
             form.ShowDialog();
             this.Close();
+        }
+
+        private void rbEspanol_CheckedChanged(object sender, EventArgs e)
+        {
+            Idiomas.SystemLanguage.SelectLanguage("ESPANOL");
+            this.Text = Idiomas.SystemLanguage.SelectedLanguage().QuantityTitle;
+            this.label1.Text = Idiomas.SystemLanguage.SelectedLanguage().LabelQuantity;
+            this.BotonConfirmarPieza.Text = Idiomas.SystemLanguage.SelectedLanguage().ButtonAccept;
+        }
+
+        private void rbEnglish_CheckedChanged(object sender, EventArgs e)
+        {
+            Idiomas.SystemLanguage.SelectLanguage("ENGLISH");
+            this.Text = Idiomas.SystemLanguage.SelectedLanguage().QuantityTitle;
+            this.label1.Text = Idiomas.SystemLanguage.SelectedLanguage().LabelQuantity;
+            this.BotonConfirmarPieza.Text = Idiomas.SystemLanguage.SelectedLanguage().ButtonAccept;
+        }
+
+        private void CantidadPiezas_Load(object sender, EventArgs e)
+        {
+            this.label1.Text = Idiomas.SystemLanguage.SelectedLanguage().LabelQuantity;
+            this.Text = Idiomas.SystemLanguage.SelectedLanguage().QuantityTitle;
+            this.label1.Text = Idiomas.SystemLanguage.SelectedLanguage().LabelQuantity;
+            this.BotonConfirmarPieza.Text = Idiomas.SystemLanguage.SelectedLanguage().ButtonAccept;
         }
     }
 }

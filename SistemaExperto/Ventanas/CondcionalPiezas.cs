@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using SistemaExperto.Ventanas;
 using SistemaExperto.Piezas;
+using SistemaExperto.Idiomas;
 
 namespace SistemaExperto
 {
@@ -42,6 +43,7 @@ namespace SistemaExperto
                 Piezas[_numeroPiezaActual].CrearAnguloPieza(piezaFormaArr.Single<RadioButton>(ch => ch.Checked).TabIndex);
                 Piezas[_numeroPiezaActual].CrearCondicionalesPagina_1(this.radioSi_1.Checked, 
                     this.radioSi_2.Checked, this.radioSi_3.Checked);
+                Piezas[_numeroPiezaActual].NombrePieza = this.nombrePiezaText.Text;
                 if (Piezas.Count > _numeroPiezaActual + 1)
                 {
                     _numeroPiezaActual++;
@@ -56,7 +58,7 @@ namespace SistemaExperto
                         MessageBox.Show("Simetrica: " + (pieza.EsSimetrica.Value ? "Si\n" : "No\n") + 
                             "Incrustable: " + (pieza.EsIncrustable.Value ? "Si\n" : "No\n") + 
                             "Enlasable: " + (pieza.EsEnlasable.Value ? "Si\n" : "No\n") + 
-                            "Alfa: " + pieza.Alfa.ToString() +"\nBeta: " + pieza.Beta.ToString(), pieza.NombreNumeroPieza);
+                            "Alfa: " + pieza.Alfa.ToString() +"\nBeta: " + pieza.Beta.ToString() + "\nNombre: " + pieza.NombrePieza, pieza.NombreNumeroPieza);
                     this.Dispose();
                 }
             }
@@ -84,11 +86,18 @@ namespace SistemaExperto
             if(!piezaFormaArr.Any<RadioButton>(ch => ch.Checked))
                 throw new IncompleteSelectionException();
             #endregion
+
+            #region Pagina 3
+            if (nombrePiezaText.Text == "")
+                throw new IncompleteSelectionException();
+            if((largoText.Text == "") || (anchoText.Text == ""))
+                throw new IncompleteSelectionException();
+            #endregion
         }
 
         private void LimpiarCondiciones()
         {
-            //Funcion que se encarga de limpiar los radio Buttons
+            //Funcion que se encarga de limpiar los RadioButtons y TextFields
 
             #region Pagina 1
             RadioButton[] arrPanel1 = {radioNo_1, radioSi_1};
@@ -104,16 +113,17 @@ namespace SistemaExperto
             #endregion
             
             #region Pagina 2
-                RadioButton[] piezaFormaArr = { rbPieza1, rbPieza2, rbPieza3, rbPieza4, rbPieza5, rbPieza6 };
-                foreach (var rad in piezaFormaArr)
-                    rad.Checked = false;
+            RadioButton[] piezaFormaArr = { rbPieza1, rbPieza2, rbPieza3, rbPieza4, rbPieza5, rbPieza6 };
+            foreach (var rad in piezaFormaArr)
+                rad.Checked = false;
+            #endregion
+
+            #region Pagina 3
+            nombrePiezaText.Text = "";
+            largoText.Text = "";
+            anchoText.Text = "";
             #endregion
         }
         #endregion
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
     }
 }

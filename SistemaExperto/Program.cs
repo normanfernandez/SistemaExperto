@@ -13,6 +13,7 @@ namespace SistemaExperto
         [STAThread]
         static void Main()
         {
+            Idiomas.SystemLanguage.LanguageAdd();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Ventanas.CantidadPiezas());

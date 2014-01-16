@@ -38,7 +38,7 @@ namespace SistemaExperto
 
         #region Metodos
         //Getters de los atributos
-        public string NombrePieza { get { return _nombre; } }
+        public string NombrePieza { get { return _nombre; } set { this._nombre = value; } }
         public string NombreNumeroPieza { get { return _nombreNumero; } }
         public int NumeroPieza { get {return this._numero; } }
         public int? Alfa { get { return _alfa.HasValue ? _alfa : -1; } }
