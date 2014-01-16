@@ -62,6 +62,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.PiezaActual = new System.Windows.Forms.Label();
             this.botonAlante = new System.Windows.Forms.Button();
+            this.botonAtras = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -87,9 +88,9 @@
             this.radioSi_1.AutoSize = true;
             this.radioSi_1.Location = new System.Drawing.Point(0, 0);
             this.radioSi_1.Name = "radioSi_1";
-            this.radioSi_1.Size = new System.Drawing.Size(34, 17);
+            this.radioSi_1.Size = new System.Drawing.Size(32, 17);
             this.radioSi_1.TabIndex = 1;
-            this.radioSi_1.Text = Idiomas.SystemLanguage.SelectedLanguage().Yes;
+            this.radioSi_1.Text = "si";
             this.radioSi_1.UseVisualStyleBackColor = true;
             // 
             // radioNo_1
@@ -97,10 +98,10 @@
             this.radioNo_1.AutoSize = true;
             this.radioNo_1.Location = new System.Drawing.Point(0, 22);
             this.radioNo_1.Name = "radioNo_1";
-            this.radioNo_1.Size = new System.Drawing.Size(39, 17);
+            this.radioNo_1.Size = new System.Drawing.Size(37, 17);
             this.radioNo_1.TabIndex = 2;
             this.radioNo_1.TabStop = true;
-            this.radioNo_1.Text = Idiomas.SystemLanguage.SelectedLanguage().No;
+            this.radioNo_1.Text = "no";
             this.radioNo_1.UseVisualStyleBackColor = true;
             // 
             // label2
@@ -163,9 +164,9 @@
             this.radioSi_3.AutoSize = true;
             this.radioSi_3.Location = new System.Drawing.Point(0, 0);
             this.radioSi_3.Name = "radioSi_3";
-            this.radioSi_3.Size = new System.Drawing.Size(34, 17);
+            this.radioSi_3.Size = new System.Drawing.Size(32, 17);
             this.radioSi_3.TabIndex = 1;
-            this.radioSi_3.Text = Idiomas.SystemLanguage.SelectedLanguage().Yes;
+            this.radioSi_3.Text = "si";
             this.radioSi_3.UseVisualStyleBackColor = true;
             // 
             // radioNo_3
@@ -173,10 +174,10 @@
             this.radioNo_3.AutoSize = true;
             this.radioNo_3.Location = new System.Drawing.Point(0, 22);
             this.radioNo_3.Name = "radioNo_3";
-            this.radioNo_3.Size = new System.Drawing.Size(39, 17);
+            this.radioNo_3.Size = new System.Drawing.Size(37, 17);
             this.radioNo_3.TabIndex = 2;
             this.radioNo_3.TabStop = true;
-            this.radioNo_3.Text = Idiomas.SystemLanguage.SelectedLanguage().No;
+            this.radioNo_3.Text = "no";
             this.radioNo_3.UseVisualStyleBackColor = true;
             // 
             // panel2
@@ -193,9 +194,9 @@
             this.radioSi_2.AutoSize = true;
             this.radioSi_2.Location = new System.Drawing.Point(0, 0);
             this.radioSi_2.Name = "radioSi_2";
-            this.radioSi_2.Size = new System.Drawing.Size(34, 17);
+            this.radioSi_2.Size = new System.Drawing.Size(32, 17);
             this.radioSi_2.TabIndex = 1;
-            this.radioSi_2.Text = Idiomas.SystemLanguage.SelectedLanguage().Yes;
+            this.radioSi_2.Text = "si";
             this.radioSi_2.UseVisualStyleBackColor = true;
             // 
             // radioNo_2
@@ -203,10 +204,10 @@
             this.radioNo_2.AutoSize = true;
             this.radioNo_2.Location = new System.Drawing.Point(0, 22);
             this.radioNo_2.Name = "radioNo_2";
-            this.radioNo_2.Size = new System.Drawing.Size(39, 17);
+            this.radioNo_2.Size = new System.Drawing.Size(37, 17);
             this.radioNo_2.TabIndex = 2;
             this.radioNo_2.TabStop = true;
-            this.radioNo_2.Text = Idiomas.SystemLanguage.SelectedLanguage().No;
+            this.radioNo_2.Text = "no";
             this.radioNo_2.UseVisualStyleBackColor = true;
             // 
             // panel1
@@ -403,15 +404,27 @@
             this.botonAlante.Name = "botonAlante";
             this.botonAlante.Size = new System.Drawing.Size(75, 23);
             this.botonAlante.TabIndex = 11;
-            this.botonAlante.Text = Idiomas.SystemLanguage.SelectedLanguage().ButtonNext;
+            this.botonAlante.Text = "siguiente";
             this.botonAlante.UseVisualStyleBackColor = true;
             this.botonAlante.Click += new System.EventHandler(this.botonAlante_Click);
+            // 
+            // botonAtras
+            // 
+            this.botonAtras.Enabled = false;
+            this.botonAtras.Location = new System.Drawing.Point(12, 358);
+            this.botonAtras.Name = "botonAtras";
+            this.botonAtras.Size = new System.Drawing.Size(75, 23);
+            this.botonAtras.TabIndex = 12;
+            this.botonAtras.Text = "atras";
+            this.botonAtras.UseVisualStyleBackColor = true;
+            this.botonAtras.Click += new System.EventHandler(this.botonAtras_Click);
             // 
             // CondicionalPieza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(514, 395);
+            this.Controls.Add(this.botonAtras);
             this.Controls.Add(this.botonAlante);
             this.Controls.Add(this.PiezaActual);
             this.Controls.Add(this.tabControl1);
@@ -420,7 +433,7 @@
             this.MaximumSize = new System.Drawing.Size(520, 420);
             this.MinimumSize = new System.Drawing.Size(520, 420);
             this.Name = "CondicionalPieza";
-            this.Text = Idiomas.SystemLanguage.SelectedLanguage().MainTitle;
+            this.Text = "sistema";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -478,6 +491,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox nombrePiezaText;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button botonAtras;
     }
 }
 

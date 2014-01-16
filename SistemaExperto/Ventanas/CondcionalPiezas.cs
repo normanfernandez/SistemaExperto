@@ -32,6 +32,26 @@ namespace SistemaExperto
         private void Form1_Load(object sender, EventArgs e)
         {
             this.PiezaActual.Text = Piezas.First().NombreNumeroPieza + " de " + Piezas.Count.ToString();
+            this.radioNo_1.Text = Idiomas.SystemLanguage.SelectedLanguage().No;
+            this.radioSi_1.Text = Idiomas.SystemLanguage.SelectedLanguage().Yes;
+            this.radioNo_2.Text = Idiomas.SystemLanguage.SelectedLanguage().No;
+            this.radioSi_2.Text = Idiomas.SystemLanguage.SelectedLanguage().Yes;
+            this.radioNo_3.Text = Idiomas.SystemLanguage.SelectedLanguage().No;
+            this.radioSi_3.Text = Idiomas.SystemLanguage.SelectedLanguage().Yes;
+            this.botonAlante.Text = Idiomas.SystemLanguage.SelectedLanguage().ButtonNext;
+            this.botonAtras.Text = Idiomas.SystemLanguage.SelectedLanguage().ButtonBack;
+            this.Text = Idiomas.SystemLanguage.SelectedLanguage().MainTitle;
+        }
+
+        private void botonAtras_Click(object sender, EventArgs e)
+        {
+            if (_numeroPiezaActual == 1)
+                this.botonAtras.Enabled = false;
+            _numeroPiezaActual--;
+            this.LimpiarCondiciones();
+            Piezas[_numeroPiezaActual].ReiniciarEstado();
+            this.PiezaActual.Text = Piezas[_numeroPiezaActual].NombreNumeroPieza
+                        + " de " + Piezas.Count.ToString();
         }
 
         private void botonAlante_Click(object sender, EventArgs e)
@@ -54,17 +74,26 @@ namespace SistemaExperto
                 }
                 else 
                 {
-                    foreach(var pieza in Piezas)
-                        MessageBox.Show("Simetrica: " + (pieza.EsSimetrica.Value ? "Si\n" : "No\n") + 
-                            "Incrustable: " + (pieza.EsIncrustable.Value ? "Si\n" : "No\n") + 
-                            "Enlasable: " + (pieza.EsEnlasable.Value ? "Si\n" : "No\n") + 
-                            "Alfa: " + pieza.Alfa.ToString() +"\nBeta: " + pieza.Beta.ToString() + "\nNombre: " + pieza.NombrePieza, pieza.NombreNumeroPieza);
-                    this.Dispose();
+                    DialogResult dialogResult = MessageBox.Show("Mostrar Resultados?", "", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        foreach (var pieza in Piezas)
+                            MessageBox.Show("Simetrica: " + (pieza.EsSimetrica.Value ? "Si\n" : "No\n") +
+                                "Incrustable: " + (pieza.EsIncrustable.Value ? "Si\n" : "No\n") +
+                                "Enlasable: " + (pieza.EsEnlasable.Value ? "Si\n" : "No\n") +
+                                "Alfa: " + pieza.Alfa.ToString() + "\nBeta: " + pieza.Beta.ToString() + "\nNombre: " + pieza.NombrePieza, pieza.NombreNumeroPieza);
+                        this.Dispose();
+                    }
+                    else if (dialogResult == DialogResult.No)
+                    {
+                        return;
+                    }   
                 }
+                this.botonAtras.Enabled = true;
             }
             catch(IncompleteSelectionException ise)
             {
-                //Se muestra mensaje de error
+                //Se muestra mensaje de error en caso que se lance una excepcion
             }
         }
         #endregion

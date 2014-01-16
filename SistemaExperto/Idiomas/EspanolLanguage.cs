@@ -12,10 +12,11 @@ namespace SistemaExperto.Idiomas
             
             QUANTITY_TITLE = "Cantidad de Piezas";
             BUTTON_NEXT = "Siguiente";
+            BUTTON_BACK = "Atras";
             BUTTON_ACCEPT = "Aceptar";
             LABEL_QUANTITY = "Cantidad de Piezas:";
             MAIN_TITLE = "Sistema Experto";
-            YES = "Si";
+            YES = "Sí";
             NO = "No";
             return this;
         }

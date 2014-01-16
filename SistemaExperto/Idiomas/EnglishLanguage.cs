@@ -11,6 +11,7 @@ namespace SistemaExperto.Idiomas
         {
             QUANTITY_TITLE = "Pieces Quantity";
             BUTTON_NEXT = "Next";
+            BUTTON_BACK = "Back";
             BUTTON_ACCEPT = "Accept";
             LABEL_QUANTITY = "Pieces quantity:";
             MAIN_TITLE = "Expert System";

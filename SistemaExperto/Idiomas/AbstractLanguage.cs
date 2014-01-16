@@ -14,11 +14,13 @@ namespace SistemaExperto.Idiomas
         protected string QUANTITY_TITLE;
         protected string BUTTON_ACCEPT;
         protected string BUTTON_NEXT;
+        protected string BUTTON_BACK;
         protected string MAIN_TITLE;
         protected string YES;
         protected string NO;
 
         public string ButtonNext { get { return BUTTON_NEXT; } }
+        public string ButtonBack { get { return BUTTON_BACK; } }
         public string ButtonAccept { get { return BUTTON_ACCEPT; } }
         public string QuantityTitle { get { return QUANTITY_TITLE; } }
         public string LabelQuantity { get { return LABEL_QUANTITY; } }

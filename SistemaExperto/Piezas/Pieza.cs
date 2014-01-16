@@ -64,6 +64,16 @@ namespace SistemaExperto
             this._alfa = arrConstantes[indice - 1][0];
             this._beta = arrConstantes[indice - 1][1];
         }
+        public void ReiniciarEstado() 
+        {
+            this._alfa = null;
+            this._beta = null;
+
+            this._enlace_tipo = null;
+            this._incruste = null;
+            this._simetrica = null;
+            this._nombre = "";
+        }
         ///////////////////////////
         #endregion
     }

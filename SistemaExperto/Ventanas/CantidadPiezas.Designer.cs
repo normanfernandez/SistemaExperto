@@ -51,6 +51,7 @@
             this.BotonConfirmarPieza.Name = "BotonConfirmarPieza";
             this.BotonConfirmarPieza.Size = new System.Drawing.Size(75, 23);
             this.BotonConfirmarPieza.TabIndex = 2;
+            this.BotonConfirmarPieza.Text = "pony";
             this.BotonConfirmarPieza.UseVisualStyleBackColor = true;
             this.BotonConfirmarPieza.Click += new System.EventHandler(this.BotonConfirmarPieza_Click);
             // 
@@ -81,7 +82,7 @@
             this.rbEspanol.Size = new System.Drawing.Size(63, 17);
             this.rbEspanol.TabIndex = 4;
             this.rbEspanol.TabStop = true;
-            this.rbEspanol.Text = "Espanol";
+            this.rbEspanol.Text = "Español";
             this.rbEspanol.UseVisualStyleBackColor = true;
             this.rbEspanol.CheckedChanged += new System.EventHandler(this.rbEspanol_CheckedChanged);
             // 
@@ -110,6 +111,7 @@
             this.MaximumSize = new System.Drawing.Size(277, 151);
             this.MinimumSize = new System.Drawing.Size(277, 151);
             this.Name = "CantidadPiezas";
+            this.Text = "Cantidad Piezas";
             this.Load += new System.EventHandler(this.CantidadPiezas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
