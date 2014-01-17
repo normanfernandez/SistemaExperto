@@ -31,9 +31,6 @@ namespace SistemaExperto
         private string _nombreNumero;
         private int? _alfa;
         private int? _beta;
-        private bool? _simetrica;
-        private bool? _incruste;
-        private bool? _enlace_tipo;
         private double? _ancho;
         private double? _largo;
         #endregion
@@ -47,18 +44,9 @@ namespace SistemaExperto
         public int? Beta { get { return this._beta.HasValue ? _beta : -1; } }
         public double? Ancho { get { return this._ancho; } set { this._ancho = value; } }
         public double? Largo { get { return this._largo; } set { this._largo = value; } }
-        public bool? EsSimetrica { get { return _simetrica.HasValue ? _simetrica : null; } }
-        public bool? EsIncrustable { get { return _incruste.HasValue ? _incruste : null; } }
-        public bool? EsEnlasable { get { return _enlace_tipo.HasValue ? _enlace_tipo : null; } }
         //////////////////////////
 
         //Metodos para dar valores
-        public void CrearCondicionalesPagina_1(bool sim, bool inc, bool enl) 
-        {
-            this._simetrica = sim;
-            this._incruste = inc;
-            this._enlace_tipo = enl;
-        }
         public void CrearAnguloPieza(int indice) 
         {
             if (indice < 1 || indice > 6)
@@ -73,9 +61,6 @@ namespace SistemaExperto
             this._alfa = null;
             this._beta = null;
 
-            this._enlace_tipo = null;
-            this._incruste = null;
-            this._simetrica = null;
             this._nombre = "";
         }
         ///////////////////////////

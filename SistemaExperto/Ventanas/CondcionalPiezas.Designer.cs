@@ -40,7 +40,7 @@
             this.panelSeccion2 = new System.Windows.Forms.Panel();
             this.panelSeccion2Sub = new System.Windows.Forms.Panel();
             this.rbEstandar = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.rbEspecial = new System.Windows.Forms.RadioButton();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.grupoGeneral = new System.Windows.Forms.GroupBox();
@@ -69,7 +69,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.nombrePiezaText = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.PiezaActual = new System.Windows.Forms.Label();
+            this.LabelPiezaActual = new System.Windows.Forms.Label();
             this.botonAlante = new System.Windows.Forms.Button();
             this.botonAtras = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
@@ -194,7 +194,7 @@
             // panelSeccion2Sub
             // 
             this.panelSeccion2Sub.Controls.Add(this.rbEstandar);
-            this.panelSeccion2Sub.Controls.Add(this.radioButton7);
+            this.panelSeccion2Sub.Controls.Add(this.rbEspecial);
             this.panelSeccion2Sub.Enabled = false;
             this.panelSeccion2Sub.Location = new System.Drawing.Point(25, 27);
             this.panelSeccion2Sub.Name = "panelSeccion2Sub";
@@ -212,17 +212,17 @@
             this.rbEstandar.Text = "Herramientas Estandar";
             this.rbEstandar.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // rbEspecial
             // 
-            this.radioButton7.AccessibleDescription = "rbEpecial";
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(3, 28);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(141, 17);
-            this.radioButton7.TabIndex = 0;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Herramientas Especiales";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.rbEspecial.AccessibleDescription = "rbEpecial";
+            this.rbEspecial.AutoSize = true;
+            this.rbEspecial.Location = new System.Drawing.Point(3, 28);
+            this.rbEspecial.Name = "rbEspecial";
+            this.rbEspecial.Size = new System.Drawing.Size(141, 17);
+            this.rbEspecial.TabIndex = 0;
+            this.rbEspecial.TabStop = true;
+            this.rbEspecial.Text = "Herramientas Especiales";
+            this.rbEspecial.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
@@ -263,7 +263,6 @@
             this.rbDificil.Name = "rbDificil";
             this.rbDificil.Size = new System.Drawing.Size(152, 17);
             this.rbDificil.TabIndex = 1;
-            this.rbDificil.TabStop = true;
             this.rbDificil.Text = "Posee dificultad de manejo";
             this.rbDificil.UseVisualStyleBackColor = true;
             // 
@@ -274,7 +273,6 @@
             this.rbFacil.Name = "rbFacil";
             this.rbFacil.Size = new System.Drawing.Size(168, 17);
             this.rbFacil.TabIndex = 0;
-            this.rbFacil.TabStop = true;
             this.rbFacil.Text = "Es facil de Agarrar y Manipular";
             this.rbFacil.UseVisualStyleBackColor = true;
             // 
@@ -285,7 +283,6 @@
             this.rbHandlingSeccion4.Name = "rbHandlingSeccion4";
             this.rbHandlingSeccion4.Size = new System.Drawing.Size(381, 17);
             this.rbHandlingSeccion4.TabIndex = 3;
-            this.rbHandlingSeccion4.TabStop = true;
             this.rbHandlingSeccion4.Text = "Se requiere dos manos para manipular y transportar debido a que es grande";
             this.rbHandlingSeccion4.UseVisualStyleBackColor = true;
             this.rbHandlingSeccion4.CheckedChanged += new System.EventHandler(this.rbHandlingSeccion4_CheckedChanged);
@@ -297,7 +294,6 @@
             this.rbHandlingSeccion3.Name = "rbHandlingSeccion3";
             this.rbHandlingSeccion3.Size = new System.Drawing.Size(287, 17);
             this.rbHandlingSeccion3.TabIndex = 2;
-            this.rbHandlingSeccion3.TabStop = true;
             this.rbHandlingSeccion3.Text = "Usa dos manos para la manipulacion pero no es grande";
             this.rbHandlingSeccion3.UseVisualStyleBackColor = true;
             this.rbHandlingSeccion3.CheckedChanged += new System.EventHandler(this.rbHandlingSeccion3_CheckedChanged);
@@ -309,7 +305,6 @@
             this.rbHandlingSeccion2.Name = "rbHandlingSeccion2";
             this.rbHandlingSeccion2.Size = new System.Drawing.Size(456, 17);
             this.rbHandlingSeccion2.TabIndex = 1;
-            this.rbHandlingSeccion2.TabStop = true;
             this.rbHandlingSeccion2.Text = "La parte se puede agarrar con una mano pero solo con el uso de herramientas como " +
                 "pinzas";
             this.rbHandlingSeccion2.UseVisualStyleBackColor = true;
@@ -322,7 +317,6 @@
             this.rbHandlingSeccion1.Name = "rbHandlingSeccion1";
             this.rbHandlingSeccion1.Size = new System.Drawing.Size(399, 17);
             this.rbHandlingSeccion1.TabIndex = 0;
-            this.rbHandlingSeccion1.TabStop = true;
             this.rbHandlingSeccion1.Text = "La parte se puede agarrar y manipular con una mano sin el uso de herramientas";
             this.rbHandlingSeccion1.UseVisualStyleBackColor = true;
             this.rbHandlingSeccion1.CheckedChanged += new System.EventHandler(this.rbHandlingSeccion1_CheckedChanged);
@@ -361,7 +355,6 @@
             this.rbPieza2.Name = "rbPieza2";
             this.rbPieza2.Size = new System.Drawing.Size(14, 13);
             this.rbPieza2.TabIndex = 2;
-            this.rbPieza2.TabStop = true;
             this.rbPieza2.UseVisualStyleBackColor = true;
             // 
             // rbPieza6
@@ -371,7 +364,6 @@
             this.rbPieza6.Name = "rbPieza6";
             this.rbPieza6.Size = new System.Drawing.Size(14, 13);
             this.rbPieza6.TabIndex = 6;
-            this.rbPieza6.TabStop = true;
             this.rbPieza6.UseVisualStyleBackColor = true;
             // 
             // rbPieza5
@@ -381,7 +373,6 @@
             this.rbPieza5.Name = "rbPieza5";
             this.rbPieza5.Size = new System.Drawing.Size(14, 13);
             this.rbPieza5.TabIndex = 5;
-            this.rbPieza5.TabStop = true;
             this.rbPieza5.UseVisualStyleBackColor = true;
             // 
             // rbPieza4
@@ -391,7 +382,6 @@
             this.rbPieza4.Name = "rbPieza4";
             this.rbPieza4.Size = new System.Drawing.Size(14, 13);
             this.rbPieza4.TabIndex = 4;
-            this.rbPieza4.TabStop = true;
             this.rbPieza4.UseVisualStyleBackColor = true;
             // 
             // rbPieza3
@@ -401,7 +391,6 @@
             this.rbPieza3.Name = "rbPieza3";
             this.rbPieza3.Size = new System.Drawing.Size(14, 13);
             this.rbPieza3.TabIndex = 3;
-            this.rbPieza3.TabStop = true;
             this.rbPieza3.UseVisualStyleBackColor = true;
             // 
             // rbPieza1
@@ -411,7 +400,6 @@
             this.rbPieza1.Name = "rbPieza1";
             this.rbPieza1.Size = new System.Drawing.Size(14, 13);
             this.rbPieza1.TabIndex = 1;
-            this.rbPieza1.TabStop = true;
             this.rbPieza1.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
@@ -517,14 +505,14 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Nombre de la Pieza:";
             // 
-            // PiezaActual
+            // LabelPiezaActual
             // 
-            this.PiezaActual.AutoSize = true;
-            this.PiezaActual.Location = new System.Drawing.Point(220, 9);
-            this.PiezaActual.Name = "PiezaActual";
-            this.PiezaActual.Size = new System.Drawing.Size(23, 13);
-            this.PiezaActual.TabIndex = 9;
-            this.PiezaActual.Text = "null";
+            this.LabelPiezaActual.AutoSize = true;
+            this.LabelPiezaActual.Location = new System.Drawing.Point(220, 9);
+            this.LabelPiezaActual.Name = "LabelPiezaActual";
+            this.LabelPiezaActual.Size = new System.Drawing.Size(23, 13);
+            this.LabelPiezaActual.TabIndex = 9;
+            this.LabelPiezaActual.Text = "null";
             // 
             // botonAlante
             // 
@@ -538,13 +526,14 @@
             // 
             // botonAtras
             // 
-            this.botonAtras.Enabled = false;
             this.botonAtras.Location = new System.Drawing.Point(2, 450);
             this.botonAtras.Name = "botonAtras";
             this.botonAtras.Size = new System.Drawing.Size(75, 23);
             this.botonAtras.TabIndex = 12;
+            this.botonAtras.TabStop = false;
             this.botonAtras.Text = "atras";
             this.botonAtras.UseVisualStyleBackColor = true;
+            this.botonAtras.Click += new System.EventHandler(this.botonAtras_Click);
             // 
             // CondicionalPieza
             // 
@@ -553,7 +542,7 @@
             this.ClientSize = new System.Drawing.Size(504, 485);
             this.Controls.Add(this.botonAtras);
             this.Controls.Add(this.botonAlante);
-            this.Controls.Add(this.PiezaActual);
+            this.Controls.Add(this.LabelPiezaActual);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -589,7 +578,7 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Label PiezaActual;
+        private System.Windows.Forms.Label LabelPiezaActual;
         private System.Windows.Forms.Button botonAlante;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton rbPieza2;
@@ -622,7 +611,7 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Panel panelSeccion2Sub;
         private System.Windows.Forms.RadioButton rbEstandar;
-        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton rbEspecial;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Panel panelSeccion4;
         private System.Windows.Forms.CheckBox checkBox3;
