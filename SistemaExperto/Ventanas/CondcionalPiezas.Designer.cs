@@ -63,6 +63,8 @@
             this.PiezaActual = new System.Windows.Forms.Label();
             this.botonAlante = new System.Windows.Forms.Button();
             this.botonAtras = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -330,6 +332,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.largoText);
             this.groupBox1.Controls.Add(this.anchoText);
             this.groupBox1.Controls.Add(this.label7);
@@ -419,6 +423,24 @@
             this.botonAtras.UseVisualStyleBackColor = true;
             this.botonAtras.Click += new System.EventHandler(this.botonAtras_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(159, 32);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(23, 13);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "mm";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(159, 62);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(23, 13);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "mm";
+            // 
             // CondicionalPieza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -492,6 +514,8 @@
         private System.Windows.Forms.TextBox nombrePiezaText;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button botonAtras;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
     }
 }
 

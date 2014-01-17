@@ -60,10 +60,16 @@ namespace SistemaExperto
             try
             {
                 RevisarCondiciones();
+                /*
+                 * En caso de que se cumplan las condiciones entonces se marcan los valores
+                 * de la pieza actual y se pasa a la siguiente
+                 */
                 Piezas[_numeroPiezaActual].CrearAnguloPieza(piezaFormaArr.Single<RadioButton>(ch => ch.Checked).TabIndex);
                 Piezas[_numeroPiezaActual].CrearCondicionalesPagina_1(this.radioSi_1.Checked, 
                     this.radioSi_2.Checked, this.radioSi_3.Checked);
                 Piezas[_numeroPiezaActual].NombrePieza = this.nombrePiezaText.Text;
+                Piezas[_numeroPiezaActual].Ancho = Double.Parse(this.anchoText.Text);
+                Piezas[_numeroPiezaActual].Largo = Double.Parse(this.largoText.Text);
                 if (Piezas.Count > _numeroPiezaActual + 1)
                 {
                     _numeroPiezaActual++;
@@ -81,7 +87,9 @@ namespace SistemaExperto
                             MessageBox.Show("Simetrica: " + (pieza.EsSimetrica.Value ? "Si\n" : "No\n") +
                                 "Incrustable: " + (pieza.EsIncrustable.Value ? "Si\n" : "No\n") +
                                 "Enlasable: " + (pieza.EsEnlasable.Value ? "Si\n" : "No\n") +
-                                "Alfa: " + pieza.Alfa.ToString() + "\nBeta: " + pieza.Beta.ToString() + "\nNombre: " + pieza.NombrePieza, pieza.NombreNumeroPieza);
+                                "Alfa: " + pieza.Alfa.ToString() + "\nBeta: " + pieza.Beta.ToString() + "\nNombre: " + pieza.NombrePieza +
+                                "Dimension: " + pieza.Largo.ToString() + "x" + pieza.Ancho.ToString()
+                                , pieza.NombreNumeroPieza);
                         this.Dispose();
                     }
                     else if (dialogResult == DialogResult.No)
@@ -121,6 +129,18 @@ namespace SistemaExperto
                 throw new IncompleteSelectionException();
             if((largoText.Text == "") || (anchoText.Text == ""))
                 throw new IncompleteSelectionException();
+            try
+            {
+                double largo = Double.Parse(largoText.Text);
+                double ancho = Double.Parse(anchoText.Text);
+
+                if (largo < 0 || ancho < 0)
+                    throw new Exception();
+            }
+            catch (Exception e)
+            {
+                throw new IncompleteSelectionException("Numero de dimension no valido");
+            }
             #endregion
         }
 

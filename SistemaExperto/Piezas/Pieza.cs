@@ -34,15 +34,19 @@ namespace SistemaExperto
         private bool? _simetrica;
         private bool? _incruste;
         private bool? _enlace_tipo;
+        private double? _ancho;
+        private double? _largo;
         #endregion
 
         #region Metodos
-        //Getters de los atributos
-        public string NombrePieza { get { return _nombre; } set { this._nombre = value; } }
+        //Getters y Setters de los atributos
+        public string NombrePieza { get { return this._nombre; } set { this._nombre = value; } }
         public string NombreNumeroPieza { get { return _nombreNumero; } }
         public int NumeroPieza { get {return this._numero; } }
-        public int? Alfa { get { return _alfa.HasValue ? _alfa : -1; } }
-        public int? Beta { get { return _beta.HasValue ? _beta : -1; } }
+        public int? Alfa { get { return this._alfa.HasValue ? _alfa : -1; } }
+        public int? Beta { get { return this._beta.HasValue ? _beta : -1; } }
+        public double? Ancho { get { return this._ancho; } set { this._ancho = value; } }
+        public double? Largo { get { return this._largo; } set { this._largo = value; } }
         public bool? EsSimetrica { get { return _simetrica.HasValue ? _simetrica : null; } }
         public bool? EsIncrustable { get { return _incruste.HasValue ? _incruste : null; } }
         public bool? EsEnlasable { get { return _enlace_tipo.HasValue ? _enlace_tipo : null; } }
