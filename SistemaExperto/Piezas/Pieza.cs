@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SistemaExperto
 {
-    class Pieza
+    public class Pieza
     {
         #region Constantes para grados de piezas
         //El primer valor es el alfa y el segundo es el beta

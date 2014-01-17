@@ -52,6 +52,7 @@
     <Compile Include="Idiomas\SystemLanguage.cs" />
     <Compile Include="IncompleteSelectionException.cs" />
     <Compile Include="Piezas\PiezaManager.cs" />
+    <Compile Include="TablaPiezaData.cs" />
     <Compile Include="Ventanas\CantidadPiezas.cs">
       <SubType>Form</SubType>
     </Compile>

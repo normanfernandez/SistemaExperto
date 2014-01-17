@@ -30,7 +30,7 @@ namespace SistemaExperto
 
         #region Eventos
         private void Form1_Load(object sender, EventArgs e)
-        {
+        {/*
             this.PiezaActual.Text = Piezas.First().NombreNumeroPieza + " de " + Piezas.Count.ToString();
             this.radioNo_1.Text = Idiomas.SystemLanguage.SelectedLanguage().No;
             this.radioSi_1.Text = Idiomas.SystemLanguage.SelectedLanguage().Yes;
@@ -41,9 +41,54 @@ namespace SistemaExperto
             this.botonAlante.Text = Idiomas.SystemLanguage.SelectedLanguage().ButtonNext;
             this.botonAtras.Text = Idiomas.SystemLanguage.SelectedLanguage().ButtonBack;
             this.Text = Idiomas.SystemLanguage.SelectedLanguage().MainTitle;
+          */
         }
 
-        private void botonAtras_Click(object sender, EventArgs e)
+        private void rbHandlingSeccion1_CheckedChanged(object sender, EventArgs e)
+        {
+            panelSeccion2.Enabled = false;
+            panelSeccion4.Enabled = false;
+            grupoGeneral.Enabled = true;
+        }
+
+        private void rbHandlingSeccion2_CheckedChanged(object sender, EventArgs e)
+        {
+            panelSeccion2.Enabled = true;
+            panelSeccion4.Enabled = false;
+            grupoGeneral.Enabled = true;
+        }
+
+        private void rbHandlingSeccion3_CheckedChanged(object sender, EventArgs e)
+        {
+            panelSeccion2.Enabled = false;
+            panelSeccion4.Enabled = false;
+            grupoGeneral.Enabled = true;
+        }
+
+        private void rbHandlingSeccion4_CheckedChanged(object sender, EventArgs e)
+        {
+            panelSeccion2.Enabled = false;
+            panelSeccion4.Enabled = true;
+            grupoGeneral.Enabled = false;
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            panelSeccion4Sub.Enabled = checkBox3.Checked;
+            rbPesado.Enabled = rbLigero.Enabled = !checkBox3.Checked;
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            grupoGeneral.Enabled = rbPesado.Enabled = rbLigero.Enabled = checkBox4.Checked;
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            grupoGeneral.Enabled = checkBox1.Enabled = !(panelSeccion2Sub.Enabled = checkBox2.Checked);
+        }
+
+        /*private void botonAtras_Click(object sender, EventArgs e)
         {
             if (_numeroPiezaActual == 1)
                 this.botonAtras.Enabled = false;
@@ -52,18 +97,16 @@ namespace SistemaExperto
             Piezas[_numeroPiezaActual].ReiniciarEstado();
             this.PiezaActual.Text = Piezas[_numeroPiezaActual].NombreNumeroPieza
                         + " de " + Piezas.Count.ToString();
-        }
+        }*/
 
-        private void botonAlante_Click(object sender, EventArgs e)
+        /*private void botonAlante_Click(object sender, EventArgs e)
         {
             RadioButton[] piezaFormaArr = { rbPieza1, rbPieza2, rbPieza3, rbPieza4, rbPieza5, rbPieza6 };
             try
             {
                 RevisarCondiciones();
-                /*
-                 * En caso de que se cumplan las condiciones entonces se marcan los valores
-                 * de la pieza actual y se pasa a la siguiente
-                 */
+
+                
                 Piezas[_numeroPiezaActual].CrearAnguloPieza(piezaFormaArr.Single<RadioButton>(ch => ch.Checked).TabIndex);
                 Piezas[_numeroPiezaActual].CrearCondicionalesPagina_1(this.radioSi_1.Checked, 
                     this.radioSi_2.Checked, this.radioSi_3.Checked);
@@ -103,11 +146,13 @@ namespace SistemaExperto
             {
                 //Se muestra mensaje de error en caso que se lance una excepcion
             }
+                 
         }
+        */
         #endregion
 
         #region Metodos
-        private void RevisarCondiciones()
+        /*private void RevisarCondiciones()
         {
             #region Pagina 1
             //Se revisa si cada una de las preguntas esta respondida
@@ -142,11 +187,10 @@ namespace SistemaExperto
                 throw new IncompleteSelectionException("Numero de dimension no valido");
             }
             #endregion
-        }
+        }*/
 
-        private void LimpiarCondiciones()
+        /*private void LimpiarCondiciones()
         {
-            //Funcion que se encarga de limpiar los RadioButtons y TextFields
 
             #region Pagina 1
             RadioButton[] arrPanel1 = {radioNo_1, radioSi_1};
@@ -172,7 +216,7 @@ namespace SistemaExperto
             largoText.Text = "";
             anchoText.Text = "";
             #endregion
-        }
+        }*/
         #endregion
     }
 }

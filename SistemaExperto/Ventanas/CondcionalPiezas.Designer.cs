@@ -29,20 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CondicionalPieza));
-            this.label1 = new System.Windows.Forms.Label();
-            this.radioSi_1 = new System.Windows.Forms.RadioButton();
-            this.radioNo_1 = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.radioSi_3 = new System.Windows.Forms.RadioButton();
-            this.radioNo_3 = new System.Windows.Forms.RadioButton();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.radioSi_2 = new System.Windows.Forms.RadioButton();
-            this.radioNo_2 = new System.Windows.Forms.RadioButton();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelSeccion2 = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.grupoGeneral = new System.Windows.Forms.GroupBox();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.rbHandlingSeccion4 = new System.Windows.Forms.RadioButton();
+            this.rbHandlingSeccion3 = new System.Windows.Forms.RadioButton();
+            this.rbHandlingSeccion2 = new System.Windows.Forms.RadioButton();
+            this.rbHandlingSeccion1 = new System.Windows.Forms.RadioButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label4 = new System.Windows.Forms.Label();
             this.rbPieza2 = new System.Windows.Forms.RadioButton();
@@ -54,6 +51,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.largoText = new System.Windows.Forms.TextBox();
             this.anchoText = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -63,66 +62,28 @@
             this.PiezaActual = new System.Windows.Forms.Label();
             this.botonAlante = new System.Windows.Forms.Button();
             this.botonAtras = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.panelSeccion2Sub = new System.Windows.Forms.Panel();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.rbEstandar = new System.Windows.Forms.RadioButton();
+            this.panelSeccion4 = new System.Windows.Forms.Panel();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.panelSeccion4Sub = new System.Windows.Forms.Panel();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.rbLigero = new System.Windows.Forms.RadioButton();
+            this.rbPesado = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panelSeccion2.SuspendLayout();
+            this.grupoGeneral.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panelSeccion2Sub.SuspendLayout();
+            this.panelSeccion4.SuspendLayout();
+            this.panelSeccion4Sub.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "1-Es simetrica su pieza?";
-            // 
-            // radioSi_1
-            // 
-            this.radioSi_1.AutoSize = true;
-            this.radioSi_1.Location = new System.Drawing.Point(0, 0);
-            this.radioSi_1.Name = "radioSi_1";
-            this.radioSi_1.Size = new System.Drawing.Size(32, 17);
-            this.radioSi_1.TabIndex = 1;
-            this.radioSi_1.Text = "si";
-            this.radioSi_1.UseVisualStyleBackColor = true;
-            // 
-            // radioNo_1
-            // 
-            this.radioNo_1.AutoSize = true;
-            this.radioNo_1.Location = new System.Drawing.Point(0, 22);
-            this.radioNo_1.Name = "radioNo_1";
-            this.radioNo_1.Size = new System.Drawing.Size(37, 17);
-            this.radioNo_1.TabIndex = 2;
-            this.radioNo_1.TabStop = true;
-            this.radioNo_1.Text = "no";
-            this.radioNo_1.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(316, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "2-Puede ocurrir que la pieza se incruste una sobre otra en el lote?";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 139);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(374, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "3-Puede ocurrir que la pieza dentro del lote se enlace con otras del mismo tipo";
             // 
             // tabControl1
             // 
@@ -133,93 +94,128 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(504, 340);
+            this.tabControl1.Size = new System.Drawing.Size(497, 432);
             this.tabControl1.TabIndex = 9;
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.Cornsilk;
-            this.tabPage1.Controls.Add(this.panel3);
-            this.tabPage1.Controls.Add(this.panel2);
-            this.tabPage1.Controls.Add(this.panel1);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tabPage1.Controls.Add(this.panelSeccion4);
+            this.tabPage1.Controls.Add(this.panelSeccion2);
+            this.tabPage1.Controls.Add(this.grupoGeneral);
+            this.tabPage1.Controls.Add(this.rbHandlingSeccion4);
+            this.tabPage1.Controls.Add(this.rbHandlingSeccion3);
+            this.tabPage1.Controls.Add(this.rbHandlingSeccion2);
+            this.tabPage1.Controls.Add(this.rbHandlingSeccion1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(496, 314);
+            this.tabPage1.Size = new System.Drawing.Size(489, 406);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Pagina 1";
             // 
-            // panel3
+            // panelSeccion2
             // 
-            this.panel3.Controls.Add(this.radioSi_3);
-            this.panel3.Controls.Add(this.radioNo_3);
-            this.panel3.Location = new System.Drawing.Point(9, 155);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(58, 39);
-            this.panel3.TabIndex = 10;
+            this.panelSeccion2.Controls.Add(this.panelSeccion2Sub);
+            this.panelSeccion2.Controls.Add(this.checkBox2);
+            this.panelSeccion2.Controls.Add(this.checkBox1);
+            this.panelSeccion2.Enabled = false;
+            this.panelSeccion2.Location = new System.Drawing.Point(21, 53);
+            this.panelSeccion2.Name = "panelSeccion2";
+            this.panelSeccion2.Size = new System.Drawing.Size(306, 101);
+            this.panelSeccion2.TabIndex = 5;
             // 
-            // radioSi_3
+            // checkBox1
             // 
-            this.radioSi_3.AutoSize = true;
-            this.radioSi_3.Location = new System.Drawing.Point(0, 0);
-            this.radioSi_3.Name = "radioSi_3";
-            this.radioSi_3.Size = new System.Drawing.Size(32, 17);
-            this.radioSi_3.TabIndex = 1;
-            this.radioSi_3.Text = "si";
-            this.radioSi_3.UseVisualStyleBackColor = true;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(3, 81);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(183, 17);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "Requiere el uso de magnificacion";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // radioNo_3
+            // grupoGeneral
             // 
-            this.radioNo_3.AutoSize = true;
-            this.radioNo_3.Location = new System.Drawing.Point(0, 22);
-            this.radioNo_3.Name = "radioNo_3";
-            this.radioNo_3.Size = new System.Drawing.Size(37, 17);
-            this.radioNo_3.TabIndex = 2;
-            this.radioNo_3.TabStop = true;
-            this.radioNo_3.Text = "no";
-            this.radioNo_3.UseVisualStyleBackColor = true;
+            this.grupoGeneral.Controls.Add(this.radioButton6);
+            this.grupoGeneral.Controls.Add(this.radioButton5);
+            this.grupoGeneral.Location = new System.Drawing.Point(6, 319);
+            this.grupoGeneral.Name = "grupoGeneral";
+            this.grupoGeneral.Size = new System.Drawing.Size(190, 72);
+            this.grupoGeneral.TabIndex = 4;
+            this.grupoGeneral.TabStop = false;
+            this.grupoGeneral.Text = "Descripcion del manejo";
             // 
-            // panel2
+            // radioButton6
             // 
-            this.panel2.Controls.Add(this.radioSi_2);
-            this.panel2.Controls.Add(this.radioNo_2);
-            this.panel2.Location = new System.Drawing.Point(9, 87);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(58, 39);
-            this.panel2.TabIndex = 10;
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(7, 42);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(152, 17);
+            this.radioButton6.TabIndex = 1;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Posee dificultad de manejo";
+            this.radioButton6.UseVisualStyleBackColor = true;
             // 
-            // radioSi_2
+            // radioButton5
             // 
-            this.radioSi_2.AutoSize = true;
-            this.radioSi_2.Location = new System.Drawing.Point(0, 0);
-            this.radioSi_2.Name = "radioSi_2";
-            this.radioSi_2.Size = new System.Drawing.Size(32, 17);
-            this.radioSi_2.TabIndex = 1;
-            this.radioSi_2.Text = "si";
-            this.radioSi_2.UseVisualStyleBackColor = true;
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(7, 19);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(168, 17);
+            this.radioButton5.TabIndex = 0;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Es facil de Agarrar y Manipular";
+            this.radioButton5.UseVisualStyleBackColor = true;
             // 
-            // radioNo_2
+            // rbHandlingSeccion4
             // 
-            this.radioNo_2.AutoSize = true;
-            this.radioNo_2.Location = new System.Drawing.Point(0, 22);
-            this.radioNo_2.Name = "radioNo_2";
-            this.radioNo_2.Size = new System.Drawing.Size(37, 17);
-            this.radioNo_2.TabIndex = 2;
-            this.radioNo_2.TabStop = true;
-            this.radioNo_2.Text = "no";
-            this.radioNo_2.UseVisualStyleBackColor = true;
+            this.rbHandlingSeccion4.AutoSize = true;
+            this.rbHandlingSeccion4.Location = new System.Drawing.Point(6, 183);
+            this.rbHandlingSeccion4.Name = "rbHandlingSeccion4";
+            this.rbHandlingSeccion4.Size = new System.Drawing.Size(381, 17);
+            this.rbHandlingSeccion4.TabIndex = 3;
+            this.rbHandlingSeccion4.TabStop = true;
+            this.rbHandlingSeccion4.Text = "Se requiere dos manos para manipular y transportar debido a que es grande";
+            this.rbHandlingSeccion4.UseVisualStyleBackColor = true;
+            this.rbHandlingSeccion4.CheckedChanged += new System.EventHandler(this.rbHandlingSeccion4_CheckedChanged);
             // 
-            // panel1
+            // rbHandlingSeccion3
             // 
-            this.panel1.Controls.Add(this.radioSi_1);
-            this.panel1.Controls.Add(this.radioNo_1);
-            this.panel1.Location = new System.Drawing.Point(9, 19);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(58, 39);
-            this.panel1.TabIndex = 9;
+            this.rbHandlingSeccion3.AutoSize = true;
+            this.rbHandlingSeccion3.Location = new System.Drawing.Point(6, 160);
+            this.rbHandlingSeccion3.Name = "rbHandlingSeccion3";
+            this.rbHandlingSeccion3.Size = new System.Drawing.Size(287, 17);
+            this.rbHandlingSeccion3.TabIndex = 2;
+            this.rbHandlingSeccion3.TabStop = true;
+            this.rbHandlingSeccion3.Text = "Usa dos manos para la manipulacion pero no es grande";
+            this.rbHandlingSeccion3.UseVisualStyleBackColor = true;
+            this.rbHandlingSeccion3.CheckedChanged += new System.EventHandler(this.rbHandlingSeccion3_CheckedChanged);
+            // 
+            // rbHandlingSeccion2
+            // 
+            this.rbHandlingSeccion2.AutoSize = true;
+            this.rbHandlingSeccion2.Location = new System.Drawing.Point(6, 29);
+            this.rbHandlingSeccion2.Name = "rbHandlingSeccion2";
+            this.rbHandlingSeccion2.Size = new System.Drawing.Size(456, 17);
+            this.rbHandlingSeccion2.TabIndex = 1;
+            this.rbHandlingSeccion2.TabStop = true;
+            this.rbHandlingSeccion2.Text = "La parte se puede agarrar con una mano pero solo con el uso de herramientas como " +
+                "pinzas";
+            this.rbHandlingSeccion2.UseVisualStyleBackColor = true;
+            this.rbHandlingSeccion2.CheckedChanged += new System.EventHandler(this.rbHandlingSeccion2_CheckedChanged);
+            // 
+            // rbHandlingSeccion1
+            // 
+            this.rbHandlingSeccion1.AutoSize = true;
+            this.rbHandlingSeccion1.Location = new System.Drawing.Point(6, 6);
+            this.rbHandlingSeccion1.Name = "rbHandlingSeccion1";
+            this.rbHandlingSeccion1.Size = new System.Drawing.Size(399, 17);
+            this.rbHandlingSeccion1.TabIndex = 0;
+            this.rbHandlingSeccion1.TabStop = true;
+            this.rbHandlingSeccion1.Text = "La parte se puede agarrar y manipular con una mano sin el uso de herramientas";
+            this.rbHandlingSeccion1.UseVisualStyleBackColor = true;
+            this.rbHandlingSeccion1.CheckedChanged += new System.EventHandler(this.rbHandlingSeccion1_CheckedChanged);
             // 
             // tabPage2
             // 
@@ -234,7 +230,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(496, 314);
+            this.tabPage2.Size = new System.Drawing.Size(489, 406);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Pagina 2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -325,7 +321,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(496, 314);
+            this.tabPage3.Size = new System.Drawing.Size(489, 406);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Pagina 3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -344,6 +340,24 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dimensiones";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(159, 62);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(23, 13);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "mm";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(159, 32);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(23, 13);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "mm";
             // 
             // largoText
             // 
@@ -404,68 +418,154 @@
             // 
             // botonAlante
             // 
-            this.botonAlante.Location = new System.Drawing.Point(431, 358);
+            this.botonAlante.Location = new System.Drawing.Point(424, 450);
             this.botonAlante.Name = "botonAlante";
             this.botonAlante.Size = new System.Drawing.Size(75, 23);
             this.botonAlante.TabIndex = 11;
             this.botonAlante.Text = "siguiente";
             this.botonAlante.UseVisualStyleBackColor = true;
-            this.botonAlante.Click += new System.EventHandler(this.botonAlante_Click);
             // 
             // botonAtras
             // 
             this.botonAtras.Enabled = false;
-            this.botonAtras.Location = new System.Drawing.Point(12, 358);
+            this.botonAtras.Location = new System.Drawing.Point(2, 450);
             this.botonAtras.Name = "botonAtras";
             this.botonAtras.Size = new System.Drawing.Size(75, 23);
             this.botonAtras.TabIndex = 12;
             this.botonAtras.Text = "atras";
             this.botonAtras.UseVisualStyleBackColor = true;
-            this.botonAtras.Click += new System.EventHandler(this.botonAtras_Click);
             // 
-            // label8
+            // checkBox2
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(159, 32);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(23, 13);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "mm";
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(4, 4);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(203, 17);
+            this.checkBox2.TabIndex = 1;
+            this.checkBox2.Text = "Requiere de herramientas adicionales";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
-            // label9
+            // panelSeccion2Sub
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(159, 62);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(23, 13);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "mm";
+            this.panelSeccion2Sub.Controls.Add(this.rbEstandar);
+            this.panelSeccion2Sub.Controls.Add(this.radioButton7);
+            this.panelSeccion2Sub.Enabled = false;
+            this.panelSeccion2Sub.Location = new System.Drawing.Point(25, 27);
+            this.panelSeccion2Sub.Name = "panelSeccion2Sub";
+            this.panelSeccion2Sub.Size = new System.Drawing.Size(182, 48);
+            this.panelSeccion2Sub.TabIndex = 2;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AccessibleDescription = "rbEpecial";
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(3, 28);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(141, 17);
+            this.radioButton7.TabIndex = 0;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Herramientas Especiales";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // rbEstandar
+            // 
+            this.rbEstandar.AutoSize = true;
+            this.rbEstandar.Location = new System.Drawing.Point(4, 5);
+            this.rbEstandar.Name = "rbEstandar";
+            this.rbEstandar.Size = new System.Drawing.Size(132, 17);
+            this.rbEstandar.TabIndex = 1;
+            this.rbEstandar.TabStop = true;
+            this.rbEstandar.Text = "Herramientas Estandar";
+            this.rbEstandar.UseVisualStyleBackColor = true;
+            // 
+            // panelSeccion4
+            // 
+            this.panelSeccion4.Controls.Add(this.panelSeccion4Sub);
+            this.panelSeccion4.Controls.Add(this.checkBox3);
+            this.panelSeccion4.Enabled = false;
+            this.panelSeccion4.Location = new System.Drawing.Point(25, 207);
+            this.panelSeccion4.Name = "panelSeccion4";
+            this.panelSeccion4.Size = new System.Drawing.Size(318, 106);
+            this.panelSeccion4.TabIndex = 6;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(4, 4);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(312, 17);
+            this.checkBox3.TabIndex = 0;
+            this.checkBox3.Text = "No se necesitan herramientas especiales para manupulacion";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+            // 
+            // panelSeccion4Sub
+            // 
+            this.panelSeccion4Sub.Controls.Add(this.rbPesado);
+            this.panelSeccion4Sub.Controls.Add(this.rbLigero);
+            this.panelSeccion4Sub.Controls.Add(this.checkBox4);
+            this.panelSeccion4Sub.Enabled = false;
+            this.panelSeccion4Sub.Location = new System.Drawing.Point(21, 27);
+            this.panelSeccion4Sub.Name = "panelSeccion4Sub";
+            this.panelSeccion4Sub.Size = new System.Drawing.Size(215, 69);
+            this.panelSeccion4Sub.TabIndex = 1;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(4, 3);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(210, 17);
+            this.checkBox4.TabIndex = 0;
+            this.checkBox4.Text = "Las partes no se anidan ni son flexibles";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            // 
+            // rbLigero
+            // 
+            this.rbLigero.AutoSize = true;
+            this.rbLigero.Location = new System.Drawing.Point(23, 26);
+            this.rbLigero.Name = "rbLigero";
+            this.rbLigero.Size = new System.Drawing.Size(121, 17);
+            this.rbLigero.TabIndex = 1;
+            this.rbLigero.TabStop = true;
+            this.rbLigero.Text = "Pesa menos de 10lb";
+            this.rbLigero.UseVisualStyleBackColor = true;
+            // 
+            // rbPesado
+            // 
+            this.rbPesado.AutoSize = true;
+            this.rbPesado.Location = new System.Drawing.Point(23, 49);
+            this.rbPesado.Name = "rbPesado";
+            this.rbPesado.Size = new System.Drawing.Size(109, 17);
+            this.rbPesado.TabIndex = 2;
+            this.rbPesado.TabStop = true;
+            this.rbPesado.Text = "Pesa mas de 10lb";
+            this.rbPesado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbPesado.UseVisualStyleBackColor = true;
             // 
             // CondicionalPieza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(514, 395);
+            this.ClientSize = new System.Drawing.Size(504, 485);
             this.Controls.Add(this.botonAtras);
             this.Controls.Add(this.botonAlante);
             this.Controls.Add(this.PiezaActual);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(520, 420);
-            this.MinimumSize = new System.Drawing.Size(520, 420);
             this.Name = "CondicionalPieza";
             this.Text = "sistema";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelSeccion2.ResumeLayout(false);
+            this.panelSeccion2.PerformLayout();
+            this.grupoGeneral.ResumeLayout(false);
+            this.grupoGeneral.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -473,6 +573,12 @@
             this.tabPage3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panelSeccion2Sub.ResumeLayout(false);
+            this.panelSeccion2Sub.PerformLayout();
+            this.panelSeccion4.ResumeLayout(false);
+            this.panelSeccion4.PerformLayout();
+            this.panelSeccion4Sub.ResumeLayout(false);
+            this.panelSeccion4Sub.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -480,23 +586,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radioSi_1;
-        private System.Windows.Forms.RadioButton radioNo_1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label PiezaActual;
         private System.Windows.Forms.Button botonAlante;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.RadioButton radioSi_3;
-        private System.Windows.Forms.RadioButton radioNo_3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RadioButton radioSi_2;
-        private System.Windows.Forms.RadioButton radioNo_2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton rbPieza2;
         private System.Windows.Forms.RadioButton rbPieza6;
@@ -516,6 +609,26 @@
         private System.Windows.Forms.Button botonAtras;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.GroupBox grupoGeneral;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton rbHandlingSeccion4;
+        private System.Windows.Forms.RadioButton rbHandlingSeccion3;
+        private System.Windows.Forms.RadioButton rbHandlingSeccion2;
+        private System.Windows.Forms.RadioButton rbHandlingSeccion1;
+        private System.Windows.Forms.Panel panelSeccion2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Panel panelSeccion2Sub;
+        private System.Windows.Forms.RadioButton rbEstandar;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.Panel panelSeccion4;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.Panel panelSeccion4Sub;
+        private System.Windows.Forms.RadioButton rbPesado;
+        private System.Windows.Forms.RadioButton rbLigero;
+        private System.Windows.Forms.CheckBox checkBox4;
     }
 }
 
