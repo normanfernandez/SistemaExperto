@@ -99,14 +99,13 @@ namespace SistemaExperto
                         + " de " + Piezas.Count.ToString();
         }*/
 
-        /*private void botonAlante_Click(object sender, EventArgs e)
+        private void botonAlante_Click(object sender, EventArgs e)
         {
-            RadioButton[] piezaFormaArr = { rbPieza1, rbPieza2, rbPieza3, rbPieza4, rbPieza5, rbPieza6 };
             try
             {
                 RevisarCondiciones();
 
-                
+                /*
                 Piezas[_numeroPiezaActual].CrearAnguloPieza(piezaFormaArr.Single<RadioButton>(ch => ch.Checked).TabIndex);
                 Piezas[_numeroPiezaActual].CrearCondicionalesPagina_1(this.radioSi_1.Checked, 
                     this.radioSi_2.Checked, this.radioSi_3.Checked);
@@ -139,7 +138,7 @@ namespace SistemaExperto
                     {
                         return;
                     }   
-                }
+                }*/
                 this.botonAtras.Enabled = true;
             }
             catch(IncompleteSelectionException ise)
@@ -148,27 +147,31 @@ namespace SistemaExperto
             }
                  
         }
-        */
         #endregion
 
         #region Metodos
-        /*private void RevisarCondiciones()
+        private void RevisarCondiciones()
         {
             #region Pagina 1
             //Se revisa si cada una de las preguntas esta respondida
-            if (!(radioNo_1.Checked ^ radioSi_1.Checked
-                && radioNo_2.Checked ^ radioSi_2.Checked
-                && radioNo_3.Checked ^ radioSi_3.Checked))
+            if(!this.grupoGeneral.Controls.OfType<RadioButton>().Any(rb => rb.Checked) 
+                && this.grupoGeneral.Enabled)
+                    throw new IncompleteSelectionException();
+            if (!this.tabPage1.Controls.OfType<RadioButton>().Any(rb => rb.Checked))
+                throw new IncompleteSelectionException();
+            if (!this.panelSeccion2Sub.Controls.OfType<RadioButton>().Any(rb => rb.Checked)
+                && this.panelSeccion2Sub.Enabled)
+                    throw new IncompleteSelectionException();
+            if(!this.panelSeccion4Sub.Controls.OfType<RadioButton>().Any(rb => rb.Checked) && this.checkBox4.Checked)
                 throw new IncompleteSelectionException();
             #endregion
 
             #region Pagina 2
             //Se revisa que se haya elegido la forma de la pieza
-            RadioButton[] piezaFormaArr = { rbPieza1, rbPieza2, rbPieza3, rbPieza4, rbPieza5, rbPieza6 };
-            if(!piezaFormaArr.Any<RadioButton>(ch => ch.Checked))
+            if (!tabPage2.Controls.OfType<RadioButton>().Any(rb => rb.Checked))
                 throw new IncompleteSelectionException();
             #endregion
-
+            
             #region Pagina 3
             if (nombrePiezaText.Text == "")
                 throw new IncompleteSelectionException();
@@ -187,7 +190,7 @@ namespace SistemaExperto
                 throw new IncompleteSelectionException("Numero de dimension no valido");
             }
             #endregion
-        }*/
+        }
 
         /*private void LimpiarCondiciones()
         {
