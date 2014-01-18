@@ -31,8 +31,10 @@ namespace SistemaExperto
         private string _nombreNumero;
         private int? _alfa;
         private int? _beta;
-        private double? _ancho;
-        private double? _largo;
+        private double _ancho;
+        private double _largo;
+        private double _handlingTime;
+        private double _insertionTime;
         #endregion
 
         #region Metodos
@@ -42,8 +44,10 @@ namespace SistemaExperto
         public int NumeroPieza { get {return this._numero; } }
         public int? Alfa { get { return this._alfa.HasValue ? _alfa : -1; } }
         public int? Beta { get { return this._beta.HasValue ? _beta : -1; } }
-        public double? Ancho { get { return this._ancho; } set { this._ancho = value; } }
-        public double? Largo { get { return this._largo; } set { this._largo = value; } }
+        public double Ancho { get { return this._ancho; } set { this._ancho = value; } }
+        public double Largo { get { return this._largo; } set { this._largo = value; } }
+        public double HandlingTime { get { return this._handlingTime; } set { this._handlingTime = value; } }
+        public double InsertionTime { get { return this._insertionTime; } set { this._insertionTime = value; } }
         //////////////////////////
 
         //Metodos para dar valores

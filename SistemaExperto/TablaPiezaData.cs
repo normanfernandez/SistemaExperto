@@ -42,5 +42,10 @@ namespace SistemaExperto
         {
             return 0.0;
         }
+
+        public static double InsertionTime(Pieza pieza) 
+        {
+            return 0.0;
+        }
     }
 }

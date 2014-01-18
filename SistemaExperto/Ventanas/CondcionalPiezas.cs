@@ -108,8 +108,8 @@ namespace SistemaExperto
         {
             try
             {
-                //RevisarCondiciones();
-                this.PiezaActual.Value.CrearAnguloPieza(this.tabPage2.Controls.OfType<RadioButton>().Single(rb => rb.Checked).TabIndex);
+                RevisarCondiciones();
+                this.PiezaActual.Value.CrearAnguloPieza(this.tabPage3.Controls.OfType<RadioButton>().Single(rb => rb.Checked).TabIndex);
                 this.PiezaActual.Value.NombrePieza = this.nombrePiezaText.Text;
                 if (PiezaActual.Next != null)
                 {
@@ -159,13 +159,13 @@ namespace SistemaExperto
                 throw new IncompleteSelectionException();
             #endregion
 
-            #region Pagina 2
+            #region Pagina 3
             //Se revisa que se haya elegido la forma de la pieza
-            if (!tabPage2.Controls.OfType<RadioButton>().Any(rb => rb.Checked))
+            if (!tabPage3.Controls.OfType<RadioButton>().Any(rb => rb.Checked))
                 throw new IncompleteSelectionException();
             #endregion
             
-            #region Pagina 3
+            #region Pagina 4
             if (nombrePiezaText.Text == "")
                 throw new IncompleteSelectionException();
             if((largoText.Text == "") || (anchoText.Text == ""))
@@ -201,17 +201,19 @@ namespace SistemaExperto
             this.grupoGeneral.Enabled = true;
             #endregion
             
-            #region Pagina 2
-            foreach (var rad in this.tabPage2.Controls.OfType<RadioButton>().Where(rb => rb.Checked))
-                rad.Checked = false;
-            #endregion
-
             #region Pagina 3
+            foreach (var rad in this.tabPage3.Controls.OfType<RadioButton>().Where(rb => rb.Checked))
+                rad.Checked = false;
             this.nombrePiezaText.Text = "";
             this.anchoText.Text = "";
             this.largoText.Text = "";
             #endregion
         }
         #endregion
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
