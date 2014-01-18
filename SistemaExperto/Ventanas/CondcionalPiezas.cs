@@ -111,6 +111,7 @@ namespace SistemaExperto
                 RevisarCondiciones();
                 this.PiezaActual.Value.CrearAnguloPieza(this.tabPage3.Controls.OfType<RadioButton>().Single(rb => rb.Checked).TabIndex);
                 this.PiezaActual.Value.NombrePieza = this.nombrePiezaText.Text;
+                CalcularTiempoManejo(PiezaActual.Value);
                 if (PiezaActual.Next != null)
                 {
                     PiezaActual = PiezaActual.Next;
@@ -209,11 +210,163 @@ namespace SistemaExperto
             this.largoText.Text = "";
             #endregion
         }
-        #endregion
 
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        private void CalcularTiempoManejo(Pieza p)
         {
+            int columna = -1;
+            int fila = -1;
+            short[] columnaHandling = {0,1,2,3,4,5,6,7,8,9};
+            short[] filaHandling = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
+            #region Analizando Numero de la izquierda
+            switch(this.tabPage1.Controls.OfType<RadioButton>().Single(rb => rb.Checked).TabIndex)
+            {
+                case 1:
+                    int? theta = p.Alfa + p.Beta;
+                    if (theta < 360)
+                        fila = 0;
+                    else if (theta < 540)
+                        fila = 1;
+                    else if (theta < 720)
+                        theta = 2;
+                    else
+                        theta = 3;
+                    break;
+                case 2:
+                    if(p.Alfa == 360)
+                    {
+                        if (p.Beta <= 180)
+                            fila = 6;
+                        else
+                            fila = 7;
+                    }
+                    else
+                    {
+                        if (p.Beta <= 180)
+                            fila = 4;
+                        else
+                            fila = 5;
+                    }
+                    break;
+                case 3:
+                    fila = 8;
+                    break;
+                case 4:
+                    fila = 9;
+                    break;
+            }
+            #endregion
+
+            #region Analizando Numero de la derecha
+            switch (this.tabPage1.Controls.OfType<RadioButton>().Single(rb => rb.Checked).TabIndex)
+            {
+                case 1:
+                    if (rbFacil.Checked)
+                    {
+                        if (p.Ancho > 2) 
+                        {
+                            columna = p.Largo > 15 ? 0 : p.Largo > 6 ? 1 : 2;
+                        } 
+                        else 
+                        {
+                            columna = p.Largo > 6 ? 3 : 4;
+                        }
+                    } 
+                    else 
+                    {
+                        if (p.Ancho > 2)
+                        {
+                            columna = p.Largo > 15 ? 5 : p.Largo > 6 ? 6 : 7;
+                        }
+                        else
+                        {
+                            columna = p.Largo > 6 ? 8 : 9;
+                        }
+                    }
+                    break;
+                case 2:
+                    if (this.panelSeccion2Sub.Enabled)
+                    {
+                        columna = this.panelSeccion2Sub.Controls.
+                            OfType<RadioButton>().Single(rb => rb.Checked).TabIndex;
+                        break;
+                    }
+                    else 
+                    {
+                        if (!checkBox2.Checked)
+                        {
+                            if (rbFacil.Checked)
+                                columna = p.Ancho > 0.25 ? 0 : 1;
+                            else
+                                columna = p.Ancho > 0.25 ? 2 : 3;
+                        }
+                        else 
+                        {
+                            if (rbFacil.Checked)
+                                columna = p.Ancho > 0.25 ? 4 : 5;
+                            else
+                                columna = p.Ancho > 0.25 ? 6 : 7;
+                        }
+                    }
+                    break;
+                case 3:
+                    if(rbFacil.Checked)
+                    {
+                        if (p.Alfa <= 180)
+                        {
+                            columna = p.Largo > 15 ? 0 : p.Largo > 6 ? 1 : 2;
+                        }
+                        else 
+                        {
+                            columna = p.Largo > 6 ? 3 : 4;
+                        }
+                    }
+                    else
+                    {
+                        if (p.Alfa <= 180)
+                        {
+                            columna = p.Largo > 15 ? 5 : p.Largo > 6 ?  6: 7;
+                        }
+                        else
+                        {
+                            columna = p.Largo > 6 ? 8 : 9;
+                        }
+                    }
+                    break;
+                case 4:
+                    if (!checkBox3.Checked)
+                        columna = 9;
+                    else 
+                    {
+                        if (!checkBox4.Checked)
+                        {
+                            columna = 8;
+                            break;
+                        }
+                        else 
+                        {
+                            if (rbLigero.Checked) 
+                            {
+                                if (rbFacil.Checked)
+                                    columna = p.Alfa <= 180 ? 0 : 1;
+                                else 
+                                    columna = p.Alfa <= 180 ? 2 : 3;
+                            } 
+                            else 
+                            {
+                                if (rbFacil.Checked)
+                                    columna = p.Alfa <= 180 ? 4 : 5;
+                                else
+                                    columna = p.Alfa <= 180 ? 6 : 7;
+                            }
+                        }
+                    }
+                    break;
+            }
+            #endregion
+            p.HandlingCode = fila.ToString() + columna.ToString();
+            p.HandlingTime = TablaPiezaData.HandlingTime(fila, columna);
         }
+        #endregion
     }
 }

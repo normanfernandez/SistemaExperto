@@ -51,6 +51,10 @@
             this.rbPieza1 = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
@@ -80,14 +84,11 @@
             this.rbHandlingSeccion2 = new System.Windows.Forms.RadioButton();
             this.rbHandlingSeccion1 = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.tabPage3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -97,7 +98,6 @@
             this.panelSeccion2Sub.SuspendLayout();
             this.grupoGeneral.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // LabelPiezaActual
@@ -323,6 +323,48 @@
             this.tabPage2.Text = "Pagina 2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.checkBox9);
+            this.groupBox2.Controls.Add(this.checkBox8);
+            this.groupBox2.Controls.Add(this.checkBox7);
+            this.groupBox2.Location = new System.Drawing.Point(277, 24);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(206, 93);
+            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Data Extra";
+            // 
+            // checkBox9
+            // 
+            this.checkBox9.AutoSize = true;
+            this.checkBox9.Location = new System.Drawing.Point(7, 66);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(165, 17);
+            this.checkBox9.TabIndex = 2;
+            this.checkBox9.Text = "Tiene resistencia al insertarse";
+            this.checkBox9.UseVisualStyleBackColor = true;
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Location = new System.Drawing.Point(7, 43);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(100, 17);
+            this.checkBox8.TabIndex = 1;
+            this.checkBox8.Text = "Dificil de alinear";
+            this.checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(7, 20);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(193, 17);
+            this.checkBox7.TabIndex = 0;
+            this.checkBox7.Text = "Se requiere mantenerse presionada";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.panel2);
@@ -395,7 +437,6 @@
             this.radioButton3.Text = "Proceso por separdado: procesos de ensamble donde todas las partes solidas estan " +
                 "en sitio";
             this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // radioButton1
             // 
@@ -518,7 +559,7 @@
             this.rbEstandar.Location = new System.Drawing.Point(4, 5);
             this.rbEstandar.Name = "rbEstandar";
             this.rbEstandar.Size = new System.Drawing.Size(132, 17);
-            this.rbEstandar.TabIndex = 1;
+            this.rbEstandar.TabIndex = 8;
             this.rbEstandar.TabStop = true;
             this.rbEstandar.Text = "Herramientas Estandar";
             this.rbEstandar.UseVisualStyleBackColor = true;
@@ -530,7 +571,7 @@
             this.rbEspecial.Location = new System.Drawing.Point(3, 28);
             this.rbEspecial.Name = "rbEspecial";
             this.rbEspecial.Size = new System.Drawing.Size(141, 17);
-            this.rbEspecial.TabIndex = 0;
+            this.rbEspecial.TabIndex = 9;
             this.rbEspecial.TabStop = true;
             this.rbEspecial.Text = "Herramientas Especiales";
             this.rbEspecial.UseVisualStyleBackColor = true;
@@ -593,7 +634,7 @@
             this.rbHandlingSeccion4.Location = new System.Drawing.Point(6, 183);
             this.rbHandlingSeccion4.Name = "rbHandlingSeccion4";
             this.rbHandlingSeccion4.Size = new System.Drawing.Size(381, 17);
-            this.rbHandlingSeccion4.TabIndex = 3;
+            this.rbHandlingSeccion4.TabIndex = 4;
             this.rbHandlingSeccion4.Text = "Se requiere dos manos para manipular y transportar debido a que es grande";
             this.rbHandlingSeccion4.UseVisualStyleBackColor = true;
             this.rbHandlingSeccion4.CheckedChanged += new System.EventHandler(this.rbHandlingSeccion4_CheckedChanged);
@@ -604,7 +645,7 @@
             this.rbHandlingSeccion3.Location = new System.Drawing.Point(6, 160);
             this.rbHandlingSeccion3.Name = "rbHandlingSeccion3";
             this.rbHandlingSeccion3.Size = new System.Drawing.Size(287, 17);
-            this.rbHandlingSeccion3.TabIndex = 2;
+            this.rbHandlingSeccion3.TabIndex = 3;
             this.rbHandlingSeccion3.Text = "Usa dos manos para la manipulacion pero no es grande";
             this.rbHandlingSeccion3.UseVisualStyleBackColor = true;
             this.rbHandlingSeccion3.CheckedChanged += new System.EventHandler(this.rbHandlingSeccion3_CheckedChanged);
@@ -615,7 +656,7 @@
             this.rbHandlingSeccion2.Location = new System.Drawing.Point(6, 29);
             this.rbHandlingSeccion2.Name = "rbHandlingSeccion2";
             this.rbHandlingSeccion2.Size = new System.Drawing.Size(456, 17);
-            this.rbHandlingSeccion2.TabIndex = 1;
+            this.rbHandlingSeccion2.TabIndex = 2;
             this.rbHandlingSeccion2.Text = "La parte se puede agarrar con una mano pero solo con el uso de herramientas como " +
                 "pinzas";
             this.rbHandlingSeccion2.UseVisualStyleBackColor = true;
@@ -627,7 +668,7 @@
             this.rbHandlingSeccion1.Location = new System.Drawing.Point(6, 6);
             this.rbHandlingSeccion1.Name = "rbHandlingSeccion1";
             this.rbHandlingSeccion1.Size = new System.Drawing.Size(399, 17);
-            this.rbHandlingSeccion1.TabIndex = 0;
+            this.rbHandlingSeccion1.TabIndex = 1;
             this.rbHandlingSeccion1.Text = "La parte se puede agarrar y manipular con una mano sin el uso de herramientas";
             this.rbHandlingSeccion1.UseVisualStyleBackColor = true;
             this.rbHandlingSeccion1.CheckedChanged += new System.EventHandler(this.rbHandlingSeccion1_CheckedChanged);
@@ -643,48 +684,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(554, 432);
             this.tabControl1.TabIndex = 9;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.checkBox9);
-            this.groupBox2.Controls.Add(this.checkBox8);
-            this.groupBox2.Controls.Add(this.checkBox7);
-            this.groupBox2.Location = new System.Drawing.Point(277, 24);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(206, 93);
-            this.groupBox2.TabIndex = 5;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Data Extra";
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(7, 20);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(193, 17);
-            this.checkBox7.TabIndex = 0;
-            this.checkBox7.Text = "Se requiere mantenerse presionada";
-            this.checkBox7.UseVisualStyleBackColor = true;
-            // 
-            // checkBox8
-            // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(7, 43);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(100, 17);
-            this.checkBox8.TabIndex = 1;
-            this.checkBox8.Text = "Dificil de alinear";
-            this.checkBox8.UseVisualStyleBackColor = true;
-            // 
-            // checkBox9
-            // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(7, 66);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(165, 17);
-            this.checkBox9.TabIndex = 2;
-            this.checkBox9.Text = "Tiene resistencia al insertarse";
-            this.checkBox9.UseVisualStyleBackColor = true;
             // 
             // CondicionalPieza
             // 
@@ -707,6 +706,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -724,8 +725,6 @@
             this.grupoGeneral.ResumeLayout(false);
             this.grupoGeneral.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

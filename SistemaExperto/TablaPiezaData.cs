@@ -9,7 +9,7 @@ namespace SistemaExperto
     {
         private TablaPiezaData() { }
 
-        private double [,] HANDLING_TIME = 
+        private static double [,] HANDLING_TIME = 
         {
             {1.13, 1.43, 1.88, 1.69, 2.18, 1.84, 2.17, 2.65, 2.45, 2.98},
             {1.50, 1.80, 2.25, 2.06, 2.55, 2.25, 2.57, 3.06, 3.00, 3.38},
@@ -23,7 +23,7 @@ namespace SistemaExperto
             {2.00, 3.00, 2.00, 3.00, 3.00, 4.00, 4.00, 5.00, 7.00, 9.00}
         };
 
-        private double[,] INSERTION_TIME =
+        private static double[,] INSERTION_TIME =
         {
             //Valores con -1 no estan en la tabla
             {1.50, 2.50, 2.50, 3.50, -1, -1, 5.50, 6.50, 6.50, 7.50},
@@ -38,9 +38,9 @@ namespace SistemaExperto
             {4.00, 7.00, 5.00, 3.50, 7.00, 8.00, 12.00, 12.00, 9.00, 12.00}
         };
 
-        public static double HandlingTime(Pieza pieza) 
+        public static double HandlingTime(int fila, int columna)
         {
-            return 0.0;
+            return HANDLING_TIME[fila,columna];
         }
 
         public static double InsertionTime(Pieza pieza) 

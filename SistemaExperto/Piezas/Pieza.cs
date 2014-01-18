@@ -35,6 +35,7 @@ namespace SistemaExperto
         private double _largo;
         private double _handlingTime;
         private double _insertionTime;
+        private string _handlingCode;
         #endregion
 
         #region Metodos
@@ -47,6 +48,7 @@ namespace SistemaExperto
         public double Ancho { get { return this._ancho; } set { this._ancho = value; } }
         public double Largo { get { return this._largo; } set { this._largo = value; } }
         public double HandlingTime { get { return this._handlingTime; } set { this._handlingTime = value; } }
+        public string HandlingCode { get { return this._handlingCode; } set { this._handlingCode = value; } }
         public double InsertionTime { get { return this._insertionTime; } set { this._insertionTime = value; } }
         //////////////////////////
 
