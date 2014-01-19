@@ -51,18 +51,18 @@
             this.rbPieza1 = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.gbExtra = new System.Windows.Forms.GroupBox();
+            this.chResistencia = new System.Windows.Forms.CheckBox();
+            this.chDificilAlinear = new System.Windows.Forms.CheckBox();
+            this.chPresion = new System.Windows.Forms.CheckBox();
+            this.panelInsercion1 = new System.Windows.Forms.Panel();
+            this.panelInsercion1Sub = new System.Windows.Forms.Panel();
+            this.rbObtruidoAnd = new System.Windows.Forms.RadioButton();
+            this.rbObstruidoOr = new System.Windows.Forms.RadioButton();
+            this.chDestinoNoAlcanzado = new System.Windows.Forms.CheckBox();
+            this.chAseguradaInmediato = new System.Windows.Forms.CheckBox();
+            this.rbSeparado = new System.Windows.Forms.RadioButton();
+            this.rbAgregada = new System.Windows.Forms.RadioButton();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panelSeccion4 = new System.Windows.Forms.Panel();
             this.panelSeccion4Sub = new System.Windows.Forms.Panel();
@@ -84,13 +84,16 @@
             this.rbHandlingSeccion2 = new System.Windows.Forms.RadioButton();
             this.rbHandlingSeccion1 = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.tabPage3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.gbExtra.SuspendLayout();
+            this.panelInsercion1.SuspendLayout();
+            this.panelInsercion1Sub.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panelSeccion4.SuspendLayout();
             this.panelSeccion4Sub.SuspendLayout();
@@ -98,6 +101,7 @@
             this.panelSeccion2Sub.SuspendLayout();
             this.grupoGeneral.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // LabelPiezaActual
@@ -311,10 +315,11 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Controls.Add(this.panel1);
-            this.tabPage2.Controls.Add(this.radioButton3);
-            this.tabPage2.Controls.Add(this.radioButton1);
+            this.tabPage2.Controls.Add(this.gbExtra);
+            this.tabPage2.Controls.Add(this.panelInsercion1);
+            this.tabPage2.Controls.Add(this.rbSeparado);
+            this.tabPage2.Controls.Add(this.rbAgregada);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -323,131 +328,135 @@
             this.tabPage2.Text = "Pagina 2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
+            // gbExtra
             // 
-            this.groupBox2.Controls.Add(this.checkBox9);
-            this.groupBox2.Controls.Add(this.checkBox8);
-            this.groupBox2.Controls.Add(this.checkBox7);
-            this.groupBox2.Location = new System.Drawing.Point(277, 24);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(206, 93);
-            this.groupBox2.TabIndex = 5;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Data Extra";
+            this.gbExtra.Controls.Add(this.chResistencia);
+            this.gbExtra.Controls.Add(this.chDificilAlinear);
+            this.gbExtra.Controls.Add(this.chPresion);
+            this.gbExtra.Location = new System.Drawing.Point(277, 24);
+            this.gbExtra.Name = "gbExtra";
+            this.gbExtra.Size = new System.Drawing.Size(206, 93);
+            this.gbExtra.TabIndex = 5;
+            this.gbExtra.TabStop = false;
+            this.gbExtra.Text = "Data Extra";
             // 
-            // checkBox9
+            // chResistencia
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(7, 66);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(165, 17);
-            this.checkBox9.TabIndex = 2;
-            this.checkBox9.Text = "Tiene resistencia al insertarse";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.chResistencia.AutoSize = true;
+            this.chResistencia.Location = new System.Drawing.Point(7, 66);
+            this.chResistencia.Name = "chResistencia";
+            this.chResistencia.Size = new System.Drawing.Size(165, 17);
+            this.chResistencia.TabIndex = 2;
+            this.chResistencia.Text = "Tiene resistencia al insertarse";
+            this.chResistencia.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // chDificilAlinear
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(7, 43);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(100, 17);
-            this.checkBox8.TabIndex = 1;
-            this.checkBox8.Text = "Dificil de alinear";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.chDificilAlinear.AutoSize = true;
+            this.chDificilAlinear.Location = new System.Drawing.Point(7, 43);
+            this.chDificilAlinear.Name = "chDificilAlinear";
+            this.chDificilAlinear.Size = new System.Drawing.Size(100, 17);
+            this.chDificilAlinear.TabIndex = 1;
+            this.chDificilAlinear.Text = "Dificil de alinear";
+            this.chDificilAlinear.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // chPresion
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(7, 20);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(193, 17);
-            this.checkBox7.TabIndex = 0;
-            this.checkBox7.Text = "Se requiere mantenerse presionada";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.chPresion.AutoSize = true;
+            this.chPresion.Location = new System.Drawing.Point(7, 20);
+            this.chPresion.Name = "chPresion";
+            this.chPresion.Size = new System.Drawing.Size(193, 17);
+            this.chPresion.TabIndex = 0;
+            this.chPresion.Text = "Se requiere mantenerse presionada";
+            this.chPresion.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // panelInsercion1
             // 
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.checkBox6);
-            this.panel1.Controls.Add(this.checkBox5);
-            this.panel1.Location = new System.Drawing.Point(18, 47);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(253, 105);
-            this.panel1.TabIndex = 4;
+            this.panelInsercion1.Controls.Add(this.panelInsercion1Sub);
+            this.panelInsercion1.Controls.Add(this.chDestinoNoAlcanzado);
+            this.panelInsercion1.Controls.Add(this.chAseguradaInmediato);
+            this.panelInsercion1.Enabled = false;
+            this.panelInsercion1.Location = new System.Drawing.Point(18, 47);
+            this.panelInsercion1.Name = "panelInsercion1";
+            this.panelInsercion1.Size = new System.Drawing.Size(253, 105);
+            this.panelInsercion1.TabIndex = 4;
             // 
-            // panel2
+            // panelInsercion1Sub
             // 
-            this.panel2.Controls.Add(this.radioButton4);
-            this.panel2.Controls.Add(this.radioButton2);
-            this.panel2.Location = new System.Drawing.Point(8, 50);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(241, 46);
-            this.panel2.TabIndex = 5;
+            this.panelInsercion1Sub.Controls.Add(this.rbObtruidoAnd);
+            this.panelInsercion1Sub.Controls.Add(this.rbObstruidoOr);
+            this.panelInsercion1Sub.Location = new System.Drawing.Point(8, 50);
+            this.panelInsercion1Sub.Name = "panelInsercion1Sub";
+            this.panelInsercion1Sub.Size = new System.Drawing.Size(241, 46);
+            this.panelInsercion1Sub.TabIndex = 5;
             // 
-            // radioButton4
+            // rbObtruidoAnd
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(4, 26);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(235, 17);
-            this.radioButton4.TabIndex = 1;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Debido a acceso obstruido y vision restrigida";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rbObtruidoAnd.AutoSize = true;
+            this.rbObtruidoAnd.Location = new System.Drawing.Point(4, 26);
+            this.rbObtruidoAnd.Name = "rbObtruidoAnd";
+            this.rbObtruidoAnd.Size = new System.Drawing.Size(235, 17);
+            this.rbObtruidoAnd.TabIndex = 1;
+            this.rbObtruidoAnd.TabStop = true;
+            this.rbObtruidoAnd.Text = "Debido a acceso obstruido y vision restrigida";
+            this.rbObtruidoAnd.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbObstruidoOr
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(4, 3);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(236, 17);
-            this.radioButton2.TabIndex = 0;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Debido a acceso obstruido o vision restrigida";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbObstruidoOr.AutoSize = true;
+            this.rbObstruidoOr.Location = new System.Drawing.Point(4, 3);
+            this.rbObstruidoOr.Name = "rbObstruidoOr";
+            this.rbObstruidoOr.Size = new System.Drawing.Size(236, 17);
+            this.rbObstruidoOr.TabIndex = 0;
+            this.rbObstruidoOr.TabStop = true;
+            this.rbObstruidoOr.Text = "Debido a acceso obstruido o vision restrigida";
+            this.rbObstruidoOr.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // chDestinoNoAlcanzado
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(8, 27);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(182, 17);
-            this.checkBox6.TabIndex = 4;
-            this.checkBox6.Text = "No alcanza facilmente su destino";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.chDestinoNoAlcanzado.AutoSize = true;
+            this.chDestinoNoAlcanzado.Location = new System.Drawing.Point(8, 27);
+            this.chDestinoNoAlcanzado.Name = "chDestinoNoAlcanzado";
+            this.chDestinoNoAlcanzado.Size = new System.Drawing.Size(182, 17);
+            this.chDestinoNoAlcanzado.TabIndex = 4;
+            this.chDestinoNoAlcanzado.Text = "No alcanza facilmente su destino";
+            this.chDestinoNoAlcanzado.UseVisualStyleBackColor = true;
+            this.chDestinoNoAlcanzado.CheckedChanged += new System.EventHandler(this.chDestinoNoAlcanzado_CheckedChanged);
             // 
-            // checkBox5
+            // chAseguradaInmediato
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(8, 4);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(140, 17);
-            this.checkBox5.TabIndex = 3;
-            this.checkBox5.Text = "Asegurada de inmediato";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.chAseguradaInmediato.AutoSize = true;
+            this.chAseguradaInmediato.Location = new System.Drawing.Point(8, 4);
+            this.chAseguradaInmediato.Name = "chAseguradaInmediato";
+            this.chAseguradaInmediato.Size = new System.Drawing.Size(140, 17);
+            this.chAseguradaInmediato.TabIndex = 3;
+            this.chAseguradaInmediato.Text = "Asegurada de inmediato";
+            this.chAseguradaInmediato.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rbSeparado
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(26, 158);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(457, 17);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Proceso por separdado: procesos de ensamble donde todas las partes solidas estan " +
+            this.rbSeparado.AutoSize = true;
+            this.rbSeparado.Location = new System.Drawing.Point(20, 188);
+            this.rbSeparado.Name = "rbSeparado";
+            this.rbSeparado.Size = new System.Drawing.Size(457, 17);
+            this.rbSeparado.TabIndex = 2;
+            this.rbSeparado.TabStop = true;
+            this.rbSeparado.Text = "Proceso por separdado: procesos de ensamble donde todas las partes solidas estan " +
                 "en sitio";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbSeparado.UseVisualStyleBackColor = true;
+            this.rbSeparado.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
-            // radioButton1
+            // rbAgregada
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(26, 24);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(98, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Parte agregada";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbAgregada.AutoSize = true;
+            this.rbAgregada.Location = new System.Drawing.Point(26, 24);
+            this.rbAgregada.Name = "rbAgregada";
+            this.rbAgregada.Size = new System.Drawing.Size(98, 17);
+            this.rbAgregada.TabIndex = 0;
+            this.rbAgregada.TabStop = true;
+            this.rbAgregada.Text = "Parte agregada";
+            this.rbAgregada.UseVisualStyleBackColor = true;
+            this.rbAgregada.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // tabPage1
             // 
@@ -621,10 +630,12 @@
             // rbFacil
             // 
             this.rbFacil.AutoSize = true;
+            this.rbFacil.Checked = true;
             this.rbFacil.Location = new System.Drawing.Point(7, 19);
             this.rbFacil.Name = "rbFacil";
             this.rbFacil.Size = new System.Drawing.Size(168, 17);
             this.rbFacil.TabIndex = 0;
+            this.rbFacil.TabStop = true;
             this.rbFacil.Text = "Es facil de Agarrar y Manipular";
             this.rbFacil.UseVisualStyleBackColor = true;
             // 
@@ -665,10 +676,12 @@
             // rbHandlingSeccion1
             // 
             this.rbHandlingSeccion1.AutoSize = true;
+            this.rbHandlingSeccion1.Checked = true;
             this.rbHandlingSeccion1.Location = new System.Drawing.Point(6, 6);
             this.rbHandlingSeccion1.Name = "rbHandlingSeccion1";
             this.rbHandlingSeccion1.Size = new System.Drawing.Size(399, 17);
             this.rbHandlingSeccion1.TabIndex = 1;
+            this.rbHandlingSeccion1.TabStop = true;
             this.rbHandlingSeccion1.Text = "La parte se puede agarrar y manipular con una mano sin el uso de herramientas";
             this.rbHandlingSeccion1.UseVisualStyleBackColor = true;
             this.rbHandlingSeccion1.CheckedChanged += new System.EventHandler(this.rbHandlingSeccion1_CheckedChanged);
@@ -684,6 +697,37 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(554, 432);
             this.tabControl1.TabIndex = 9;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.radioButton6);
+            this.panel1.Controls.Add(this.radioButton5);
+            this.panel1.Location = new System.Drawing.Point(12, 220);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.TabIndex = 6;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(12, 15);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(85, 17);
+            this.radioButton5.TabIndex = 0;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "radioButton5";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(12, 53);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(85, 17);
+            this.radioButton6.TabIndex = 1;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "radioButton6";
+            this.radioButton6.UseVisualStyleBackColor = true;
             // 
             // CondicionalPieza
             // 
@@ -706,12 +750,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.gbExtra.ResumeLayout(false);
+            this.gbExtra.PerformLayout();
+            this.panelInsercion1.ResumeLayout(false);
+            this.panelInsercion1.PerformLayout();
+            this.panelInsercion1Sub.ResumeLayout(false);
+            this.panelInsercion1Sub.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.panelSeccion4.ResumeLayout(false);
@@ -725,6 +769,8 @@
             this.grupoGeneral.ResumeLayout(false);
             this.grupoGeneral.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -766,14 +812,14 @@
         private System.Windows.Forms.RadioButton rbHandlingSeccion2;
         private System.Windows.Forms.RadioButton rbHandlingSeccion1;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.Panel panelInsercion1;
+        private System.Windows.Forms.CheckBox chAseguradaInmediato;
+        private System.Windows.Forms.RadioButton rbSeparado;
+        private System.Windows.Forms.RadioButton rbAgregada;
+        private System.Windows.Forms.Panel panelInsercion1Sub;
+        private System.Windows.Forms.RadioButton rbObtruidoAnd;
+        private System.Windows.Forms.RadioButton rbObstruidoOr;
+        private System.Windows.Forms.CheckBox chDestinoNoAlcanzado;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -783,10 +829,13 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox nombrePiezaText;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.GroupBox gbExtra;
+        private System.Windows.Forms.CheckBox chResistencia;
+        private System.Windows.Forms.CheckBox chDificilAlinear;
+        private System.Windows.Forms.CheckBox chPresion;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton5;
     }
 }
 

@@ -71,6 +71,17 @@ namespace SistemaExperto
             panelSeccion4.Enabled = true;
             grupoGeneral.Enabled = false;
         }
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            panelInsercion1.Enabled = true;
+            panelInsercion1Sub.Enabled = chDestinoNoAlcanzado.Checked;
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            panelInsercion1.Enabled = false;
+        }
+
         #endregion
 
         #region Eventos checkbox
@@ -112,6 +123,7 @@ namespace SistemaExperto
                 this.PiezaActual.Value.CrearAnguloPieza(this.tabPage3.Controls.OfType<RadioButton>().Single(rb => rb.Checked).TabIndex);
                 this.PiezaActual.Value.NombrePieza = this.nombrePiezaText.Text;
                 CalcularTiempoManejo(PiezaActual.Value);
+                CalcularTiempoInsercion(PiezaActual.Value);
                 if (PiezaActual.Next != null)
                 {
                     PiezaActual = PiezaActual.Next;
@@ -141,6 +153,11 @@ namespace SistemaExperto
             }
                  
         }
+
+        private void chDestinoNoAlcanzado_CheckedChanged(object sender, EventArgs e)
+        {
+            panelInsercion1Sub.Enabled = chDestinoNoAlcanzado.Checked;
+        }
         #endregion
 
         #region Metodos
@@ -160,16 +177,20 @@ namespace SistemaExperto
                 throw new IncompleteSelectionException();
             #endregion
 
+            #region Pagina 2
+            if (!tabPage2.Controls.OfType<RadioButton>().Any(rb => rb.Checked))
+                throw new IncompleteSelectionException();
+            if( !panelInsercion1Sub.Controls.OfType<RadioButton>().Any(rb => rb.Checked && rb.Enabled))
+                throw new IncompleteSelectionException();
+            #endregion
+
             #region Pagina 3
             //Se revisa que se haya elegido la forma de la pieza
             if (!tabPage3.Controls.OfType<RadioButton>().Any(rb => rb.Checked))
                 throw new IncompleteSelectionException();
-            #endregion
-            
-            #region Pagina 4
             if (nombrePiezaText.Text == "")
                 throw new IncompleteSelectionException();
-            if((largoText.Text == "") || (anchoText.Text == ""))
+            if ((largoText.Text == "") || (anchoText.Text == ""))
                 throw new IncompleteSelectionException();
             try
             {
@@ -201,7 +222,19 @@ namespace SistemaExperto
             this.panelSeccion4.Enabled = false;
             this.grupoGeneral.Enabled = true;
             #endregion
-            
+
+            #region Pagina 2
+            foreach (var rad in tabPage2.Controls.OfType<RadioButton>())
+                rad.Checked = false;
+            foreach (var ch in panelInsercion1.Controls.OfType<CheckBox>())
+                ch.Checked = false;
+            foreach (var rad in panelInsercion1Sub.Controls.OfType<RadioButton>())
+                rad.Checked = false;
+            foreach (var ch in gbExtra.Controls.OfType<CheckBox>())
+                ch.Checked = false;
+            panelInsercion1.Enabled = false;
+            #endregion
+
             #region Pagina 3
             foreach (var rad in this.tabPage3.Controls.OfType<RadioButton>().Where(rb => rb.Checked))
                 rad.Checked = false;
@@ -211,14 +244,13 @@ namespace SistemaExperto
             #endregion
         }
 
+        #region Handling Time
         private void CalcularTiempoManejo(Pieza p)
         {
             int columna = -1;
             int fila = -1;
-            short[] columnaHandling = {0,1,2,3,4,5,6,7,8,9};
-            short[] filaHandling = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
-            #region Analizando Numero de la izquierda
+            #region Analizando Numero de la izquierda (fila)
             switch(this.tabPage1.Controls.OfType<RadioButton>().Single(rb => rb.Checked).TabIndex)
             {
                 case 1:
@@ -228,9 +260,9 @@ namespace SistemaExperto
                     else if (theta < 540)
                         fila = 1;
                     else if (theta < 720)
-                        theta = 2;
+                        fila = 2;
                     else
-                        theta = 3;
+                        fila = 3;
                     break;
                 case 2:
                     if(p.Alfa == 360)
@@ -257,7 +289,7 @@ namespace SistemaExperto
             }
             #endregion
 
-            #region Analizando Numero de la derecha
+            #region Analizando Numero de la derecha (Columna)
             switch (this.tabPage1.Controls.OfType<RadioButton>().Single(rb => rb.Checked).TabIndex)
             {
                 case 1:
@@ -367,6 +399,30 @@ namespace SistemaExperto
             p.HandlingCode = fila.ToString() + columna.ToString();
             p.HandlingTime = TablaPiezaData.HandlingTime(fila, columna);
         }
+        #endregion
+
+        #region Insertion Time
+        private void CalcularTiempoInsercion(Pieza p)
+        {
+            int fila = -1;
+            int columna = -1;
+
+            #region Numero de la izquierda (fila)
+            if (rbSeparado.Checked)
+                fila = 9;
+            else
+                fila = (chAseguradaInmediato.Checked ? 3 : 0) + 
+                    (chDestinoNoAlcanzado.Checked ? (rbObstruidoOr.Checked ? 1 : 2): 0);
+            #endregion
+
+            #region Numero de la derecha (columna)
+
+            #endregion
+
+            p.HandlingCode = fila.ToString();
+        }
+        #endregion
+
         #endregion
     }
 }
