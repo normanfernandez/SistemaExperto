@@ -51,18 +51,29 @@
             this.rbPieza1 = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.gbPlastico = new System.Windows.Forms.GroupBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.panelInsercion2 = new System.Windows.Forms.Panel();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.gbExtra = new System.Windows.Forms.GroupBox();
             this.chResistencia = new System.Windows.Forms.CheckBox();
             this.chDificilAlinear = new System.Windows.Forms.CheckBox();
             this.chPresion = new System.Windows.Forms.CheckBox();
             this.panelInsercion1 = new System.Windows.Forms.Panel();
-            this.panelInsercion1Sub = new System.Windows.Forms.Panel();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.panelInsercion1Sub2 = new System.Windows.Forms.Panel();
             this.rbObtruidoAnd = new System.Windows.Forms.RadioButton();
             this.rbObstruidoOr = new System.Windows.Forms.RadioButton();
             this.chDestinoNoAlcanzado = new System.Windows.Forms.CheckBox();
             this.chAseguradaInmediato = new System.Windows.Forms.CheckBox();
             this.rbSeparado = new System.Windows.Forms.RadioButton();
             this.rbAgregada = new System.Windows.Forms.RadioButton();
+            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panelSeccion4 = new System.Windows.Forms.Panel();
             this.panelSeccion4Sub = new System.Windows.Forms.Panel();
@@ -84,16 +95,29 @@
             this.rbHandlingSeccion2 = new System.Windows.Forms.RadioButton();
             this.rbHandlingSeccion1 = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.gbProcesoSeparado = new System.Windows.Forms.GroupBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.radioButton12 = new System.Windows.Forms.RadioButton();
             this.tabPage3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
+            this.gbPlastico.SuspendLayout();
+            this.panelInsercion2.SuspendLayout();
             this.gbExtra.SuspendLayout();
             this.panelInsercion1.SuspendLayout();
-            this.panelInsercion1Sub.SuspendLayout();
+            this.panelInsercion1Sub2.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panelSeccion4.SuspendLayout();
             this.panelSeccion4Sub.SuspendLayout();
@@ -101,7 +125,10 @@
             this.panelSeccion2Sub.SuspendLayout();
             this.grupoGeneral.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.gbProcesoSeparado.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // LabelPiezaActual
@@ -115,7 +142,7 @@
             // 
             // botonAlante
             // 
-            this.botonAlante.Location = new System.Drawing.Point(424, 485);
+            this.botonAlante.Location = new System.Drawing.Point(428, 542);
             this.botonAlante.Name = "botonAlante";
             this.botonAlante.Size = new System.Drawing.Size(75, 23);
             this.botonAlante.TabIndex = 11;
@@ -125,7 +152,7 @@
             // 
             // botonAtras
             // 
-            this.botonAtras.Location = new System.Drawing.Point(2, 485);
+            this.botonAtras.Location = new System.Drawing.Point(6, 542);
             this.botonAtras.Name = "botonAtras";
             this.botonAtras.Size = new System.Drawing.Size(75, 23);
             this.botonAtras.TabIndex = 12;
@@ -315,18 +342,102 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.panel1);
+            this.tabPage2.Controls.Add(this.gbProcesoSeparado);
+            this.tabPage2.Controls.Add(this.gbPlastico);
+            this.tabPage2.Controls.Add(this.panelInsercion2);
             this.tabPage2.Controls.Add(this.gbExtra);
             this.tabPage2.Controls.Add(this.panelInsercion1);
             this.tabPage2.Controls.Add(this.rbSeparado);
             this.tabPage2.Controls.Add(this.rbAgregada);
+            this.tabPage2.Controls.Add(this.shapeContainer1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(546, 406);
+            this.tabPage2.Size = new System.Drawing.Size(546, 472);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Pagina 2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // gbPlastico
+            // 
+            this.gbPlastico.Controls.Add(this.radioButton2);
+            this.gbPlastico.Controls.Add(this.radioButton1);
+            this.gbPlastico.Enabled = false;
+            this.gbPlastico.Location = new System.Drawing.Point(277, 123);
+            this.gbPlastico.Name = "gbPlastico";
+            this.gbPlastico.Size = new System.Drawing.Size(130, 80);
+            this.gbPlastico.TabIndex = 8;
+            this.gbPlastico.TabStop = false;
+            this.gbPlastico.Text = "Deformacion Plastica";
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(7, 44);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(85, 17);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Por remache";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(7, 20);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(75, 17);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Por torsion";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // panelInsercion2
+            // 
+            this.panelInsercion2.Controls.Add(this.panel1);
+            this.panelInsercion2.Controls.Add(this.checkBox12);
+            this.panelInsercion2.Controls.Add(this.checkBox8);
+            this.panelInsercion2.Controls.Add(this.radioButton3);
+            this.panelInsercion2.Controls.Add(this.radioButton6);
+            this.panelInsercion2.Controls.Add(this.radioButton5);
+            this.panelInsercion2.Enabled = false;
+            this.panelInsercion2.Location = new System.Drawing.Point(10, 293);
+            this.panelInsercion2.Name = "panelInsercion2";
+            this.panelInsercion2.Size = new System.Drawing.Size(182, 173);
+            this.panelInsercion2.TabIndex = 6;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(12, 94);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(115, 17);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Proceso sin amarre";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(12, 47);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(131, 17);
+            this.radioButton6.TabIndex = 1;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Proceso No Mecanico";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(12, 3);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(114, 17);
+            this.radioButton5.TabIndex = 0;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Proceso Mecanico";
+            this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // gbExtra
             // 
@@ -372,23 +483,46 @@
             // 
             // panelInsercion1
             // 
-            this.panelInsercion1.Controls.Add(this.panelInsercion1Sub);
+            this.panelInsercion1.Controls.Add(this.checkBox6);
+            this.panelInsercion1.Controls.Add(this.checkBox5);
+            this.panelInsercion1.Controls.Add(this.panelInsercion1Sub2);
             this.panelInsercion1.Controls.Add(this.chDestinoNoAlcanzado);
             this.panelInsercion1.Controls.Add(this.chAseguradaInmediato);
             this.panelInsercion1.Enabled = false;
-            this.panelInsercion1.Location = new System.Drawing.Point(18, 47);
+            this.panelInsercion1.Location = new System.Drawing.Point(18, 29);
             this.panelInsercion1.Name = "panelInsercion1";
-            this.panelInsercion1.Size = new System.Drawing.Size(253, 105);
+            this.panelInsercion1.Size = new System.Drawing.Size(253, 187);
             this.panelInsercion1.TabIndex = 4;
             // 
-            // panelInsercion1Sub
+            // checkBox6
             // 
-            this.panelInsercion1Sub.Controls.Add(this.rbObtruidoAnd);
-            this.panelInsercion1Sub.Controls.Add(this.rbObstruidoOr);
-            this.panelInsercion1Sub.Location = new System.Drawing.Point(8, 50);
-            this.panelInsercion1Sub.Name = "panelInsercion1Sub";
-            this.panelInsercion1Sub.Size = new System.Drawing.Size(241, 46);
-            this.panelInsercion1Sub.TabIndex = 5;
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(8, 134);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(169, 17);
+            this.checkBox6.TabIndex = 7;
+            this.checkBox6.Text = "Necesita apretarse con tornillo";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(8, 110);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(126, 17);
+            this.checkBox5.TabIndex = 6;
+            this.checkBox5.Text = "Deformacion Plastica";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            // 
+            // panelInsercion1Sub2
+            // 
+            this.panelInsercion1Sub2.Controls.Add(this.rbObtruidoAnd);
+            this.panelInsercion1Sub2.Controls.Add(this.rbObstruidoOr);
+            this.panelInsercion1Sub2.Location = new System.Drawing.Point(8, 43);
+            this.panelInsercion1Sub2.Name = "panelInsercion1Sub2";
+            this.panelInsercion1Sub2.Size = new System.Drawing.Size(241, 61);
+            this.panelInsercion1Sub2.TabIndex = 5;
             // 
             // rbObtruidoAnd
             // 
@@ -415,7 +549,7 @@
             // chDestinoNoAlcanzado
             // 
             this.chDestinoNoAlcanzado.AutoSize = true;
-            this.chDestinoNoAlcanzado.Location = new System.Drawing.Point(8, 27);
+            this.chDestinoNoAlcanzado.Location = new System.Drawing.Point(8, 3);
             this.chDestinoNoAlcanzado.Name = "chDestinoNoAlcanzado";
             this.chDestinoNoAlcanzado.Size = new System.Drawing.Size(182, 17);
             this.chDestinoNoAlcanzado.TabIndex = 4;
@@ -426,7 +560,7 @@
             // chAseguradaInmediato
             // 
             this.chAseguradaInmediato.AutoSize = true;
-            this.chAseguradaInmediato.Location = new System.Drawing.Point(8, 4);
+            this.chAseguradaInmediato.Location = new System.Drawing.Point(8, 26);
             this.chAseguradaInmediato.Name = "chAseguradaInmediato";
             this.chAseguradaInmediato.Size = new System.Drawing.Size(140, 17);
             this.chAseguradaInmediato.TabIndex = 3;
@@ -436,11 +570,10 @@
             // rbSeparado
             // 
             this.rbSeparado.AutoSize = true;
-            this.rbSeparado.Location = new System.Drawing.Point(20, 188);
+            this.rbSeparado.Location = new System.Drawing.Point(18, 270);
             this.rbSeparado.Name = "rbSeparado";
             this.rbSeparado.Size = new System.Drawing.Size(457, 17);
             this.rbSeparado.TabIndex = 2;
-            this.rbSeparado.TabStop = true;
             this.rbSeparado.Text = "Proceso por separdado: procesos de ensamble donde todas las partes solidas estan " +
                 "en sitio";
             this.rbSeparado.UseVisualStyleBackColor = true;
@@ -449,14 +582,32 @@
             // rbAgregada
             // 
             this.rbAgregada.AutoSize = true;
-            this.rbAgregada.Location = new System.Drawing.Point(26, 24);
+            this.rbAgregada.Location = new System.Drawing.Point(26, 6);
             this.rbAgregada.Name = "rbAgregada";
-            this.rbAgregada.Size = new System.Drawing.Size(98, 17);
+            this.rbAgregada.Size = new System.Drawing.Size(242, 17);
             this.rbAgregada.TabIndex = 0;
-            this.rbAgregada.TabStop = true;
-            this.rbAgregada.Text = "Parte agregada";
+            this.rbAgregada.Text = "Parte agregada: proceso en el cual se termina";
             this.rbAgregada.UseVisualStyleBackColor = true;
             this.rbAgregada.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // shapeContainer1
+            // 
+            this.shapeContainer1.Location = new System.Drawing.Point(3, 3);
+            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer1.Name = "shapeContainer1";
+            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape1});
+            this.shapeContainer1.Size = new System.Drawing.Size(540, 466);
+            this.shapeContainer1.TabIndex = 7;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 6;
+            this.lineShape1.X2 = 532;
+            this.lineShape1.Y1 = 249;
+            this.lineShape1.Y2 = 249;
             // 
             // tabPage1
             // 
@@ -695,45 +846,164 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(554, 432);
+            this.tabControl1.Size = new System.Drawing.Size(554, 498);
             this.tabControl1.TabIndex = 9;
+            // 
+            // gbProcesoSeparado
+            // 
+            this.gbProcesoSeparado.Controls.Add(this.panel3);
+            this.gbProcesoSeparado.Controls.Add(this.panel2);
+            this.gbProcesoSeparado.Location = new System.Drawing.Point(198, 289);
+            this.gbProcesoSeparado.Name = "gbProcesoSeparado";
+            this.gbProcesoSeparado.Size = new System.Drawing.Size(299, 115);
+            this.gbProcesoSeparado.TabIndex = 9;
+            this.gbProcesoSeparado.TabStop = false;
+            this.gbProcesoSeparado.Text = "Data proceso por separado";
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Location = new System.Drawing.Point(20, 24);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(126, 17);
+            this.checkBox8.TabIndex = 3;
+            this.checkBox8.Text = "Deformacion Plastica";
+            this.checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // checkBox12
+            // 
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.Location = new System.Drawing.Point(20, 71);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(123, 17);
+            this.checkBox12.TabIndex = 4;
+            this.checkBox12.Text = "Proceso Metalurgico";
+            this.checkBox12.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.radioButton6);
-            this.panel1.Controls.Add(this.radioButton5);
-            this.panel1.Location = new System.Drawing.Point(12, 220);
+            this.panel1.Controls.Add(this.radioButton7);
+            this.panel1.Controls.Add(this.radioButton4);
+            this.panel1.Enabled = false;
+            this.panel1.Location = new System.Drawing.Point(20, 117);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 100);
-            this.panel1.TabIndex = 6;
+            this.panel1.Size = new System.Drawing.Size(144, 53);
+            this.panel1.TabIndex = 5;
             // 
-            // radioButton5
+            // radioButton4
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(12, 15);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(85, 17);
-            this.radioButton5.TabIndex = 0;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "radioButton5";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(4, 3);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(93, 17);
+            this.radioButton4.TabIndex = 0;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Sub-Ensamble";
+            this.radioButton4.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // radioButton7
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(12, 53);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(85, 17);
-            this.radioButton6.TabIndex = 1;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "radioButton6";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(4, 27);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(97, 17);
+            this.radioButton7.TabIndex = 1;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Otros Procesos";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel2.Controls.Add(this.radioButton10);
+            this.panel2.Controls.Add(this.radioButton9);
+            this.panel2.Controls.Add(this.radioButton8);
+            this.panel2.Location = new System.Drawing.Point(7, 20);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(111, 79);
+            this.panel2.TabIndex = 0;
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(4, 4);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(53, 17);
+            this.radioButton8.TabIndex = 0;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "Union";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            // 
+            // radioButton9
+            // 
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.Location = new System.Drawing.Point(4, 28);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(71, 17);
+            this.radioButton9.TabIndex = 1;
+            this.radioButton9.TabStop = true;
+            this.radioButton9.Text = "Remache";
+            this.radioButton9.UseVisualStyleBackColor = true;
+            // 
+            // radioButton10
+            // 
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.Location = new System.Drawing.Point(4, 52);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(110, 17);
+            this.radioButton10.TabIndex = 2;
+            this.radioButton10.TabStop = true;
+            this.radioButton10.Text = "Apriete de Tornillo";
+            this.radioButton10.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Gray;
+            this.panel3.Controls.Add(this.radioButton12);
+            this.panel3.Controls.Add(this.radioButton11);
+            this.panel3.Controls.Add(this.checkBox7);
+            this.panel3.Location = new System.Drawing.Point(125, 20);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(160, 79);
+            this.panel3.TabIndex = 1;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(4, 8);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(155, 17);
+            this.checkBox7.TabIndex = 0;
+            this.checkBox7.Text = "Material adicional requerido";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // radioButton11
+            // 
+            this.radioButton11.AutoSize = true;
+            this.radioButton11.Location = new System.Drawing.Point(14, 28);
+            this.radioButton11.Name = "radioButton11";
+            this.radioButton11.Size = new System.Drawing.Size(108, 17);
+            this.radioButton11.TabIndex = 1;
+            this.radioButton11.TabStop = true;
+            this.radioButton11.Text = "Soldadura blanda";
+            this.radioButton11.UseVisualStyleBackColor = true;
+            // 
+            // radioButton12
+            // 
+            this.radioButton12.AutoSize = true;
+            this.radioButton12.Location = new System.Drawing.Point(14, 52);
+            this.radioButton12.Name = "radioButton12";
+            this.radioButton12.Size = new System.Drawing.Size(73, 17);
+            this.radioButton12.TabIndex = 2;
+            this.radioButton12.TabStop = true;
+            this.radioButton12.Text = "Soldadura";
+            this.radioButton12.UseVisualStyleBackColor = true;
             // 
             // CondicionalPieza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(589, 520);
+            this.ClientSize = new System.Drawing.Size(596, 587);
             this.Controls.Add(this.botonAtras);
             this.Controls.Add(this.botonAlante);
             this.Controls.Add(this.LabelPiezaActual);
@@ -750,12 +1020,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.gbPlastico.ResumeLayout(false);
+            this.gbPlastico.PerformLayout();
+            this.panelInsercion2.ResumeLayout(false);
+            this.panelInsercion2.PerformLayout();
             this.gbExtra.ResumeLayout(false);
             this.gbExtra.PerformLayout();
             this.panelInsercion1.ResumeLayout(false);
             this.panelInsercion1.PerformLayout();
-            this.panelInsercion1Sub.ResumeLayout(false);
-            this.panelInsercion1Sub.PerformLayout();
+            this.panelInsercion1Sub2.ResumeLayout(false);
+            this.panelInsercion1Sub2.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.panelSeccion4.ResumeLayout(false);
@@ -769,8 +1043,13 @@
             this.grupoGeneral.ResumeLayout(false);
             this.grupoGeneral.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.gbProcesoSeparado.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -816,7 +1095,7 @@
         private System.Windows.Forms.CheckBox chAseguradaInmediato;
         private System.Windows.Forms.RadioButton rbSeparado;
         private System.Windows.Forms.RadioButton rbAgregada;
-        private System.Windows.Forms.Panel panelInsercion1Sub;
+        private System.Windows.Forms.Panel panelInsercion1Sub2;
         private System.Windows.Forms.RadioButton rbObtruidoAnd;
         private System.Windows.Forms.RadioButton rbObstruidoOr;
         private System.Windows.Forms.CheckBox chDestinoNoAlcanzado;
@@ -833,9 +1112,31 @@
         private System.Windows.Forms.CheckBox chResistencia;
         private System.Windows.Forms.CheckBox chDificilAlinear;
         private System.Windows.Forms.CheckBox chPresion;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelInsercion2;
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.RadioButton radioButton5;
+        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
+        private System.Windows.Forms.GroupBox gbPlastico;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.GroupBox gbProcesoSeparado;
+        private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.CheckBox checkBox12;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.RadioButton radioButton12;
+        private System.Windows.Forms.RadioButton radioButton11;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RadioButton radioButton10;
+        private System.Windows.Forms.RadioButton radioButton9;
+        private System.Windows.Forms.RadioButton radioButton8;
     }
 }
 

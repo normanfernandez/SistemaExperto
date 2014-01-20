@@ -74,12 +74,15 @@ namespace SistemaExperto
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             panelInsercion1.Enabled = true;
-            panelInsercion1Sub.Enabled = chDestinoNoAlcanzado.Checked;
+            panelInsercion1Sub2.Enabled = chDestinoNoAlcanzado.Checked;
+            panelInsercion2.Enabled = false;
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
             panelInsercion1.Enabled = false;
+            gbPlastico.Enabled = false;
+            panelInsercion2.Enabled = true;
         }
 
         #endregion
@@ -156,7 +159,7 @@ namespace SistemaExperto
 
         private void chDestinoNoAlcanzado_CheckedChanged(object sender, EventArgs e)
         {
-            panelInsercion1Sub.Enabled = chDestinoNoAlcanzado.Checked;
+            panelInsercion1Sub2.Enabled = chDestinoNoAlcanzado.Checked;
         }
         #endregion
 
@@ -180,7 +183,9 @@ namespace SistemaExperto
             #region Pagina 2
             if (!tabPage2.Controls.OfType<RadioButton>().Any(rb => rb.Checked))
                 throw new IncompleteSelectionException();
-            if( !panelInsercion1Sub.Controls.OfType<RadioButton>().Any(rb => rb.Checked && rb.Enabled))
+            if(panelInsercion1Sub2.Enabled && !panelInsercion1Sub2.Controls.OfType<RadioButton>().Any(rb => rb.Checked))
+                throw new IncompleteSelectionException();
+            if(gbPlastico.Enabled && !gbPlastico.Controls.OfType<RadioButton>().Any(rb => rb.Checked))
                 throw new IncompleteSelectionException();
             #endregion
 
@@ -228,7 +233,7 @@ namespace SistemaExperto
                 rad.Checked = false;
             foreach (var ch in panelInsercion1.Controls.OfType<CheckBox>())
                 ch.Checked = false;
-            foreach (var rad in panelInsercion1Sub.Controls.OfType<RadioButton>())
+            foreach (var rad in panelInsercion1Sub2.Controls.OfType<RadioButton>())
                 rad.Checked = false;
             foreach (var ch in gbExtra.Controls.OfType<CheckBox>())
                 ch.Checked = false;
@@ -416,12 +421,30 @@ namespace SistemaExperto
             #endregion
 
             #region Numero de la derecha (columna)
+            //Sacando numero columna si es de la primera seccion
+            if(!chAseguradaInmediato.Checked)
+            {
+                columna = (chPresion.Checked ? 6 : 0);
+                columna += (!chDificilAlinear.Checked ? 0 : 2);
+                columna += (chResistencia.Checked ? 1 : 0);
+            }
+            else
+            {
 
+                columna = 0;
+            }
             #endregion
 
-            p.HandlingCode = fila.ToString();
+            p.InsertionCode = fila.ToString() + columna.ToString();
         }
         #endregion
+
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+            gbPlastico.Enabled = checkBox5.Checked;
+            checkBox6.Checked = false;
+            checkBox6.Enabled = !checkBox5.Checked;
+        }
 
         #endregion
     }

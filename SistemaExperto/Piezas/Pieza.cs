@@ -51,7 +51,7 @@ namespace SistemaExperto
         public double HandlingTime { get { return this._handlingTime; } set { this._handlingTime = value; } }
         public string HandlingCode { get { return this._handlingCode; } set { this._handlingCode = value; } }
         public double InsertionTime { get { return this._insertionTime; } set { this._insertionTime = value; } }
-        public string InsertiongCode { get { return this._insertionCode; } set { this._insertionCode = value; } }
+        public string InsertionCode { get { return this._insertionCode; } set { this._insertionCode = value; } }
         //////////////////////////
 
         //Metodos para dar valores
