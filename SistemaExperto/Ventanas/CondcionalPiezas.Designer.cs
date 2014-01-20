@@ -53,6 +53,9 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.gbProcesoSeparado = new System.Windows.Forms.GroupBox();
             this.panelProceso2 = new System.Windows.Forms.Panel();
+            this.panelProceso2Sub = new System.Windows.Forms.Panel();
+            this.rbSoldadura2 = new System.Windows.Forms.RadioButton();
+            this.rbSoldadura1 = new System.Windows.Forms.RadioButton();
             this.chMaterialAdicional = new System.Windows.Forms.CheckBox();
             this.panelProceso1 = new System.Windows.Forms.Panel();
             this.rbTornillo = new System.Windows.Forms.RadioButton();
@@ -107,15 +110,13 @@
             this.rbHandlingSeccion2 = new System.Windows.Forms.RadioButton();
             this.rbHandlingSeccion1 = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.panelProceso2Sub = new System.Windows.Forms.Panel();
-            this.rbSoldadura2 = new System.Windows.Forms.RadioButton();
-            this.rbSoldadura1 = new System.Windows.Forms.RadioButton();
             this.tabPage3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.gbProcesoSeparado.SuspendLayout();
             this.panelProceso2.SuspendLayout();
+            this.panelProceso2Sub.SuspendLayout();
             this.panelProceso1.SuspendLayout();
             this.gbPlastico.SuspendLayout();
             this.panelInsercion2.SuspendLayout();
@@ -130,7 +131,6 @@
             this.panelSeccion2Sub.SuspendLayout();
             this.grupoGeneral.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.panelProceso2Sub.SuspendLayout();
             this.SuspendLayout();
             // 
             // LabelPiezaActual
@@ -223,7 +223,6 @@
             this.largoText.Name = "largoText";
             this.largoText.Size = new System.Drawing.Size(100, 20);
             this.largoText.TabIndex = 3;
-            this.largoText.Text = "2";
             // 
             // anchoText
             // 
@@ -231,7 +230,6 @@
             this.anchoText.Name = "anchoText";
             this.anchoText.Size = new System.Drawing.Size(100, 20);
             this.anchoText.TabIndex = 2;
-            this.anchoText.Text = "2";
             // 
             // label7
             // 
@@ -382,6 +380,38 @@
             this.panelProceso2.Name = "panelProceso2";
             this.panelProceso2.Size = new System.Drawing.Size(160, 79);
             this.panelProceso2.TabIndex = 1;
+            // 
+            // panelProceso2Sub
+            // 
+            this.panelProceso2Sub.Controls.Add(this.rbSoldadura2);
+            this.panelProceso2Sub.Controls.Add(this.rbSoldadura1);
+            this.panelProceso2Sub.Enabled = false;
+            this.panelProceso2Sub.Location = new System.Drawing.Point(14, 24);
+            this.panelProceso2Sub.Name = "panelProceso2Sub";
+            this.panelProceso2Sub.Size = new System.Drawing.Size(112, 45);
+            this.panelProceso2Sub.TabIndex = 3;
+            // 
+            // rbSoldadura2
+            // 
+            this.rbSoldadura2.AutoSize = true;
+            this.rbSoldadura2.Location = new System.Drawing.Point(3, 26);
+            this.rbSoldadura2.Name = "rbSoldadura2";
+            this.rbSoldadura2.Size = new System.Drawing.Size(73, 17);
+            this.rbSoldadura2.TabIndex = 4;
+            this.rbSoldadura2.TabStop = true;
+            this.rbSoldadura2.Text = "Soldadura";
+            this.rbSoldadura2.UseVisualStyleBackColor = true;
+            // 
+            // rbSoldadura1
+            // 
+            this.rbSoldadura1.AutoSize = true;
+            this.rbSoldadura1.Location = new System.Drawing.Point(3, 3);
+            this.rbSoldadura1.Name = "rbSoldadura1";
+            this.rbSoldadura1.Size = new System.Drawing.Size(108, 17);
+            this.rbSoldadura1.TabIndex = 3;
+            this.rbSoldadura1.TabStop = true;
+            this.rbSoldadura1.Text = "Soldadura blanda";
+            this.rbSoldadura1.UseVisualStyleBackColor = true;
             // 
             // chMaterialAdicional
             // 
@@ -724,10 +754,12 @@
             // rbAgregada
             // 
             this.rbAgregada.AutoSize = true;
+            this.rbAgregada.Checked = true;
             this.rbAgregada.Location = new System.Drawing.Point(26, 6);
             this.rbAgregada.Name = "rbAgregada";
             this.rbAgregada.Size = new System.Drawing.Size(242, 17);
             this.rbAgregada.TabIndex = 0;
+            this.rbAgregada.TabStop = true;
             this.rbAgregada.Text = "Parte agregada: proceso en el cual se termina";
             this.rbAgregada.UseVisualStyleBackColor = true;
             this.rbAgregada.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
@@ -991,38 +1023,6 @@
             this.tabControl1.Size = new System.Drawing.Size(554, 498);
             this.tabControl1.TabIndex = 9;
             // 
-            // panelProceso2Sub
-            // 
-            this.panelProceso2Sub.Controls.Add(this.rbSoldadura2);
-            this.panelProceso2Sub.Controls.Add(this.rbSoldadura1);
-            this.panelProceso2Sub.Enabled = false;
-            this.panelProceso2Sub.Location = new System.Drawing.Point(14, 24);
-            this.panelProceso2Sub.Name = "panelProceso2Sub";
-            this.panelProceso2Sub.Size = new System.Drawing.Size(112, 45);
-            this.panelProceso2Sub.TabIndex = 3;
-            // 
-            // rbSoldadura2
-            // 
-            this.rbSoldadura2.AutoSize = true;
-            this.rbSoldadura2.Location = new System.Drawing.Point(3, 26);
-            this.rbSoldadura2.Name = "rbSoldadura2";
-            this.rbSoldadura2.Size = new System.Drawing.Size(73, 17);
-            this.rbSoldadura2.TabIndex = 4;
-            this.rbSoldadura2.TabStop = true;
-            this.rbSoldadura2.Text = "Soldadura";
-            this.rbSoldadura2.UseVisualStyleBackColor = true;
-            // 
-            // rbSoldadura1
-            // 
-            this.rbSoldadura1.AutoSize = true;
-            this.rbSoldadura1.Location = new System.Drawing.Point(3, 3);
-            this.rbSoldadura1.Name = "rbSoldadura1";
-            this.rbSoldadura1.Size = new System.Drawing.Size(108, 17);
-            this.rbSoldadura1.TabIndex = 3;
-            this.rbSoldadura1.TabStop = true;
-            this.rbSoldadura1.Text = "Soldadura blanda";
-            this.rbSoldadura1.UseVisualStyleBackColor = true;
-            // 
             // CondicionalPieza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1047,6 +1047,8 @@
             this.gbProcesoSeparado.ResumeLayout(false);
             this.panelProceso2.ResumeLayout(false);
             this.panelProceso2.PerformLayout();
+            this.panelProceso2Sub.ResumeLayout(false);
+            this.panelProceso2Sub.PerformLayout();
             this.panelProceso1.ResumeLayout(false);
             this.panelProceso1.PerformLayout();
             this.gbPlastico.ResumeLayout(false);
@@ -1074,8 +1076,6 @@
             this.grupoGeneral.ResumeLayout(false);
             this.grupoGeneral.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            this.panelProceso2Sub.ResumeLayout(false);
-            this.panelProceso2Sub.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

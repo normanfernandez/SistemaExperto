@@ -28,6 +28,7 @@ namespace SistemaExperto
         private LinkedListNode<Pieza> PiezaActual;
         #endregion
 
+        #region Evento Form load
         private void Form1_Load(object sender, EventArgs e)
         {
             this.LabelPiezaActual.Text = PiezaActual.Value.NombreNumeroPieza + " de " + Piezas.Count.ToString();
@@ -42,6 +43,7 @@ namespace SistemaExperto
             this.Text = Idiomas.SystemLanguage.SelectedLanguage().MainTitle;
           */
         }
+        #endregion
 
         #region Eventos RadioButtons
         private void rbHandlingSeccion1_CheckedChanged(object sender, EventArgs e)
@@ -71,6 +73,7 @@ namespace SistemaExperto
             panelSeccion4.Enabled = true;
             grupoGeneral.Enabled = false;
         }
+
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             panelInsercion1.Enabled = true;
@@ -90,6 +93,31 @@ namespace SistemaExperto
             gbExtra.Enabled = false;
         }
 
+        private void rbProcesoSinAmarre_CheckedChanged(object sender, EventArgs e)
+        {
+            panelInsercion2.Enabled = true;
+            chProcesoMetalurgico.Enabled = false;
+            panelProceso2.Enabled = false;
+            panelProceso1.Enabled = false;
+            chDeformacionPlastica2.Enabled = false;
+        }
+
+        private void rbProcesoNoMecanico_CheckedChanged(object sender, EventArgs e)
+        {
+            panelSeccion2Sub.Enabled = false;
+            panelProceso1.Enabled = false;
+            chDeformacionPlastica2.Enabled = false;
+            chProcesoMetalurgico.Enabled = true;
+        }
+
+        private void rbProcesoMecanico_CheckedChanged(object sender, EventArgs e)
+        {
+            panelSeccion2Sub.Enabled = false;
+            chDeformacionPlastica2.Enabled = true;
+            chProcesoMetalurgico.Enabled = false;
+            panelProceso2.Enabled = false;
+        }
+
         #endregion
 
         #region Eventos checkbox
@@ -107,6 +135,28 @@ namespace SistemaExperto
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             grupoGeneral.Enabled = checkBox1.Enabled = !(panelSeccion2Sub.Enabled = checkBox2.Checked);
+        }
+
+        private void chTornillo_CheckedChanged(object sender, EventArgs e)
+        {
+            gbPlastico.Enabled = false;
+            chDeformacionPlastica.Enabled = !chTornillo.Checked;
+            chDeformacionPlastica.Checked = false;
+        }
+
+        private void chDeformacionPlastica2_CheckedChanged(object sender, EventArgs e)
+        {
+            panelProceso1.Enabled = chDeformacionPlastica2.Checked;
+        }
+
+        private void chMaterialAdicional_CheckedChanged(object sender, EventArgs e)
+        {
+            panelProceso2Sub.Enabled = chMaterialAdicional.Checked;
+        }
+
+        private void chProcesoMetalurgico_CheckedChanged(object sender, EventArgs e)
+        {
+            panelProceso2.Enabled = chProcesoMetalurgico.Checked;
         }
         #endregion
 
@@ -130,6 +180,8 @@ namespace SistemaExperto
                 RevisarCondiciones();
                 this.PiezaActual.Value.CrearAnguloPieza(this.tabPage3.Controls.OfType<RadioButton>().Single(rb => rb.Checked).TabIndex);
                 this.PiezaActual.Value.NombrePieza = this.nombrePiezaText.Text;
+                this.PiezaActual.Value.Largo = double.Parse(largoText.Text);
+                this.PiezaActual.Value.Ancho = double.Parse(anchoText.Text);
                 CalcularTiempoManejo(PiezaActual.Value);
                 CalcularTiempoInsercion(PiezaActual.Value);
                 if (PiezaActual.Next != null)
@@ -192,6 +244,16 @@ namespace SistemaExperto
                 throw new IncompleteSelectionException();
             if(gbPlastico.Enabled && !gbPlastico.Controls.OfType<RadioButton>().Any(rb => rb.Checked))
                 throw new IncompleteSelectionException();
+            /*
+             * Division para la parte de abajo
+             * de la pagina 2
+             */
+            if(panelProceso1.Enabled && !panelProceso1.Controls.OfType<RadioButton>().Any(rb => rb.Checked))
+                throw new IncompleteSelectionException();
+            if(panelInsercion2Sub.Enabled && !panelInsercion2Sub.Controls.OfType<RadioButton>().Any(rb => rb.Checked))
+                throw new IncompleteSelectionException();
+            if (panelProceso2Sub.Enabled && !panelProceso2Sub.Controls.OfType<RadioButton>().Any(rb => rb.Checked))
+                throw new IncompleteSelectionException();
             #endregion
 
             #region Pagina 3
@@ -240,9 +302,16 @@ namespace SistemaExperto
                 ch.Checked = false;
             foreach (var rad in panelInsercion1Sub2.Controls.OfType<RadioButton>())
                 rad.Checked = false;
+            foreach (var rad in panelInsercion2Sub.Controls.OfType<RadioButton>())
+                rad.Checked = false;
+            foreach (var rad in gbPlastico.Controls.OfType<RadioButton>())
+                rad.Checked = false;
             foreach (var ch in gbExtra.Controls.OfType<CheckBox>())
                 ch.Checked = false;
             panelInsercion1.Enabled = false;
+            panelInsercion2.Enabled = false;
+            gbPlastico.Enabled = false;
+            gbProcesoSeparado.Enabled = false;
             #endregion
 
             #region Pagina 3
@@ -453,52 +522,6 @@ namespace SistemaExperto
         }
 
         #endregion
-
-        private void chTornillo_CheckedChanged(object sender, EventArgs e)
-        {
-            gbPlastico.Enabled = false;
-            chDeformacionPlastica.Enabled = !chTornillo.Checked;
-            chDeformacionPlastica.Checked = false;
-        }
-
-        private void chDeformacionPlastica2_CheckedChanged(object sender, EventArgs e)
-        {
-            panelProceso1.Enabled = chDeformacionPlastica2.Checked;
-        }
-
-        private void rbProcesoSinAmarre_CheckedChanged(object sender, EventArgs e)
-        {
-            panelInsercion2.Enabled = true;
-            chProcesoMetalurgico.Enabled = false;
-            panelProceso2.Enabled = false;
-            panelProceso1.Enabled = false;
-            chDeformacionPlastica2.Enabled = false;
-        }
-
-        private void rbProcesoNoMecanico_CheckedChanged(object sender, EventArgs e)
-        {
-            panelSeccion2Sub.Enabled = false;
-            panelProceso1.Enabled = false;
-            chDeformacionPlastica2.Enabled = false;
-            chProcesoMetalurgico.Enabled = true;
-        }
-
-        private void rbProcesoMecanico_CheckedChanged(object sender, EventArgs e)
-        {
-            panelSeccion2Sub.Enabled = false;
-            chDeformacionPlastica2.Enabled = true;
-            chProcesoMetalurgico.Enabled = false;
-            panelProceso2.Enabled = false;
-        }
-
-        private void chMaterialAdicional_CheckedChanged(object sender, EventArgs e)
-        {
-            panelProceso2Sub.Enabled = chMaterialAdicional.Checked;
-        }
-
-        private void chProcesoMetalurgico_CheckedChanged(object sender, EventArgs e)
-        {
-            panelProceso2.Enabled = chProcesoMetalurgico.Checked;
-        }
+      
     }
 }
