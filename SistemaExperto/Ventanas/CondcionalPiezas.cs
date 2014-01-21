@@ -404,7 +404,7 @@ namespace SistemaExperto
                     }
                     else 
                     {
-                        if (!checkBox2.Checked)
+                        if (!checkBox1.Checked)
                         {
                             if (rbFacil.Checked)
                                 columna = p.Ancho > 0.25 ? 0 : 1;
@@ -522,6 +522,11 @@ namespace SistemaExperto
         }
 
         #endregion
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
       
     }
 }

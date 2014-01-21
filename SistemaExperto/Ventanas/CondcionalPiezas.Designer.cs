@@ -110,6 +110,10 @@
             this.rbHandlingSeccion2 = new System.Windows.Forms.RadioButton();
             this.rbHandlingSeccion1 = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.gpEsencial = new System.Windows.Forms.GroupBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.tabPage3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -131,6 +135,7 @@
             this.panelSeccion2Sub.SuspendLayout();
             this.grupoGeneral.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.gpEsencial.SuspendLayout();
             this.SuspendLayout();
             // 
             // LabelPiezaActual
@@ -165,6 +170,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.gpEsencial);
             this.tabPage3.Controls.Add(this.groupBox1);
             this.tabPage3.Controls.Add(this.nombrePiezaText);
             this.tabPage3.Controls.Add(this.label5);
@@ -251,7 +257,7 @@
             // 
             // nombrePiezaText
             // 
-            this.nombrePiezaText.Location = new System.Drawing.Point(135, 14);
+            this.nombrePiezaText.Location = new System.Drawing.Point(153, 14);
             this.nombrePiezaText.Name = "nombrePiezaText";
             this.nombrePiezaText.Size = new System.Drawing.Size(100, 20);
             this.nombrePiezaText.TabIndex = 17;
@@ -260,11 +266,13 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(27, 17);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 13);
+            this.label5.Size = new System.Drawing.Size(121, 13);
             this.label5.TabIndex = 16;
             this.label5.Text = "Nombre de la Pieza:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -967,9 +975,10 @@
             // rbHandlingSeccion4
             // 
             this.rbHandlingSeccion4.AutoSize = true;
+            this.rbHandlingSeccion4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbHandlingSeccion4.Location = new System.Drawing.Point(6, 183);
             this.rbHandlingSeccion4.Name = "rbHandlingSeccion4";
-            this.rbHandlingSeccion4.Size = new System.Drawing.Size(381, 17);
+            this.rbHandlingSeccion4.Size = new System.Drawing.Size(454, 17);
             this.rbHandlingSeccion4.TabIndex = 4;
             this.rbHandlingSeccion4.Text = "Se requiere dos manos para manipular y transportar debido a que es grande";
             this.rbHandlingSeccion4.UseVisualStyleBackColor = true;
@@ -978,9 +987,10 @@
             // rbHandlingSeccion3
             // 
             this.rbHandlingSeccion3.AutoSize = true;
+            this.rbHandlingSeccion3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbHandlingSeccion3.Location = new System.Drawing.Point(6, 160);
             this.rbHandlingSeccion3.Name = "rbHandlingSeccion3";
-            this.rbHandlingSeccion3.Size = new System.Drawing.Size(287, 17);
+            this.rbHandlingSeccion3.Size = new System.Drawing.Size(339, 17);
             this.rbHandlingSeccion3.TabIndex = 3;
             this.rbHandlingSeccion3.Text = "Usa dos manos para la manipulacion pero no es grande";
             this.rbHandlingSeccion3.UseVisualStyleBackColor = true;
@@ -989,9 +999,10 @@
             // rbHandlingSeccion2
             // 
             this.rbHandlingSeccion2.AutoSize = true;
+            this.rbHandlingSeccion2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbHandlingSeccion2.Location = new System.Drawing.Point(6, 29);
             this.rbHandlingSeccion2.Name = "rbHandlingSeccion2";
-            this.rbHandlingSeccion2.Size = new System.Drawing.Size(456, 17);
+            this.rbHandlingSeccion2.Size = new System.Drawing.Size(543, 17);
             this.rbHandlingSeccion2.TabIndex = 2;
             this.rbHandlingSeccion2.Text = "La parte se puede agarrar con una mano pero solo con el uso de herramientas como " +
                 "pinzas";
@@ -1002,9 +1013,10 @@
             // 
             this.rbHandlingSeccion1.AutoSize = true;
             this.rbHandlingSeccion1.Checked = true;
+            this.rbHandlingSeccion1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbHandlingSeccion1.Location = new System.Drawing.Point(6, 6);
             this.rbHandlingSeccion1.Name = "rbHandlingSeccion1";
-            this.rbHandlingSeccion1.Size = new System.Drawing.Size(399, 17);
+            this.rbHandlingSeccion1.Size = new System.Drawing.Size(476, 17);
             this.rbHandlingSeccion1.TabIndex = 1;
             this.rbHandlingSeccion1.TabStop = true;
             this.rbHandlingSeccion1.Text = "La parte se puede agarrar y manipular con una mano sin el uso de herramientas";
@@ -1022,6 +1034,48 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(554, 498);
             this.tabControl1.TabIndex = 9;
+            // 
+            // gpEsencial
+            // 
+            this.gpEsencial.Controls.Add(this.checkBox7);
+            this.gpEsencial.Controls.Add(this.checkBox6);
+            this.gpEsencial.Controls.Add(this.checkBox5);
+            this.gpEsencial.Location = new System.Drawing.Point(259, 17);
+            this.gpEsencial.Name = "gpEsencial";
+            this.gpEsencial.Size = new System.Drawing.Size(281, 117);
+            this.gpEsencial.TabIndex = 19;
+            this.gpEsencial.TabStop = false;
+            this.gpEsencial.Text = "Esencialidad de la pieza";
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(21, 20);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(166, 17);
+            this.checkBox5.TabIndex = 0;
+            this.checkBox5.Text = "Material diferente a los demas";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(21, 43);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(241, 17);
+            this.checkBox6.TabIndex = 1;
+            this.checkBox6.Text = "Movimiento relativo con respecto a los demas";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(21, 66);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(224, 17);
+            this.checkBox7.TabIndex = 2;
+            this.checkBox7.Text = "Debe ser separada para permitir ensamble";
+            this.checkBox7.UseVisualStyleBackColor = true;
             // 
             // CondicionalPieza
             // 
@@ -1076,6 +1130,8 @@
             this.grupoGeneral.ResumeLayout(false);
             this.grupoGeneral.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.gpEsencial.ResumeLayout(false);
+            this.gpEsencial.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1164,6 +1220,10 @@
         private System.Windows.Forms.Panel panelProceso2Sub;
         private System.Windows.Forms.RadioButton rbSoldadura2;
         private System.Windows.Forms.RadioButton rbSoldadura1;
+        private System.Windows.Forms.GroupBox gpEsencial;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox checkBox5;
     }
 }
 
