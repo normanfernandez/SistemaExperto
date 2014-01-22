@@ -25,6 +25,20 @@ namespace SistemaExperto
         }
         #endregion
 
+        public void ReiniciarEstado()
+        {
+            this._alfa = null;
+            this._beta = null;
+            this._esencial = false;
+            this._ancho = 0;
+            this._largo = 0;
+            this._insertionCode = "";
+            this._handlingCode = "";
+            this._handlingTime = 0;
+            this._insertionTime = 0;
+            this._nombre = "";
+        }
+
         #region Atributos
         private int _numero;
         private string _nombre;
@@ -37,6 +51,7 @@ namespace SistemaExperto
         private double _insertionTime;
         private string _handlingCode;
         private string _insertionCode;
+        private bool _esencial;
         #endregion
 
         #region Metodos
@@ -52,6 +67,7 @@ namespace SistemaExperto
         public string HandlingCode { get { return this._handlingCode; } set { this._handlingCode = value; } }
         public double InsertionTime { get { return this._insertionTime; } set { this._insertionTime = value; } }
         public string InsertionCode { get { return this._insertionCode; } set { this._insertionCode = value; } }
+        public bool EsEsencial { get { return this._esencial; } set { this._esencial = value; } }
         //////////////////////////
 
         //Metodos para dar valores
@@ -64,13 +80,7 @@ namespace SistemaExperto
             this._alfa = arrConstantes[indice - 1][0];
             this._beta = arrConstantes[indice - 1][1];
         }
-        public void ReiniciarEstado() 
-        {
-            this._alfa = null;
-            this._beta = null;
-
-            this._nombre = "";
-        }
+        
         ///////////////////////////
         #endregion
     }

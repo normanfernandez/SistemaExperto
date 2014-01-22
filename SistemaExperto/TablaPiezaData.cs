@@ -43,9 +43,9 @@ namespace SistemaExperto
             return HANDLING_TIME[fila,columna];
         }
 
-        public static double InsertionTime(Pieza pieza) 
+        public static double InsertionTime(int fila, int columna) 
         {
-            return 0.0;
+            return INSERTION_TIME[fila, columna];
         }
     }
 }

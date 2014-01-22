@@ -192,6 +192,8 @@ namespace SistemaExperto
                 this.PiezaActual.Value.Ancho = double.Parse(anchoText.Text);
                 CalcularTiempoManejo(PiezaActual.Value);
                 CalcularTiempoInsercion(PiezaActual.Value);
+                if (gbEsencial.Controls.OfType<CheckBox>().Any(ch => ch.Checked))
+                    this.PiezaActual.Value.EsEsencial = true;
                 if (PiezaActual.Next != null)
                 {
                     PiezaActual = PiezaActual.Next;
@@ -203,6 +205,9 @@ namespace SistemaExperto
                 }
                 else 
                 {
+                    if (!Piezas.Any(p => p.EsEsencial))
+                        throw new IncompleteSelectionException("No hay por lo menos una pieza esencial!");
+
                     DialogResult dialogResult = MessageBox.Show("Mostrar Resultados?", "", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
@@ -528,14 +533,32 @@ namespace SistemaExperto
                     }
                 }
             }
-            //Caso ultima sellecion
+            //Caso ultima seccion
             else 
             {
-            
+                if(rbProcesoSinAmarre.Checked)
+                {
+                    columna = rbSubEnsamble.Checked ? 8 : 9;
+                }
+                else if (rbProcesoMecanico.Checked)
+                {
+                    if (chDeformacionPlastica2.Checked)
+                        columna = 3;
+                    else
+                        columna = panelProceso1.Controls.OfType<RadioButton>().Single(rb => rb.Checked).TabIndex;
+                } 
+                else
+                {
+                    if(chProcesoMetalurgico.Checked)
+                        columna = chMaterialAdicional.Checked ? (rbSoldadura1.Checked ? 5 : 6) : 4;
+                    else
+                        columna = 7;
+                }
             }
             #endregion
 
             p.InsertionCode = fila.ToString() + columna.ToString();
+            p.InsertionTime = TablaPiezaData.InsertionTime(fila, columna);
         }
         #endregion
 

@@ -33,6 +33,10 @@
             this.botonAlante = new System.Windows.Forms.Button();
             this.botonAtras = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.gbEsencial = new System.Windows.Forms.GroupBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -110,11 +114,8 @@
             this.rbHandlingSeccion2 = new System.Windows.Forms.RadioButton();
             this.rbHandlingSeccion1 = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.gpEsencial = new System.Windows.Forms.GroupBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.tabPage3.SuspendLayout();
+            this.gbEsencial.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
@@ -135,7 +136,6 @@
             this.panelSeccion2Sub.SuspendLayout();
             this.grupoGeneral.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.gpEsencial.SuspendLayout();
             this.SuspendLayout();
             // 
             // LabelPiezaActual
@@ -170,7 +170,7 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.gpEsencial);
+            this.tabPage3.Controls.Add(this.gbEsencial);
             this.tabPage3.Controls.Add(this.groupBox1);
             this.tabPage3.Controls.Add(this.nombrePiezaText);
             this.tabPage3.Controls.Add(this.label5);
@@ -189,6 +189,48 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Pagina 3";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // gbEsencial
+            // 
+            this.gbEsencial.Controls.Add(this.checkBox7);
+            this.gbEsencial.Controls.Add(this.checkBox6);
+            this.gbEsencial.Controls.Add(this.checkBox5);
+            this.gbEsencial.Location = new System.Drawing.Point(259, 17);
+            this.gbEsencial.Name = "gbEsencial";
+            this.gbEsencial.Size = new System.Drawing.Size(281, 117);
+            this.gbEsencial.TabIndex = 19;
+            this.gbEsencial.TabStop = false;
+            this.gbEsencial.Text = "Esencialidad de la pieza";
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(21, 66);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(224, 17);
+            this.checkBox7.TabIndex = 2;
+            this.checkBox7.Text = "Debe ser separada para permitir ensamble";
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(21, 43);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(241, 17);
+            this.checkBox6.TabIndex = 1;
+            this.checkBox6.Text = "Movimiento relativo con respecto a los demas";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(21, 20);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(166, 17);
+            this.checkBox5.TabIndex = 0;
+            this.checkBox5.Text = "Material diferente a los demas";
+            this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -261,7 +303,6 @@
             this.nombrePiezaText.Name = "nombrePiezaText";
             this.nombrePiezaText.Size = new System.Drawing.Size(100, 20);
             this.nombrePiezaText.TabIndex = 17;
-            this.nombrePiezaText.Text = "lel";
             // 
             // label5
             // 
@@ -294,12 +335,10 @@
             // rbPieza6
             // 
             this.rbPieza6.AutoSize = true;
-            this.rbPieza6.Checked = true;
             this.rbPieza6.Location = new System.Drawing.Point(384, 337);
             this.rbPieza6.Name = "rbPieza6";
             this.rbPieza6.Size = new System.Drawing.Size(14, 13);
             this.rbPieza6.TabIndex = 6;
-            this.rbPieza6.TabStop = true;
             this.rbPieza6.UseVisualStyleBackColor = true;
             // 
             // rbPieza5
@@ -446,7 +485,7 @@
             // rbTornillo
             // 
             this.rbTornillo.AutoSize = true;
-            this.rbTornillo.Location = new System.Drawing.Point(4, 52);
+            this.rbTornillo.Location = new System.Drawing.Point(4, 54);
             this.rbTornillo.Name = "rbTornillo";
             this.rbTornillo.Size = new System.Drawing.Size(110, 17);
             this.rbTornillo.TabIndex = 2;
@@ -761,12 +800,10 @@
             // rbAgregada
             // 
             this.rbAgregada.AutoSize = true;
-            this.rbAgregada.Checked = true;
             this.rbAgregada.Location = new System.Drawing.Point(26, 6);
             this.rbAgregada.Name = "rbAgregada";
             this.rbAgregada.Size = new System.Drawing.Size(242, 17);
             this.rbAgregada.TabIndex = 0;
-            this.rbAgregada.TabStop = true;
             this.rbAgregada.Text = "Parte agregada: proceso en el cual se termina";
             this.rbAgregada.UseVisualStyleBackColor = true;
             this.rbAgregada.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
@@ -962,12 +999,10 @@
             // rbFacil
             // 
             this.rbFacil.AutoSize = true;
-            this.rbFacil.Checked = true;
             this.rbFacil.Location = new System.Drawing.Point(7, 19);
             this.rbFacil.Name = "rbFacil";
             this.rbFacil.Size = new System.Drawing.Size(168, 17);
             this.rbFacil.TabIndex = 0;
-            this.rbFacil.TabStop = true;
             this.rbFacil.Text = "Es facil de Agarrar y Manipular";
             this.rbFacil.UseVisualStyleBackColor = true;
             // 
@@ -1011,13 +1046,11 @@
             // rbHandlingSeccion1
             // 
             this.rbHandlingSeccion1.AutoSize = true;
-            this.rbHandlingSeccion1.Checked = true;
             this.rbHandlingSeccion1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbHandlingSeccion1.Location = new System.Drawing.Point(6, 6);
             this.rbHandlingSeccion1.Name = "rbHandlingSeccion1";
             this.rbHandlingSeccion1.Size = new System.Drawing.Size(476, 17);
             this.rbHandlingSeccion1.TabIndex = 1;
-            this.rbHandlingSeccion1.TabStop = true;
             this.rbHandlingSeccion1.Text = "La parte se puede agarrar y manipular con una mano sin el uso de herramientas";
             this.rbHandlingSeccion1.UseVisualStyleBackColor = true;
             this.rbHandlingSeccion1.CheckedChanged += new System.EventHandler(this.rbHandlingSeccion1_CheckedChanged);
@@ -1033,48 +1066,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(554, 498);
             this.tabControl1.TabIndex = 9;
-            // 
-            // gpEsencial
-            // 
-            this.gpEsencial.Controls.Add(this.checkBox7);
-            this.gpEsencial.Controls.Add(this.checkBox6);
-            this.gpEsencial.Controls.Add(this.checkBox5);
-            this.gpEsencial.Location = new System.Drawing.Point(259, 17);
-            this.gpEsencial.Name = "gpEsencial";
-            this.gpEsencial.Size = new System.Drawing.Size(281, 117);
-            this.gpEsencial.TabIndex = 19;
-            this.gpEsencial.TabStop = false;
-            this.gpEsencial.Text = "Esencialidad de la pieza";
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(21, 20);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(166, 17);
-            this.checkBox5.TabIndex = 0;
-            this.checkBox5.Text = "Material diferente a los demas";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(21, 43);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(241, 17);
-            this.checkBox6.TabIndex = 1;
-            this.checkBox6.Text = "Movimiento relativo con respecto a los demas";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(21, 66);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(224, 17);
-            this.checkBox7.TabIndex = 2;
-            this.checkBox7.Text = "Debe ser separada para permitir ensamble";
-            this.checkBox7.UseVisualStyleBackColor = true;
             // 
             // CondicionalPieza
             // 
@@ -1092,6 +1083,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.gbEsencial.ResumeLayout(false);
+            this.gbEsencial.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1129,8 +1122,6 @@
             this.grupoGeneral.ResumeLayout(false);
             this.grupoGeneral.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            this.gpEsencial.ResumeLayout(false);
-            this.gpEsencial.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1219,7 +1210,7 @@
         private System.Windows.Forms.Panel panelProceso2Sub;
         private System.Windows.Forms.RadioButton rbSoldadura2;
         private System.Windows.Forms.RadioButton rbSoldadura1;
-        private System.Windows.Forms.GroupBox gpEsencial;
+        private System.Windows.Forms.GroupBox gbEsencial;
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.CheckBox checkBox5;
