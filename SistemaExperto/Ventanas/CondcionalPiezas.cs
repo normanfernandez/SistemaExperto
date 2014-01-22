@@ -158,6 +158,14 @@ namespace SistemaExperto
         {
             panelProceso2.Enabled = chProcesoMetalurgico.Checked;
         }
+
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+            gbPlastico.Enabled = chDeformacionPlastica.Checked;
+            chTornillo.Enabled = !chDeformacionPlastica.Checked;
+            chTornillo.Checked = false;
+
+        }
         #endregion
 
         #region Evento Buttons
@@ -495,17 +503,35 @@ namespace SistemaExperto
             #endregion
 
             #region Numero de la derecha (columna)
-            //Sacando numero columna si es de la primera seccion
-            if(!chAseguradaInmediato.Checked)
+            if (rbAgregada.Checked)
             {
-                columna = (chPresion.Checked ? 6 : 0);
-                columna += (!chDificilAlinear.Checked ? 0 : 2);
-                columna += (chResistencia.Checked ? 1 : 0);
+                //Sacando numero columna si es de la primera seccion
+                if (!chAseguradaInmediato.Checked)
+                {
+                    columna = (chPresion.Checked ? 6 : 0);
+                    columna += (!chDificilAlinear.Checked ? 0 : 2);
+                    columna += (chResistencia.Checked ? 1 : 0);
+                }
+                //Sacando numero de columna en caso de ser la segunda seccion
+                else
+                {
+                    if (chDeformacionPlastica.Checked)
+                    {
+                        columna = rbRemache.Checked ? 5 : 2;
+                        columna += !chDificilAlinear.Checked ? 0 :
+                            (chResistencia.Checked ? 2 : 1);
+                    }
+                    else
+                    {
+                        columna = rbTornillo.Checked ? 8 : 0;
+                        columna += !chDificilAlinear.Checked ? 0 : 1;
+                    }
+                }
             }
-            else
+            //Caso ultima sellecion
+            else 
             {
-
-                columna = 0;
+            
             }
             #endregion
 
@@ -513,20 +539,6 @@ namespace SistemaExperto
         }
         #endregion
 
-        private void checkBox5_CheckedChanged(object sender, EventArgs e)
-        {
-            gbPlastico.Enabled = chDeformacionPlastica.Checked;
-            chTornillo.Enabled = !chDeformacionPlastica.Checked;
-            chTornillo.Checked = false;
-
-        }
-
         #endregion
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-      
     }
 }

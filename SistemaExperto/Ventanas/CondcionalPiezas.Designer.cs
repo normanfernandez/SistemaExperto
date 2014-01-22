@@ -272,7 +272,6 @@
             this.label5.Size = new System.Drawing.Size(121, 13);
             this.label5.TabIndex = 16;
             this.label5.Text = "Nombre de la Pieza:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
