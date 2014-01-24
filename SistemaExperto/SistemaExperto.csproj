@@ -54,6 +54,11 @@
     <Compile Include="Idiomas\SystemLanguage.cs" />
     <Compile Include="IncompleteSelectionException.cs" />
     <Compile Include="Piezas\PiezaManager.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="TablaPiezaData.cs" />
     <Compile Include="Ventanas\CantidadPiezas.cs">
       <SubType>Form</SubType>
@@ -84,14 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Ventanas\ResultadoPiezas.resx">
       <DependentUpon>ResultadoPiezas.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +106,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Piezas\Imagenes\akinator.png" />
     <Content Include="Piezas\Imagenes\Piezas.png" />
     <Content Include="Piezas\Imagenes\pieza_1.png" />
     <Content Include="Piezas\Imagenes\pieza_2.png" />

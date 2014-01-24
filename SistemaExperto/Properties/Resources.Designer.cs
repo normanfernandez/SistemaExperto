@@ -63,6 +63,16 @@ namespace SistemaExperto.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap akinator {
+            get {
+                object obj = ResourceManager.GetObject("akinator", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Piezas {
             get {
                 object obj = ResourceManager.GetObject("Piezas", resourceCulture);

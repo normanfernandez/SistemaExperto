@@ -7,3 +7,4 @@ C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Release\Sistem
 C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Release\SistemaExperto.csproj.GenerateResource.Cache
 C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Release\SistemaExperto.exe
 C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Release\SistemaExperto.pdb
+C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Release\SistemaExperto.csprojResolveAssemblyReference.cache
