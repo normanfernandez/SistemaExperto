@@ -25,20 +25,6 @@ namespace SistemaExperto
         }
         #endregion
 
-        public void ReiniciarEstado()
-        {
-            this._alfa = null;
-            this._beta = null;
-            this._esencial = false;
-            this._ancho = 0;
-            this._largo = 0;
-            this._insertionCode = "";
-            this._handlingCode = "";
-            this._handlingTime = 0;
-            this._insertionTime = 0;
-            this._nombre = "";
-        }
-
         #region Atributos
         private int _numero;
         private string _nombre;
@@ -79,6 +65,20 @@ namespace SistemaExperto
             int [][] arrConstantes = { PIEZA_1, PIEZA_2, PIEZA_3, PIEZA_4, PIEZA_5, PIEZA_6 };
             this._alfa = arrConstantes[indice - 1][0];
             this._beta = arrConstantes[indice - 1][1];
+        }
+
+        public void ReiniciarEstado()
+        {
+            this._alfa = null;
+            this._beta = null;
+            this._esencial = false;
+            this._ancho = 0;
+            this._largo = 0;
+            this._insertionCode = "";
+            this._handlingCode = "";
+            this._handlingTime = 0;
+            this._insertionTime = 0;
+            this._nombre = "";
         }
         
         ///////////////////////////

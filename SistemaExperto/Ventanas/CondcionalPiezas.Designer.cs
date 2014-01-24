@@ -159,6 +159,7 @@
             // 
             // botonAtras
             // 
+            this.botonAtras.Enabled = false;
             this.botonAtras.Location = new System.Drawing.Point(6, 542);
             this.botonAtras.Name = "botonAtras";
             this.botonAtras.Size = new System.Drawing.Size(75, 23);
@@ -714,7 +715,7 @@
             // chTornillo
             // 
             this.chTornillo.AutoSize = true;
-            this.chTornillo.Location = new System.Drawing.Point(8, 134);
+            this.chTornillo.Location = new System.Drawing.Point(8, 130);
             this.chTornillo.Name = "chTornillo";
             this.chTornillo.Size = new System.Drawing.Size(169, 17);
             this.chTornillo.TabIndex = 7;
@@ -725,7 +726,7 @@
             // chDeformacionPlastica
             // 
             this.chDeformacionPlastica.AutoSize = true;
-            this.chDeformacionPlastica.Location = new System.Drawing.Point(8, 110);
+            this.chDeformacionPlastica.Location = new System.Drawing.Point(8, 107);
             this.chDeformacionPlastica.Name = "chDeformacionPlastica";
             this.chDeformacionPlastica.Size = new System.Drawing.Size(126, 17);
             this.chDeformacionPlastica.TabIndex = 6;
@@ -737,7 +738,7 @@
             // 
             this.panelInsercion1Sub2.Controls.Add(this.rbObtruidoAnd);
             this.panelInsercion1Sub2.Controls.Add(this.rbObstruidoOr);
-            this.panelInsercion1Sub2.Location = new System.Drawing.Point(8, 43);
+            this.panelInsercion1Sub2.Location = new System.Drawing.Point(12, 17);
             this.panelInsercion1Sub2.Name = "panelInsercion1Sub2";
             this.panelInsercion1Sub2.Size = new System.Drawing.Size(241, 61);
             this.panelInsercion1Sub2.TabIndex = 5;
@@ -778,7 +779,7 @@
             // chAseguradaInmediato
             // 
             this.chAseguradaInmediato.AutoSize = true;
-            this.chAseguradaInmediato.Location = new System.Drawing.Point(8, 26);
+            this.chAseguradaInmediato.Location = new System.Drawing.Point(8, 84);
             this.chAseguradaInmediato.Name = "chAseguradaInmediato";
             this.chAseguradaInmediato.Size = new System.Drawing.Size(140, 17);
             this.chAseguradaInmediato.TabIndex = 3;

@@ -12,6 +12,9 @@ namespace SistemaExperto.Ventanas
 {
     public partial class CantidadPiezas : Form
     {
+        private static string _nombreEnsamble = "";
+        public static string NombreEnsamble { get { return _nombreEnsamble; } set { _nombreEnsamble = value; } }
+
         public CantidadPiezas()
         {
             InitializeComponent();

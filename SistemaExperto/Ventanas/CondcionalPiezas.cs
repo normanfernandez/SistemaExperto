@@ -172,13 +172,12 @@ namespace SistemaExperto
         private void botonAtras_Click(object sender, EventArgs e)
         {
             LimpiarCondiciones();
-            /*if (_numeroPiezaActual == 1)
+            if (PiezaActual.Previous == null)
                 this.botonAtras.Enabled = false;
-            _numeroPiezaActual--;
-            this.LimpiarCondiciones();
-            Piezas[_numeroPiezaActual].ReiniciarEstado();
-            this.PiezaActual.Text = Piezas[_numeroPiezaActual].NombreNumeroPieza
-                        + " de " + Piezas.Count.ToString();*/
+            PiezaActual = PiezaActual.Previous;
+            PiezaActual.Value.ReiniciarEstado();
+            this.LabelPiezaActual.Text = PiezaActual.Value.NombreNumeroPieza
+                        + " de " + Piezas.Count.ToString();
         }
 
         private void botonAlante_Click(object sender, EventArgs e)
@@ -211,7 +210,10 @@ namespace SistemaExperto
                     DialogResult dialogResult = MessageBox.Show("Mostrar Resultados?", "", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
-                        this.Dispose();
+                        this.Hide();
+                        ResultadoPiezas rwin = new ResultadoPiezas(Piezas);
+                        rwin.ShowDialog();
+                        this.Close();
                     }
                     else if (dialogResult == DialogResult.No)
                     {
@@ -328,8 +330,12 @@ namespace SistemaExperto
             #endregion
 
             #region Pagina 3
-            foreach (var rad in this.tabPage3.Controls.OfType<RadioButton>().Where(rb => rb.Checked))
+            foreach (var rad in this.tabPage3.Controls.OfType<RadioButton>())
                 rad.Checked = false;
+            foreach (var ch in this.tabPage3.Controls.OfType<CheckBox>())
+                ch.Checked = false;
+            foreach (var ch in this.gbEsencial.Controls.OfType<CheckBox>())
+                ch.Checked = false;
             this.nombrePiezaText.Text = "";
             this.anchoText.Text = "";
             this.largoText.Text = "";

@@ -28,23 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataPiezas = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.labelNombreEnsable = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataPiezas)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataPiezas
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 23);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(268, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.dataPiezas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataPiezas.Location = new System.Drawing.Point(12, 45);
+            this.dataPiezas.Name = "dataPiezas";
+            this.dataPiezas.Size = new System.Drawing.Size(583, 150);
+            this.dataPiezas.TabIndex = 0;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(235, 208);
+            this.textBox1.Location = new System.Drawing.Point(550, 201);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(45, 20);
             this.textBox1.TabIndex = 1;
@@ -52,23 +53,33 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(162, 211);
+            this.label1.Location = new System.Drawing.Point(477, 204);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Eficiencia %:";
             // 
+            // labelNombreEnsable
+            // 
+            this.labelNombreEnsable.AutoSize = true;
+            this.labelNombreEnsable.Location = new System.Drawing.Point(13, 13);
+            this.labelNombreEnsable.Name = "labelNombreEnsable";
+            this.labelNombreEnsable.Size = new System.Drawing.Size(99, 13);
+            this.labelNombreEnsable.TabIndex = 3;
+            this.labelNombreEnsable.Text = "Nombre Ensamble: ";
+            // 
             // ResultadoPiezas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(292, 273);
+            this.ClientSize = new System.Drawing.Size(629, 280);
+            this.Controls.Add(this.labelNombreEnsable);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataPiezas);
             this.Name = "ResultadoPiezas";
             this.Text = "ResultadoPiezas";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataPiezas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -76,8 +87,9 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataPiezas;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelNombreEnsable;
     }
 }
