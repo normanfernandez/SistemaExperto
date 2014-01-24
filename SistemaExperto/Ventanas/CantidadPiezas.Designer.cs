@@ -54,6 +54,7 @@
             // BotonConfirmarPieza
             // 
             this.BotonConfirmarPieza.BackColor = System.Drawing.Color.Silver;
+            this.BotonConfirmarPieza.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BotonConfirmarPieza.Location = new System.Drawing.Point(86, 237);
             this.BotonConfirmarPieza.Name = "BotonConfirmarPieza";
             this.BotonConfirmarPieza.Size = new System.Drawing.Size(120, 32);
@@ -86,7 +87,7 @@
             this.rbEspanol.AutoSize = true;
             this.rbEspanol.Checked = true;
             this.rbEspanol.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbEspanol.Location = new System.Drawing.Point(29, 13);
+            this.rbEspanol.Location = new System.Drawing.Point(29, 36);
             this.rbEspanol.Name = "rbEspanol";
             this.rbEspanol.Size = new System.Drawing.Size(97, 28);
             this.rbEspanol.TabIndex = 4;
@@ -99,7 +100,7 @@
             // 
             this.rbEnglish.AutoSize = true;
             this.rbEnglish.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbEnglish.Location = new System.Drawing.Point(193, 13);
+            this.rbEnglish.Location = new System.Drawing.Point(193, 36);
             this.rbEnglish.Name = "rbEnglish";
             this.rbEnglish.Size = new System.Drawing.Size(91, 28);
             this.rbEnglish.TabIndex = 5;
@@ -110,12 +111,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(93, 430);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 17);
+            this.label2.Size = new System.Drawing.Size(119, 20);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Felix Olivares";
+            this.label2.Text = "Felix Olivares ™ ";
             // 
             // textBox1
             // 

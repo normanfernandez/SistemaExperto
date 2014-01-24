@@ -115,6 +115,7 @@ namespace SistemaExperto
             panelSeccion2Sub.Enabled = false;
             chDeformacionPlastica2.Enabled = true;
             chProcesoMetalurgico.Enabled = false;
+            panelProceso1.Enabled = true;
             panelProceso2.Enabled = false;
         }
 
@@ -567,6 +568,11 @@ namespace SistemaExperto
             p.InsertionTime = TablaPiezaData.InsertionTime(fila, columna);
         }
         #endregion
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
 
         #endregion
     }

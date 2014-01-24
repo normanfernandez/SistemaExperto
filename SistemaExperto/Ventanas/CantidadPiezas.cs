@@ -30,11 +30,20 @@ namespace SistemaExperto.Ventanas
 
         private void BotonConfirmarPieza_Click(object sender, EventArgs e)
         {
-            Piezas.PiezaManager.Create(Int32.Parse(this.numericUpDown1.Value.ToString()));
-            CondicionalPieza form = new CondicionalPieza();
-            this.Hide();
-            form.ShowDialog();
-            this.Close();
+            try
+            {
+                if (textBox1.Text == "")
+                    throw new IncompleteSelectionException("Falta el nombre!");
+                Piezas.PiezaManager.Create(Int32.Parse(this.numericUpDown1.Value.ToString()));
+                CondicionalPieza form = new CondicionalPieza();
+                this.Hide();
+                form.ShowDialog();
+                this.Close();
+            }
+            catch (Exception ex) 
+            {
+                // se muestra error
+            }
         }
 
         private void rbEspanol_CheckedChanged(object sender, EventArgs e)

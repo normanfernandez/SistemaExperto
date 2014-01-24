@@ -53,7 +53,6 @@
             this.rbPieza4 = new System.Windows.Forms.RadioButton();
             this.rbPieza3 = new System.Windows.Forms.RadioButton();
             this.rbPieza1 = new System.Windows.Forms.RadioButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.gbProcesoSeparado = new System.Windows.Forms.GroupBox();
             this.panelProceso2 = new System.Windows.Forms.Panel();
@@ -112,10 +111,12 @@
             this.rbHandlingSeccion2 = new System.Windows.Forms.RadioButton();
             this.rbHandlingSeccion1 = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage3.SuspendLayout();
             this.gbEsencial.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.gbProcesoSeparado.SuspendLayout();
             this.panelProceso2.SuspendLayout();
@@ -134,12 +135,15 @@
             this.panelSeccion2Sub.SuspendLayout();
             this.grupoGeneral.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // LabelPiezaActual
             // 
             this.LabelPiezaActual.AutoSize = true;
-            this.LabelPiezaActual.Location = new System.Drawing.Point(220, 9);
+            this.LabelPiezaActual.Location = new System.Drawing.Point(9, 9);
             this.LabelPiezaActual.Name = "LabelPiezaActual";
             this.LabelPiezaActual.Size = new System.Drawing.Size(23, 13);
             this.LabelPiezaActual.TabIndex = 9;
@@ -147,28 +151,32 @@
             // 
             // botonAlante
             // 
-            this.botonAlante.Location = new System.Drawing.Point(428, 542);
+            this.botonAlante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonAlante.Location = new System.Drawing.Point(509, 583);
             this.botonAlante.Name = "botonAlante";
-            this.botonAlante.Size = new System.Drawing.Size(75, 23);
+            this.botonAlante.Size = new System.Drawing.Size(107, 32);
             this.botonAlante.TabIndex = 11;
-            this.botonAlante.Text = "siguiente";
+            this.botonAlante.Text = "Siguiente";
             this.botonAlante.UseVisualStyleBackColor = true;
             this.botonAlante.Click += new System.EventHandler(this.botonAlante_Click);
             // 
             // botonAtras
             // 
             this.botonAtras.Enabled = false;
-            this.botonAtras.Location = new System.Drawing.Point(6, 542);
+            this.botonAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonAtras.Location = new System.Drawing.Point(31, 583);
             this.botonAtras.Name = "botonAtras";
-            this.botonAtras.Size = new System.Drawing.Size(75, 23);
+            this.botonAtras.Size = new System.Drawing.Size(107, 32);
             this.botonAtras.TabIndex = 12;
             this.botonAtras.TabStop = false;
-            this.botonAtras.Text = "atras";
+            this.botonAtras.Text = "Atras";
             this.botonAtras.UseVisualStyleBackColor = true;
             this.botonAtras.Click += new System.EventHandler(this.botonAtras_Click);
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.White;
+            this.tabPage3.Controls.Add(this.pictureBox3);
             this.tabPage3.Controls.Add(this.gbEsencial);
             this.tabPage3.Controls.Add(this.groupBox1);
             this.tabPage3.Controls.Add(this.nombrePiezaText);
@@ -181,19 +189,19 @@
             this.tabPage3.Controls.Add(this.rbPieza3);
             this.tabPage3.Controls.Add(this.rbPieza1);
             this.tabPage3.Controls.Add(this.pictureBox1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(546, 472);
+            this.tabPage3.Size = new System.Drawing.Size(581, 508);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Pagina 3";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.Text = "Detalles";
             // 
             // gbEsencial
             // 
             this.gbEsencial.Controls.Add(this.checkBox7);
             this.gbEsencial.Controls.Add(this.checkBox6);
             this.gbEsencial.Controls.Add(this.checkBox5);
+            this.gbEsencial.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbEsencial.Location = new System.Drawing.Point(259, 17);
             this.gbEsencial.Name = "gbEsencial";
             this.gbEsencial.Size = new System.Drawing.Size(281, 117);
@@ -206,7 +214,7 @@
             this.checkBox7.AutoSize = true;
             this.checkBox7.Location = new System.Drawing.Point(21, 66);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(224, 17);
+            this.checkBox7.Size = new System.Drawing.Size(264, 17);
             this.checkBox7.TabIndex = 2;
             this.checkBox7.Text = "Debe ser separada para permitir ensamble";
             this.checkBox7.UseVisualStyleBackColor = true;
@@ -216,7 +224,7 @@
             this.checkBox6.AutoSize = true;
             this.checkBox6.Location = new System.Drawing.Point(21, 43);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(241, 17);
+            this.checkBox6.Size = new System.Drawing.Size(285, 17);
             this.checkBox6.TabIndex = 1;
             this.checkBox6.Text = "Movimiento relativo con respecto a los demas";
             this.checkBox6.UseVisualStyleBackColor = true;
@@ -226,7 +234,7 @@
             this.checkBox5.AutoSize = true;
             this.checkBox5.Location = new System.Drawing.Point(21, 20);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(166, 17);
+            this.checkBox5.Size = new System.Drawing.Size(196, 17);
             this.checkBox5.TabIndex = 0;
             this.checkBox5.Text = "Material diferente a los demas";
             this.checkBox5.UseVisualStyleBackColor = true;
@@ -239,6 +247,7 @@
             this.groupBox1.Controls.Add(this.anchoText);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(30, 59);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 100);
@@ -251,7 +260,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(159, 62);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(23, 13);
+            this.label9.Size = new System.Drawing.Size(25, 13);
             this.label9.TabIndex = 5;
             this.label9.Text = "mm";
             // 
@@ -260,7 +269,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(159, 32);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(23, 13);
+            this.label8.Size = new System.Drawing.Size(25, 13);
             this.label8.TabIndex = 4;
             this.label8.Text = "mm";
             // 
@@ -283,7 +292,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(7, 59);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 13);
+            this.label7.Size = new System.Drawing.Size(43, 13);
             this.label7.TabIndex = 1;
             this.label7.Text = "Largo:";
             // 
@@ -292,7 +301,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(7, 29);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 13);
+            this.label6.Size = new System.Drawing.Size(47, 13);
             this.label6.TabIndex = 0;
             this.label6.Text = "Ancho:";
             // 
@@ -300,7 +309,7 @@
             // 
             this.nombrePiezaText.Location = new System.Drawing.Point(153, 14);
             this.nombrePiezaText.Name = "nombrePiezaText";
-            this.nombrePiezaText.Size = new System.Drawing.Size(100, 20);
+            this.nombrePiezaText.Size = new System.Drawing.Size(100, 23);
             this.nombrePiezaText.TabIndex = 17;
             // 
             // label5
@@ -316,16 +325,18 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(150, 197);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(65, 197);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 13);
+            this.label4.Size = new System.Drawing.Size(286, 24);
             this.label4.TabIndex = 15;
             this.label4.Text = "Elija que forma tiene su pieza";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // rbPieza2
             // 
             this.rbPieza2.AutoSize = true;
-            this.rbPieza2.Location = new System.Drawing.Point(109, 337);
+            this.rbPieza2.Location = new System.Drawing.Point(111, 458);
             this.rbPieza2.Name = "rbPieza2";
             this.rbPieza2.Size = new System.Drawing.Size(14, 13);
             this.rbPieza2.TabIndex = 2;
@@ -334,7 +345,7 @@
             // rbPieza6
             // 
             this.rbPieza6.AutoSize = true;
-            this.rbPieza6.Location = new System.Drawing.Point(384, 337);
+            this.rbPieza6.Location = new System.Drawing.Point(363, 460);
             this.rbPieza6.Name = "rbPieza6";
             this.rbPieza6.Size = new System.Drawing.Size(14, 13);
             this.rbPieza6.TabIndex = 6;
@@ -343,7 +354,7 @@
             // rbPieza5
             // 
             this.rbPieza5.AutoSize = true;
-            this.rbPieza5.Location = new System.Drawing.Point(316, 337);
+            this.rbPieza5.Location = new System.Drawing.Point(298, 458);
             this.rbPieza5.Name = "rbPieza5";
             this.rbPieza5.Size = new System.Drawing.Size(14, 13);
             this.rbPieza5.TabIndex = 5;
@@ -352,7 +363,7 @@
             // rbPieza4
             // 
             this.rbPieza4.AutoSize = true;
-            this.rbPieza4.Location = new System.Drawing.Point(249, 337);
+            this.rbPieza4.Location = new System.Drawing.Point(233, 458);
             this.rbPieza4.Name = "rbPieza4";
             this.rbPieza4.Size = new System.Drawing.Size(14, 13);
             this.rbPieza4.TabIndex = 4;
@@ -361,7 +372,7 @@
             // rbPieza3
             // 
             this.rbPieza3.AutoSize = true;
-            this.rbPieza3.Location = new System.Drawing.Point(180, 337);
+            this.rbPieza3.Location = new System.Drawing.Point(174, 458);
             this.rbPieza3.Name = "rbPieza3";
             this.rbPieza3.Size = new System.Drawing.Size(14, 13);
             this.rbPieza3.TabIndex = 3;
@@ -370,23 +381,15 @@
             // rbPieza1
             // 
             this.rbPieza1.AutoSize = true;
-            this.rbPieza1.Location = new System.Drawing.Point(43, 337);
+            this.rbPieza1.Location = new System.Drawing.Point(55, 458);
             this.rbPieza1.Name = "rbPieza1";
             this.rbPieza1.Size = new System.Drawing.Size(14, 13);
             this.rbPieza1.TabIndex = 1;
             this.rbPieza1.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(30, 233);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(398, 98);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.White;
             this.tabPage2.Controls.Add(this.gbProcesoSeparado);
             this.tabPage2.Controls.Add(this.gbPlastico);
             this.tabPage2.Controls.Add(this.panelInsercion2);
@@ -394,13 +397,12 @@
             this.tabPage2.Controls.Add(this.panelInsercion1);
             this.tabPage2.Controls.Add(this.rbSeparado);
             this.tabPage2.Controls.Add(this.rbAgregada);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(546, 472);
+            this.tabPage2.Size = new System.Drawing.Size(581, 508);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Pagina 2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Text = "Insertion Time";
             // 
             // gbProcesoSeparado
             // 
@@ -440,7 +442,7 @@
             this.rbSoldadura2.AutoSize = true;
             this.rbSoldadura2.Location = new System.Drawing.Point(3, 26);
             this.rbSoldadura2.Name = "rbSoldadura2";
-            this.rbSoldadura2.Size = new System.Drawing.Size(73, 17);
+            this.rbSoldadura2.Size = new System.Drawing.Size(100, 21);
             this.rbSoldadura2.TabIndex = 4;
             this.rbSoldadura2.TabStop = true;
             this.rbSoldadura2.Text = "Soldadura";
@@ -451,7 +453,7 @@
             this.rbSoldadura1.AutoSize = true;
             this.rbSoldadura1.Location = new System.Drawing.Point(3, 3);
             this.rbSoldadura1.Name = "rbSoldadura1";
-            this.rbSoldadura1.Size = new System.Drawing.Size(108, 17);
+            this.rbSoldadura1.Size = new System.Drawing.Size(154, 21);
             this.rbSoldadura1.TabIndex = 3;
             this.rbSoldadura1.TabStop = true;
             this.rbSoldadura1.Text = "Soldadura blanda";
@@ -462,7 +464,7 @@
             this.chMaterialAdicional.AutoSize = true;
             this.chMaterialAdicional.Location = new System.Drawing.Point(4, 8);
             this.chMaterialAdicional.Name = "chMaterialAdicional";
-            this.chMaterialAdicional.Size = new System.Drawing.Size(155, 17);
+            this.chMaterialAdicional.Size = new System.Drawing.Size(230, 21);
             this.chMaterialAdicional.TabIndex = 0;
             this.chMaterialAdicional.Text = "Material adicional requerido";
             this.chMaterialAdicional.UseVisualStyleBackColor = true;
@@ -485,7 +487,7 @@
             this.rbTornillo.AutoSize = true;
             this.rbTornillo.Location = new System.Drawing.Point(4, 54);
             this.rbTornillo.Name = "rbTornillo";
-            this.rbTornillo.Size = new System.Drawing.Size(110, 17);
+            this.rbTornillo.Size = new System.Drawing.Size(161, 21);
             this.rbTornillo.TabIndex = 2;
             this.rbTornillo.TabStop = true;
             this.rbTornillo.Text = "Apriete de Tornillo";
@@ -496,7 +498,7 @@
             this.rbRemache2.AutoSize = true;
             this.rbRemache2.Location = new System.Drawing.Point(4, 28);
             this.rbRemache2.Name = "rbRemache2";
-            this.rbRemache2.Size = new System.Drawing.Size(71, 17);
+            this.rbRemache2.Size = new System.Drawing.Size(93, 21);
             this.rbRemache2.TabIndex = 1;
             this.rbRemache2.TabStop = true;
             this.rbRemache2.Text = "Remache";
@@ -507,7 +509,7 @@
             this.rbUnion.AutoSize = true;
             this.rbUnion.Location = new System.Drawing.Point(4, 4);
             this.rbUnion.Name = "rbUnion";
-            this.rbUnion.Size = new System.Drawing.Size(53, 17);
+            this.rbUnion.Size = new System.Drawing.Size(68, 21);
             this.rbUnion.TabIndex = 0;
             this.rbUnion.TabStop = true;
             this.rbUnion.Text = "Union";
@@ -518,7 +520,7 @@
             this.gbPlastico.Controls.Add(this.rbRemache);
             this.gbPlastico.Controls.Add(this.rbTorsion);
             this.gbPlastico.Enabled = false;
-            this.gbPlastico.Location = new System.Drawing.Point(277, 123);
+            this.gbPlastico.Location = new System.Drawing.Point(362, 123);
             this.gbPlastico.Name = "gbPlastico";
             this.gbPlastico.Size = new System.Drawing.Size(130, 80);
             this.gbPlastico.TabIndex = 8;
@@ -530,7 +532,7 @@
             this.rbRemache.AutoSize = true;
             this.rbRemache.Location = new System.Drawing.Point(7, 44);
             this.rbRemache.Name = "rbRemache";
-            this.rbRemache.Size = new System.Drawing.Size(85, 17);
+            this.rbRemache.Size = new System.Drawing.Size(118, 21);
             this.rbRemache.TabIndex = 1;
             this.rbRemache.TabStop = true;
             this.rbRemache.Text = "Por remache";
@@ -541,7 +543,7 @@
             this.rbTorsion.AutoSize = true;
             this.rbTorsion.Location = new System.Drawing.Point(7, 20);
             this.rbTorsion.Name = "rbTorsion";
-            this.rbTorsion.Size = new System.Drawing.Size(75, 17);
+            this.rbTorsion.Size = new System.Drawing.Size(106, 21);
             this.rbTorsion.TabIndex = 0;
             this.rbTorsion.TabStop = true;
             this.rbTorsion.Text = "Por torsion";
@@ -576,7 +578,7 @@
             this.rbOtrosProcesos.AutoSize = true;
             this.rbOtrosProcesos.Location = new System.Drawing.Point(4, 27);
             this.rbOtrosProcesos.Name = "rbOtrosProcesos";
-            this.rbOtrosProcesos.Size = new System.Drawing.Size(97, 17);
+            this.rbOtrosProcesos.Size = new System.Drawing.Size(138, 21);
             this.rbOtrosProcesos.TabIndex = 1;
             this.rbOtrosProcesos.TabStop = true;
             this.rbOtrosProcesos.Text = "Otros Procesos";
@@ -587,7 +589,7 @@
             this.rbSubEnsamble.AutoSize = true;
             this.rbSubEnsamble.Location = new System.Drawing.Point(4, 3);
             this.rbSubEnsamble.Name = "rbSubEnsamble";
-            this.rbSubEnsamble.Size = new System.Drawing.Size(93, 17);
+            this.rbSubEnsamble.Size = new System.Drawing.Size(130, 21);
             this.rbSubEnsamble.TabIndex = 0;
             this.rbSubEnsamble.TabStop = true;
             this.rbSubEnsamble.Text = "Sub-Ensamble";
@@ -599,7 +601,7 @@
             this.chProcesoMetalurgico.Enabled = false;
             this.chProcesoMetalurgico.Location = new System.Drawing.Point(20, 71);
             this.chProcesoMetalurgico.Name = "chProcesoMetalurgico";
-            this.chProcesoMetalurgico.Size = new System.Drawing.Size(123, 17);
+            this.chProcesoMetalurgico.Size = new System.Drawing.Size(175, 21);
             this.chProcesoMetalurgico.TabIndex = 4;
             this.chProcesoMetalurgico.Text = "Proceso Metalurgico";
             this.chProcesoMetalurgico.UseVisualStyleBackColor = true;
@@ -611,7 +613,7 @@
             this.chDeformacionPlastica2.Enabled = false;
             this.chDeformacionPlastica2.Location = new System.Drawing.Point(20, 24);
             this.chDeformacionPlastica2.Name = "chDeformacionPlastica2";
-            this.chDeformacionPlastica2.Size = new System.Drawing.Size(126, 17);
+            this.chDeformacionPlastica2.Size = new System.Drawing.Size(180, 21);
             this.chDeformacionPlastica2.TabIndex = 3;
             this.chDeformacionPlastica2.Text = "Deformacion Plastica";
             this.chDeformacionPlastica2.UseVisualStyleBackColor = true;
@@ -622,7 +624,7 @@
             this.rbProcesoSinAmarre.AutoSize = true;
             this.rbProcesoSinAmarre.Location = new System.Drawing.Point(12, 94);
             this.rbProcesoSinAmarre.Name = "rbProcesoSinAmarre";
-            this.rbProcesoSinAmarre.Size = new System.Drawing.Size(115, 17);
+            this.rbProcesoSinAmarre.Size = new System.Drawing.Size(167, 21);
             this.rbProcesoSinAmarre.TabIndex = 2;
             this.rbProcesoSinAmarre.TabStop = true;
             this.rbProcesoSinAmarre.Text = "Proceso sin amarre";
@@ -634,7 +636,7 @@
             this.rbProcesoNoMecanico.AutoSize = true;
             this.rbProcesoNoMecanico.Location = new System.Drawing.Point(12, 47);
             this.rbProcesoNoMecanico.Name = "rbProcesoNoMecanico";
-            this.rbProcesoNoMecanico.Size = new System.Drawing.Size(131, 17);
+            this.rbProcesoNoMecanico.Size = new System.Drawing.Size(183, 21);
             this.rbProcesoNoMecanico.TabIndex = 1;
             this.rbProcesoNoMecanico.TabStop = true;
             this.rbProcesoNoMecanico.Text = "Proceso No Mecanico";
@@ -646,7 +648,7 @@
             this.rbProcesoMecanico.AutoSize = true;
             this.rbProcesoMecanico.Location = new System.Drawing.Point(12, 3);
             this.rbProcesoMecanico.Name = "rbProcesoMecanico";
-            this.rbProcesoMecanico.Size = new System.Drawing.Size(114, 17);
+            this.rbProcesoMecanico.Size = new System.Drawing.Size(158, 21);
             this.rbProcesoMecanico.TabIndex = 0;
             this.rbProcesoMecanico.TabStop = true;
             this.rbProcesoMecanico.Text = "Proceso Mecanico";
@@ -659,7 +661,7 @@
             this.gbExtra.Controls.Add(this.chDificilAlinear);
             this.gbExtra.Controls.Add(this.chPresion);
             this.gbExtra.Enabled = false;
-            this.gbExtra.Location = new System.Drawing.Point(277, 24);
+            this.gbExtra.Location = new System.Drawing.Point(356, 24);
             this.gbExtra.Name = "gbExtra";
             this.gbExtra.Size = new System.Drawing.Size(206, 93);
             this.gbExtra.TabIndex = 5;
@@ -671,7 +673,7 @@
             this.chResistencia.AutoSize = true;
             this.chResistencia.Location = new System.Drawing.Point(7, 66);
             this.chResistencia.Name = "chResistencia";
-            this.chResistencia.Size = new System.Drawing.Size(165, 17);
+            this.chResistencia.Size = new System.Drawing.Size(248, 21);
             this.chResistencia.TabIndex = 2;
             this.chResistencia.Text = "Tiene resistencia al insertarse";
             this.chResistencia.UseVisualStyleBackColor = true;
@@ -681,7 +683,7 @@
             this.chDificilAlinear.AutoSize = true;
             this.chDificilAlinear.Location = new System.Drawing.Point(7, 43);
             this.chDificilAlinear.Name = "chDificilAlinear";
-            this.chDificilAlinear.Size = new System.Drawing.Size(100, 17);
+            this.chDificilAlinear.Size = new System.Drawing.Size(145, 21);
             this.chDificilAlinear.TabIndex = 1;
             this.chDificilAlinear.Text = "Dificil de alinear";
             this.chDificilAlinear.UseVisualStyleBackColor = true;
@@ -691,7 +693,7 @@
             this.chPresion.AutoSize = true;
             this.chPresion.Location = new System.Drawing.Point(7, 20);
             this.chPresion.Name = "chPresion";
-            this.chPresion.Size = new System.Drawing.Size(193, 17);
+            this.chPresion.Size = new System.Drawing.Size(288, 21);
             this.chPresion.TabIndex = 0;
             this.chPresion.Text = "Se requiere mantenerse presionada";
             this.chPresion.UseVisualStyleBackColor = true;
@@ -706,15 +708,15 @@
             this.panelInsercion1.Enabled = false;
             this.panelInsercion1.Location = new System.Drawing.Point(18, 29);
             this.panelInsercion1.Name = "panelInsercion1";
-            this.panelInsercion1.Size = new System.Drawing.Size(253, 187);
+            this.panelInsercion1.Size = new System.Drawing.Size(338, 227);
             this.panelInsercion1.TabIndex = 4;
             // 
             // chTornillo
             // 
             this.chTornillo.AutoSize = true;
-            this.chTornillo.Location = new System.Drawing.Point(8, 130);
+            this.chTornillo.Location = new System.Drawing.Point(8, 164);
             this.chTornillo.Name = "chTornillo";
-            this.chTornillo.Size = new System.Drawing.Size(169, 17);
+            this.chTornillo.Size = new System.Drawing.Size(251, 21);
             this.chTornillo.TabIndex = 7;
             this.chTornillo.Text = "Necesita apretarse con tornillo";
             this.chTornillo.UseVisualStyleBackColor = true;
@@ -723,9 +725,9 @@
             // chDeformacionPlastica
             // 
             this.chDeformacionPlastica.AutoSize = true;
-            this.chDeformacionPlastica.Location = new System.Drawing.Point(8, 107);
+            this.chDeformacionPlastica.Location = new System.Drawing.Point(8, 141);
             this.chDeformacionPlastica.Name = "chDeformacionPlastica";
-            this.chDeformacionPlastica.Size = new System.Drawing.Size(126, 17);
+            this.chDeformacionPlastica.Size = new System.Drawing.Size(180, 21);
             this.chDeformacionPlastica.TabIndex = 6;
             this.chDeformacionPlastica.Text = "Deformacion Plastica";
             this.chDeformacionPlastica.UseVisualStyleBackColor = true;
@@ -735,17 +737,18 @@
             // 
             this.panelInsercion1Sub2.Controls.Add(this.rbObtruidoAnd);
             this.panelInsercion1Sub2.Controls.Add(this.rbObstruidoOr);
-            this.panelInsercion1Sub2.Location = new System.Drawing.Point(12, 17);
+            this.panelInsercion1Sub2.Location = new System.Drawing.Point(12, 25);
             this.panelInsercion1Sub2.Name = "panelInsercion1Sub2";
-            this.panelInsercion1Sub2.Size = new System.Drawing.Size(241, 61);
+            this.panelInsercion1Sub2.Size = new System.Drawing.Size(327, 61);
             this.panelInsercion1Sub2.TabIndex = 5;
             // 
             // rbObtruidoAnd
             // 
             this.rbObtruidoAnd.AutoSize = true;
+            this.rbObtruidoAnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbObtruidoAnd.Location = new System.Drawing.Point(4, 26);
             this.rbObtruidoAnd.Name = "rbObtruidoAnd";
-            this.rbObtruidoAnd.Size = new System.Drawing.Size(235, 17);
+            this.rbObtruidoAnd.Size = new System.Drawing.Size(312, 19);
             this.rbObtruidoAnd.TabIndex = 1;
             this.rbObtruidoAnd.TabStop = true;
             this.rbObtruidoAnd.Text = "Debido a acceso obstruido y vision restrigida";
@@ -754,9 +757,10 @@
             // rbObstruidoOr
             // 
             this.rbObstruidoOr.AutoSize = true;
+            this.rbObstruidoOr.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbObstruidoOr.Location = new System.Drawing.Point(4, 3);
             this.rbObstruidoOr.Name = "rbObstruidoOr";
-            this.rbObstruidoOr.Size = new System.Drawing.Size(236, 17);
+            this.rbObstruidoOr.Size = new System.Drawing.Size(314, 19);
             this.rbObstruidoOr.TabIndex = 0;
             this.rbObstruidoOr.TabStop = true;
             this.rbObstruidoOr.Text = "Debido a acceso obstruido o vision restrigida";
@@ -767,7 +771,7 @@
             this.chDestinoNoAlcanzado.AutoSize = true;
             this.chDestinoNoAlcanzado.Location = new System.Drawing.Point(8, 3);
             this.chDestinoNoAlcanzado.Name = "chDestinoNoAlcanzado";
-            this.chDestinoNoAlcanzado.Size = new System.Drawing.Size(182, 17);
+            this.chDestinoNoAlcanzado.Size = new System.Drawing.Size(267, 21);
             this.chDestinoNoAlcanzado.TabIndex = 4;
             this.chDestinoNoAlcanzado.Text = "No alcanza facilmente su destino";
             this.chDestinoNoAlcanzado.UseVisualStyleBackColor = true;
@@ -776,9 +780,9 @@
             // chAseguradaInmediato
             // 
             this.chAseguradaInmediato.AutoSize = true;
-            this.chAseguradaInmediato.Location = new System.Drawing.Point(8, 84);
+            this.chAseguradaInmediato.Location = new System.Drawing.Point(8, 118);
             this.chAseguradaInmediato.Name = "chAseguradaInmediato";
-            this.chAseguradaInmediato.Size = new System.Drawing.Size(140, 17);
+            this.chAseguradaInmediato.Size = new System.Drawing.Size(203, 21);
             this.chAseguradaInmediato.TabIndex = 3;
             this.chAseguradaInmediato.Text = "Asegurada de inmediato";
             this.chAseguradaInmediato.UseVisualStyleBackColor = true;
@@ -786,9 +790,10 @@
             // rbSeparado
             // 
             this.rbSeparado.AutoSize = true;
-            this.rbSeparado.Location = new System.Drawing.Point(18, 270);
+            this.rbSeparado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbSeparado.Location = new System.Drawing.Point(3, 270);
             this.rbSeparado.Name = "rbSeparado";
-            this.rbSeparado.Size = new System.Drawing.Size(457, 17);
+            this.rbSeparado.Size = new System.Drawing.Size(546, 17);
             this.rbSeparado.TabIndex = 2;
             this.rbSeparado.Text = "Proceso por separdado: procesos de ensamble donde todas las partes solidas estan " +
                 "en sitio";
@@ -798,9 +803,10 @@
             // rbAgregada
             // 
             this.rbAgregada.AutoSize = true;
-            this.rbAgregada.Location = new System.Drawing.Point(26, 6);
+            this.rbAgregada.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbAgregada.Location = new System.Drawing.Point(11, 6);
             this.rbAgregada.Name = "rbAgregada";
-            this.rbAgregada.Size = new System.Drawing.Size(242, 17);
+            this.rbAgregada.Size = new System.Drawing.Size(287, 17);
             this.rbAgregada.TabIndex = 0;
             this.rbAgregada.Text = "Parte agregada: proceso en el cual se termina";
             this.rbAgregada.UseVisualStyleBackColor = true;
@@ -808,7 +814,8 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.pictureBox2);
             this.tabPage1.Controls.Add(this.panelSeccion4);
             this.tabPage1.Controls.Add(this.panelSeccion2);
             this.tabPage1.Controls.Add(this.grupoGeneral);
@@ -816,12 +823,13 @@
             this.tabPage1.Controls.Add(this.rbHandlingSeccion3);
             this.tabPage1.Controls.Add(this.rbHandlingSeccion2);
             this.tabPage1.Controls.Add(this.rbHandlingSeccion1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(546, 472);
+            this.tabPage1.Size = new System.Drawing.Size(581, 508);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Pagina 1";
+            this.tabPage1.Text = "Handling Time";
             // 
             // panelSeccion4
             // 
@@ -1039,18 +1047,48 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(2, 38);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(40, 40);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(554, 498);
+            this.tabControl1.Size = new System.Drawing.Size(589, 537);
             this.tabControl1.TabIndex = 9;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::SistemaExperto.Properties.Resources.akinator_2;
+            this.pictureBox2.Location = new System.Drawing.Point(377, 220);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(183, 248);
+            this.pictureBox2.TabIndex = 13;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::SistemaExperto.Properties.Resources.akinator_4;
+            this.pictureBox3.Location = new System.Drawing.Point(421, 225);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(148, 277);
+            this.pictureBox3.TabIndex = 20;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Image = global::SistemaExperto.Properties.Resources.Piezas;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 225);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(402, 224);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // CondicionalPieza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(596, 587);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(649, 660);
             this.Controls.Add(this.botonAtras);
             this.Controls.Add(this.botonAlante);
             this.Controls.Add(this.LabelPiezaActual);
@@ -1066,7 +1104,6 @@
             this.gbEsencial.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.gbProcesoSeparado.ResumeLayout(false);
@@ -1101,6 +1138,9 @@
             this.grupoGeneral.ResumeLayout(false);
             this.grupoGeneral.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1191,6 +1231,8 @@
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 
