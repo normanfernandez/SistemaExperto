@@ -53,7 +53,7 @@
             // 
             // BotonConfirmarPieza
             // 
-            this.BotonConfirmarPieza.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BotonConfirmarPieza.BackColor = System.Drawing.Color.Silver;
             this.BotonConfirmarPieza.Location = new System.Drawing.Point(86, 237);
             this.BotonConfirmarPieza.Name = "BotonConfirmarPieza";
             this.BotonConfirmarPieza.Size = new System.Drawing.Size(120, 32);
@@ -148,7 +148,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(579, 492);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
@@ -160,6 +160,7 @@
             this.Controls.Add(this.BotonConfirmarPieza);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.Black;
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(277, 151);
             this.Name = "CantidadPiezas";
