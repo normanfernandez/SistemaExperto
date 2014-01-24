@@ -138,9 +138,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SistemaExperto.Properties.Resources.akinator;
-            this.pictureBox1.Location = new System.Drawing.Point(296, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(300, 13);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(273, 446);
+            this.pictureBox1.Size = new System.Drawing.Size(283, 481);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
