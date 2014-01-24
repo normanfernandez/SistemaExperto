@@ -91,8 +91,6 @@
             this.chAseguradaInmediato = new System.Windows.Forms.CheckBox();
             this.rbSeparado = new System.Windows.Forms.RadioButton();
             this.rbAgregada = new System.Windows.Forms.RadioButton();
-            this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panelSeccion4 = new System.Windows.Forms.Panel();
             this.panelSeccion4Sub = new System.Windows.Forms.Panel();
@@ -396,7 +394,6 @@
             this.tabPage2.Controls.Add(this.panelInsercion1);
             this.tabPage2.Controls.Add(this.rbSeparado);
             this.tabPage2.Controls.Add(this.rbAgregada);
-            this.tabPage2.Controls.Add(this.shapeContainer1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -809,25 +806,6 @@
             this.rbAgregada.UseVisualStyleBackColor = true;
             this.rbAgregada.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // shapeContainer1
-            // 
-            this.shapeContainer1.Location = new System.Drawing.Point(3, 3);
-            this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer1.Name = "shapeContainer1";
-            this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(540, 466);
-            this.shapeContainer1.TabIndex = 7;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // lineShape1
-            // 
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 6;
-            this.lineShape1.X2 = 532;
-            this.lineShape1.Y1 = 249;
-            this.lineShape1.Y2 = 249;
-            // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -1188,8 +1166,6 @@
         private System.Windows.Forms.Panel panelInsercion2;
         private System.Windows.Forms.RadioButton rbProcesoNoMecanico;
         private System.Windows.Forms.RadioButton rbProcesoMecanico;
-        private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private System.Windows.Forms.GroupBox gbPlastico;
         private System.Windows.Forms.RadioButton rbRemache;
         private System.Windows.Forms.RadioButton rbTorsion;
