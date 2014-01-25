@@ -25,6 +25,9 @@ namespace SistemaExperto.Idiomas
 
         #region Form 3
         public string RESULT_TITLE;
+        public string TIP;
+        public string EFFICIENCY;
+        public string [] TIPS = new string[5];
         #endregion
     }
 }

@@ -97,7 +97,7 @@
             this.textSugerencias.Location = new System.Drawing.Point(20, 277);
             this.textSugerencias.Multiline = true;
             this.textSugerencias.Name = "textSugerencias";
-            this.textSugerencias.Size = new System.Drawing.Size(260, 105);
+            this.textSugerencias.Size = new System.Drawing.Size(414, 105);
             this.textSugerencias.TabIndex = 6;
             // 
             // ResultadoPiezas

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using SistemaExperto.Idiomas;
 
 namespace SistemaExperto.Ventanas
 {
@@ -18,6 +19,13 @@ namespace SistemaExperto.Ventanas
         public ResultadoPiezas(LinkedList<Pieza> piezas)
         {
             InitializeComponent();
+
+            #region Multiples idiomas
+            this.Text = SystemLanguage.SelectedLanguage().RESULT_TITLE;
+            this.labelNombreEnsable.Text = SystemLanguage.SelectedLanguage().ASSEMBLY_NAME;
+            this.label1.Text = SystemLanguage.SelectedLanguage().EFFICIENCY;
+            this.label2.Text = SystemLanguage.SelectedLanguage().TIP;
+            #endregion
 
             this.piezaActual = piezas.First;
             labelNombreEnsable.Text += CantidadPiezas.NombreEnsamble != "" ? CantidadPiezas.NombreEnsamble : "";
@@ -48,6 +56,7 @@ namespace SistemaExperto.Ventanas
             }
             this.dataPiezas.DataSource = dt;
             this.textBox1.Text = CalcularEficiencia(piezas);
+            this.textSugerencias.Text = SystemLanguage.SelectedLanguage().TIPS[new Random().Next(5)];
         }
 
         private string CalcularEficiencia(LinkedList<Pieza> piezas)
