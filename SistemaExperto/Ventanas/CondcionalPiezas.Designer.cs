@@ -213,10 +213,10 @@
             this.gbEsencial.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbEsencial.Location = new System.Drawing.Point(259, 17);
             this.gbEsencial.Name = "gbEsencial";
-            this.gbEsencial.Size = new System.Drawing.Size(281, 117);
+            this.gbEsencial.Size = new System.Drawing.Size(310, 117);
             this.gbEsencial.TabIndex = 19;
             this.gbEsencial.TabStop = false;
-            this.gbEsencial.Text = "Esencialidad de la pieza";
+            this.gbEsencial.Text = "Esencialidad";
             // 
             // checkBox7
             // 

@@ -36,6 +36,16 @@ namespace SistemaExperto.Idiomas
             HANDLING_RBSUB3 = "Weight is less than 10P";
             HANDLING_RBSUB4 = "Weight is more than 10P";
 
+            DETAIL_PIECE_NAME = "Piece name";
+            DETAIL_DIMENSIONS = "Dimension";
+            DETAIL_WIDTH = "Width";
+            DETAIL_SIZE = "Size";
+            DETAIL_ESSENTIAL = "Essential";
+            DETAIL_PICTURE = "Select your piece's shape";
+            DETAIL_DIFFERENT = "Different material";
+            DETAIL_RELATIVE = "Relative movement with respect to others";
+            DETAIL_SEPARATED = "Must be separated to allow assembly";
+
             RESULT_TITLE = "Result";
             EFFICIENCY = "Efficiency:";
             TIP = "Tip:";

@@ -33,6 +33,7 @@ namespace SistemaExperto
         {
             this.Text = Idiomas.SystemLanguage.SelectedLanguage().MAIN_TITLE;
             this.LabelPiezaActual.Text = PiezaActual.Value.NombreNumeroPieza + " de " + Piezas.Count.ToString();
+            
             #region pagina 1
             this.rbHandlingSeccion1.Text = SystemLanguage.SelectedLanguage().HANDLING_1;
             this.rbHandlingSeccion2.Text = SystemLanguage.SelectedLanguage().HANDLING_2;
@@ -49,6 +50,22 @@ namespace SistemaExperto
             this.checkBox4.Text = SystemLanguage.SelectedLanguage().HANDLING_CHECK4;
             this.rbPesado.Text = SystemLanguage.SelectedLanguage().HANDLING_RBSUB3;
             this.rbLigero.Text = SystemLanguage.SelectedLanguage().HANDLING_RBSUB4;
+            #endregion
+
+            #region pagina 2
+
+            #endregion
+
+            #region pagina 3
+            this.label5.Text = SystemLanguage.SelectedLanguage().DETAIL_PIECE_NAME;
+            this.groupBox1.Text = SystemLanguage.SelectedLanguage().DETAIL_DIMENSIONS;
+            this.label6.Text = SystemLanguage.SelectedLanguage().DETAIL_WIDTH;
+            this.label7.Text = SystemLanguage.SelectedLanguage().DETAIL_SIZE;
+            this.label4.Text = SystemLanguage.SelectedLanguage().DETAIL_PICTURE;
+            this.gbEsencial.Text = SystemLanguage.SelectedLanguage().DETAIL_ESSENTIAL;
+            this.checkBox5.Text = SystemLanguage.SelectedLanguage().DETAIL_DIFFERENT;
+            this.checkBox6.Text = SystemLanguage.SelectedLanguage().DETAIL_RELATIVE;
+            this.checkBox6.Text = SystemLanguage.SelectedLanguage().DETAIL_SEPARATED;
             #endregion
 
             this.botonAlante.Text = Idiomas.SystemLanguage.SelectedLanguage().BUTTON_NEXT;

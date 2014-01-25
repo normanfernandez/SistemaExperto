@@ -45,6 +45,18 @@ namespace SistemaExperto.Idiomas
         public string HANDLING_RBSUB4;
         #endregion
 
+        #region details
+        public string DETAIL_PIECE_NAME;
+        public string DETAIL_DIMENSIONS;
+        public string DETAIL_WIDTH;
+        public string DETAIL_SIZE;
+        public string DETAIL_ESSENTIAL;
+        public string DETAIL_PICTURE;
+        public string DETAIL_DIFFERENT;
+        public string DETAIL_RELATIVE;
+        public string DETAIL_SEPARATED;
+        #endregion
+
         #endregion
 
         #region Form 3
