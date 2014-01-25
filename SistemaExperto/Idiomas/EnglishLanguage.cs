@@ -17,6 +17,8 @@ namespace SistemaExperto.Idiomas
             MAIN_TITLE = "Expert System";
             YES = "Yes";
             NO = "No";
+            RESULT_TITLE = "Result";
+            ASSEMBLY_NAME = "Assembly Name:";
             return this; 
         }
     }

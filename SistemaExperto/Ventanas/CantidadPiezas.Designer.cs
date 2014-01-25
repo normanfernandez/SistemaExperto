@@ -35,7 +35,7 @@
             this.rbEnglish = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelNombreEnsamble = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -126,15 +126,15 @@
             this.textBox1.Size = new System.Drawing.Size(100, 29);
             this.textBox1.TabIndex = 7;
             // 
-            // label3
+            // labelNombreEnsamble
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(14, 108);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(174, 24);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Nombre Ensamble:";
+            this.labelNombreEnsamble.AutoSize = true;
+            this.labelNombreEnsamble.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNombreEnsamble.Location = new System.Drawing.Point(14, 108);
+            this.labelNombreEnsamble.Name = "labelNombreEnsamble";
+            this.labelNombreEnsamble.Size = new System.Drawing.Size(174, 24);
+            this.labelNombreEnsamble.TabIndex = 8;
+            this.labelNombreEnsamble.Text = "Nombre Ensamble:";
             // 
             // pictureBox1
             // 
@@ -152,7 +152,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(579, 492);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelNombreEnsamble);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.rbEnglish);
@@ -183,7 +183,7 @@
         private System.Windows.Forms.RadioButton rbEnglish;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelNombreEnsamble;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

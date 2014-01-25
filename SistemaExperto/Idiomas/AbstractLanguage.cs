@@ -10,22 +10,21 @@ namespace SistemaExperto.Idiomas
         public AbstractLanguage() 
         {
         }
-        protected string LABEL_QUANTITY;
-        protected string QUANTITY_TITLE;
-        protected string BUTTON_ACCEPT;
-        protected string BUTTON_NEXT;
-        protected string BUTTON_BACK;
-        protected string MAIN_TITLE;
-        protected string YES;
-        protected string NO;
+        #region Form 1
+        public string LABEL_QUANTITY;
+        public string QUANTITY_TITLE;
+        public string BUTTON_ACCEPT;
+        public string ASSEMBLY_NAME;
+        #endregion
+        
+        public string BUTTON_NEXT;
+        public string BUTTON_BACK;
+        public string MAIN_TITLE;
+        public  string YES;
+        public string NO;
 
-        public string ButtonNext { get { return BUTTON_NEXT; } }
-        public string ButtonBack { get { return BUTTON_BACK; } }
-        public string ButtonAccept { get { return BUTTON_ACCEPT; } }
-        public string QuantityTitle { get { return QUANTITY_TITLE; } }
-        public string LabelQuantity { get { return LABEL_QUANTITY; } }
-        public string MainTitle { get { return MAIN_TITLE; } }
-        public string Yes { get { return YES; } }
-        public string No { get { return NO; } }
+        #region Form 3
+        public string RESULT_TITLE;
+        #endregion
     }
 }

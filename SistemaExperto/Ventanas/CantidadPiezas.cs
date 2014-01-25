@@ -33,7 +33,7 @@ namespace SistemaExperto.Ventanas
             try
             {
                 if (textBox1.Text == "")
-                    throw new IncompleteSelectionException("Falta el nombre!");
+                    throw new IncompleteSelectionException();
                 Piezas.PiezaManager.Create(Int32.Parse(this.numericUpDown1.Value.ToString()));
                 CondicionalPieza form = new CondicionalPieza();
                 this.Hide();
@@ -49,25 +49,28 @@ namespace SistemaExperto.Ventanas
         private void rbEspanol_CheckedChanged(object sender, EventArgs e)
         {
             Idiomas.SystemLanguage.SelectLanguage("ESPANOL");
-            this.Text = Idiomas.SystemLanguage.SelectedLanguage().QuantityTitle;
-            this.label1.Text = Idiomas.SystemLanguage.SelectedLanguage().LabelQuantity;
-            this.BotonConfirmarPieza.Text = Idiomas.SystemLanguage.SelectedLanguage().ButtonAccept;
+            this.Text = Idiomas.SystemLanguage.SelectedLanguage().QUANTITY_TITLE;
+            this.label1.Text = Idiomas.SystemLanguage.SelectedLanguage().LABEL_QUANTITY;
+            this.BotonConfirmarPieza.Text = Idiomas.SystemLanguage.SelectedLanguage().BUTTON_ACCEPT;
+            this.labelNombreEnsamble.Text = Idiomas.SystemLanguage.SelectedLanguage().ASSEMBLY_NAME;
         }
 
         private void rbEnglish_CheckedChanged(object sender, EventArgs e)
         {
             Idiomas.SystemLanguage.SelectLanguage("ENGLISH");
-            this.Text = Idiomas.SystemLanguage.SelectedLanguage().QuantityTitle;
-            this.label1.Text = Idiomas.SystemLanguage.SelectedLanguage().LabelQuantity;
-            this.BotonConfirmarPieza.Text = Idiomas.SystemLanguage.SelectedLanguage().ButtonAccept;
+            this.Text = Idiomas.SystemLanguage.SelectedLanguage().QUANTITY_TITLE;
+            this.label1.Text = Idiomas.SystemLanguage.SelectedLanguage().LABEL_QUANTITY;
+            this.BotonConfirmarPieza.Text = Idiomas.SystemLanguage.SelectedLanguage().BUTTON_ACCEPT;
+            this.labelNombreEnsamble.Text = Idiomas.SystemLanguage.SelectedLanguage().ASSEMBLY_NAME;
         }
 
         private void CantidadPiezas_Load(object sender, EventArgs e)
         {
-            this.label1.Text = Idiomas.SystemLanguage.SelectedLanguage().LabelQuantity;
-            this.Text = Idiomas.SystemLanguage.SelectedLanguage().QuantityTitle;
-            this.label1.Text = Idiomas.SystemLanguage.SelectedLanguage().LabelQuantity;
-            this.BotonConfirmarPieza.Text = Idiomas.SystemLanguage.SelectedLanguage().ButtonAccept;
+            this.label1.Text = Idiomas.SystemLanguage.SelectedLanguage().LABEL_QUANTITY;
+            this.Text = Idiomas.SystemLanguage.SelectedLanguage().QUANTITY_TITLE;
+            this.label1.Text = Idiomas.SystemLanguage.SelectedLanguage().LABEL_QUANTITY;
+            this.BotonConfirmarPieza.Text = Idiomas.SystemLanguage.SelectedLanguage().BUTTON_ACCEPT;
+            this.labelNombreEnsamble.Text = Idiomas.SystemLanguage.SelectedLanguage().ASSEMBLY_NAME;
         }
     }
 }

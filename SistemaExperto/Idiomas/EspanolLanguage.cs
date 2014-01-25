@@ -9,7 +9,6 @@ namespace SistemaExperto.Idiomas
     {
         public AbstractLanguage ElegirIdioma()
         {
-            
             QUANTITY_TITLE = "Cantidad de Piezas";
             BUTTON_NEXT = "Siguiente";
             BUTTON_BACK = "Atras";
@@ -18,6 +17,8 @@ namespace SistemaExperto.Idiomas
             MAIN_TITLE = "Sistema Experto";
             YES = "Sí";
             NO = "No";
+            RESULT_TITLE = "Resultado";
+            ASSEMBLY_NAME = "Nombre Ensamble:";
             return this;
         }
     }

@@ -33,6 +33,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.labelNombreEnsable = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textSugerencias = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataPiezas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +49,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(550, 201);
+            this.textBox1.Location = new System.Drawing.Point(724, 200);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(45, 20);
             this.textBox1.TabIndex = 1;
@@ -56,7 +58,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(428, 199);
+            this.label1.Location = new System.Drawing.Point(602, 198);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 20);
             this.label1.TabIndex = 2;
@@ -75,11 +77,28 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SistemaExperto.Properties.Resources.akinator_3;
-            this.pictureBox1.Location = new System.Drawing.Point(382, 242);
+            this.pictureBox1.Location = new System.Drawing.Point(606, 232);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(149, 218);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(17, 250);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "sugerencias:";
+            // 
+            // textSugerencias
+            // 
+            this.textSugerencias.Location = new System.Drawing.Point(20, 277);
+            this.textSugerencias.Multiline = true;
+            this.textSugerencias.Name = "textSugerencias";
+            this.textSugerencias.Size = new System.Drawing.Size(260, 105);
+            this.textSugerencias.TabIndex = 6;
             // 
             // ResultadoPiezas
             // 
@@ -87,6 +106,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(902, 462);
+            this.Controls.Add(this.textSugerencias);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelNombreEnsable);
             this.Controls.Add(this.label1);
@@ -108,5 +129,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelNombreEnsable;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textSugerencias;
     }
 }
