@@ -292,7 +292,7 @@ namespace SistemaExperto
         }
         #endregion
 
-            #region Metodos
+        #region Metodos
         private void RevisarCondiciones()
         {
             #region Pagina 1
@@ -591,7 +591,7 @@ namespace SistemaExperto
                     }
                     else
                     {
-                        columna = rbTornillo.Checked ? 8 : 0;
+                        columna = chTornillo.Checked ? 8 : 0;
                         columna += !chDificilAlinear.Checked ? 0 : 1;
                     }
                 }

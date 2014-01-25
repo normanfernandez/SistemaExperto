@@ -32,7 +32,7 @@ namespace SistemaExperto.Ventanas
             DataTable dt = new DataTable();
             dt.Columns.Add("#");
             dt.Columns.Add("Nombre");
-            dt.Columns.Add("n");
+            dt.Columns.Add("nMin");
             dt.Columns.Add("Handling Code");
             dt.Columns.Add("Handling Time");
             dt.Columns.Add("Insertion Code");
