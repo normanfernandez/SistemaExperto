@@ -19,6 +19,23 @@ namespace SistemaExperto.Idiomas
             NO = "No";
             ASSEMBLY_NAME = "Assembly Name:";
 
+            PIECE_DETAILS = "Details";
+            HANDLING_1 = "Part can be manipulated with one hand without the use of tools";
+            HANDLING_2 = "Part can be handled with one hand but only with the use of tools";
+            HANDLING_3 = "Uses two hands for manipulation but is not big";
+            HANDLING_4 = "Requires two hands to be manipulated and transported because it is big";
+            HANDLING_EASY = "Easy to handle and manipulate";
+            HANDLING_HARD = "Has dificulty of handling";
+            HANDLING_DESCRIPTION = "Handling type";
+            HANDLING_CHECK1 = "Requires additional tools";
+            HANDLING_CHECK2 = "Requires magnification";
+            HANDLING_CHECK3 = "Doesn't need special tools for handling";
+            HANDLING_CHECK4 = "Parts do not nest nor are flexible";
+            HANDLING_RBSUB1 = "Standard Tools";
+            HANDLING_RBSUB2 = "Special tools";
+            HANDLING_RBSUB3 = "Weight is less than 10P";
+            HANDLING_RBSUB4 = "Weight is more than 10P";
+
             RESULT_TITLE = "Result";
             EFFICIENCY = "Efficiency:";
             TIP = "Tip:";

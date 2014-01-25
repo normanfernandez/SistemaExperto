@@ -31,17 +31,30 @@ namespace SistemaExperto
         #region Evento Form load
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.Text = Idiomas.SystemLanguage.SelectedLanguage().MAIN_TITLE;
             this.LabelPiezaActual.Text = PiezaActual.Value.NombreNumeroPieza + " de " + Piezas.Count.ToString();
-            /*this.radioNo_1.Text = Idiomas.SystemLanguage.SelectedLanguage().No;
-            this.radioSi_1.Text = Idiomas.SystemLanguage.SelectedLanguage().Yes;
-            this.radioNo_2.Text = Idiomas.SystemLanguage.SelectedLanguage().No;
-            this.radioSi_2.Text = Idiomas.SystemLanguage.SelectedLanguage().Yes;
-            this.radioNo_3.Text = Idiomas.SystemLanguage.SelectedLanguage().No;
-            this.radioSi_3.Text = Idiomas.SystemLanguage.SelectedLanguage().Yes;
-            this.botonAlante.Text = Idiomas.SystemLanguage.SelectedLanguage().ButtonNext;
-            this.botonAtras.Text = Idiomas.SystemLanguage.SelectedLanguage().ButtonBack;
-            this.Text = Idiomas.SystemLanguage.SelectedLanguage().MainTitle;
-          */
+            #region pagina 1
+            this.rbHandlingSeccion1.Text = SystemLanguage.SelectedLanguage().HANDLING_1;
+            this.rbHandlingSeccion2.Text = SystemLanguage.SelectedLanguage().HANDLING_2;
+            this.rbHandlingSeccion3.Text = SystemLanguage.SelectedLanguage().HANDLING_3;
+            this.rbHandlingSeccion4.Text = SystemLanguage.SelectedLanguage().HANDLING_4;
+            this.rbFacil.Text = SystemLanguage.SelectedLanguage().HANDLING_EASY;
+            this.rbDificil.Text = SystemLanguage.SelectedLanguage().HANDLING_HARD;
+            this.gbExtra.Text = SystemLanguage.SelectedLanguage().HANDLING_DESCRIPTION;
+            this.checkBox2.Text = SystemLanguage.SelectedLanguage().HANDLING_CHECK1;
+            this.checkBox1.Text = SystemLanguage.SelectedLanguage().HANDLING_CHECK2;
+            this.rbEstandar.Text = SystemLanguage.SelectedLanguage().HANDLING_RBSUB1;
+            this.rbEspecial.Text = SystemLanguage.SelectedLanguage().HANDLING_RBSUB2;
+            this.checkBox3.Text = SystemLanguage.SelectedLanguage().HANDLING_CHECK3;
+            this.checkBox4.Text = SystemLanguage.SelectedLanguage().HANDLING_CHECK4;
+            this.rbPesado.Text = SystemLanguage.SelectedLanguage().HANDLING_RBSUB3;
+            this.rbLigero.Text = SystemLanguage.SelectedLanguage().HANDLING_RBSUB4;
+            #endregion
+
+            this.botonAlante.Text = Idiomas.SystemLanguage.SelectedLanguage().BUTTON_NEXT;
+            this.botonAtras.Text = Idiomas.SystemLanguage.SelectedLanguage().BUTTON_BACK;
+            this.Text = Idiomas.SystemLanguage.SelectedLanguage().MAIN_TITLE;
+
         }
         #endregion
 

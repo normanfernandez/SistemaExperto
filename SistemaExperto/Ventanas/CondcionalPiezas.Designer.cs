@@ -33,6 +33,7 @@
             this.botonAlante = new System.Windows.Forms.Button();
             this.botonAtras = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.gbEsencial = new System.Windows.Forms.GroupBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
@@ -53,6 +54,7 @@
             this.rbPieza4 = new System.Windows.Forms.RadioButton();
             this.rbPieza3 = new System.Windows.Forms.RadioButton();
             this.rbPieza1 = new System.Windows.Forms.RadioButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.gbProcesoSeparado = new System.Windows.Forms.GroupBox();
             this.panelProceso2 = new System.Windows.Forms.Panel();
@@ -91,6 +93,7 @@
             this.rbSeparado = new System.Windows.Forms.RadioButton();
             this.rbAgregada = new System.Windows.Forms.RadioButton();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelSeccion4 = new System.Windows.Forms.Panel();
             this.panelSeccion4Sub = new System.Windows.Forms.Panel();
             this.rbPesado = new System.Windows.Forms.RadioButton();
@@ -111,12 +114,11 @@
             this.rbHandlingSeccion2 = new System.Windows.Forms.RadioButton();
             this.rbHandlingSeccion1 = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.gbEsencial.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.gbProcesoSeparado.SuspendLayout();
             this.panelProceso2.SuspendLayout();
@@ -129,15 +131,13 @@
             this.panelInsercion1.SuspendLayout();
             this.panelInsercion1Sub2.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelSeccion4.SuspendLayout();
             this.panelSeccion4Sub.SuspendLayout();
             this.panelSeccion2.SuspendLayout();
             this.panelSeccion2Sub.SuspendLayout();
             this.grupoGeneral.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // LabelPiezaActual
@@ -195,6 +195,15 @@
             this.tabPage3.Size = new System.Drawing.Size(581, 508);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Detalles";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::SistemaExperto.Properties.Resources.akinator_4;
+            this.pictureBox3.Location = new System.Drawing.Point(421, 225);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(148, 277);
+            this.pictureBox3.TabIndex = 20;
+            this.pictureBox3.TabStop = false;
             // 
             // gbEsencial
             // 
@@ -386,6 +395,16 @@
             this.rbPieza1.Size = new System.Drawing.Size(14, 13);
             this.rbPieza1.TabIndex = 1;
             this.rbPieza1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Image = global::SistemaExperto.Properties.Resources.Piezas;
+            this.pictureBox1.Location = new System.Drawing.Point(10, 225);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(402, 224);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // tabPage2
             // 
@@ -831,6 +850,15 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Handling Time";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::SistemaExperto.Properties.Resources.akinator_2;
+            this.pictureBox2.Location = new System.Drawing.Point(377, 220);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(183, 248);
+            this.pictureBox2.TabIndex = 13;
+            this.pictureBox2.TabStop = false;
+            // 
             // panelSeccion4
             // 
             this.panelSeccion4.Controls.Add(this.panelSeccion4Sub);
@@ -955,9 +983,10 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.checkBox1.Location = new System.Drawing.Point(3, 81);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(183, 17);
+            this.checkBox1.Size = new System.Drawing.Size(189, 18);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "Requiere el uso de magnificacion";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -1055,34 +1084,6 @@
             this.tabControl1.Size = new System.Drawing.Size(589, 537);
             this.tabControl1.TabIndex = 9;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::SistemaExperto.Properties.Resources.akinator_2;
-            this.pictureBox2.Location = new System.Drawing.Point(377, 220);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(183, 248);
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::SistemaExperto.Properties.Resources.akinator_4;
-            this.pictureBox3.Location = new System.Drawing.Point(421, 225);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(148, 277);
-            this.pictureBox3.TabIndex = 20;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Image = global::SistemaExperto.Properties.Resources.Piezas;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 225);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(402, 224);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
             // CondicionalPieza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1100,10 +1101,12 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.gbEsencial.ResumeLayout(false);
             this.gbEsencial.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.gbProcesoSeparado.ResumeLayout(false);
@@ -1127,6 +1130,7 @@
             this.panelInsercion1Sub2.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelSeccion4.ResumeLayout(false);
             this.panelSeccion4.PerformLayout();
             this.panelSeccion4Sub.ResumeLayout(false);
@@ -1138,9 +1142,6 @@
             this.grupoGeneral.ResumeLayout(false);
             this.grupoGeneral.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

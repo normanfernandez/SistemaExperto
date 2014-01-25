@@ -19,6 +19,23 @@ namespace SistemaExperto.Idiomas
             NO = "No";
             ASSEMBLY_NAME = "Nombre Ensamble:";
 
+            PIECE_DETAILS = "Dettalles";
+            HANDLING_1 = "La parte se puede agarrar y manipular con una mano sin el uso de herramientas";
+            HANDLING_2 = "La parte se puede agarrar con una mano pero solo con el uso de herramientas como pinzas";
+            HANDLING_3 = "Usa dos manos para la manipulacion pero no es grande";
+            HANDLING_4 = "Se requiere dos manos para manipular y transportar debido a que es grande";
+            HANDLING_EASY = "Es facil de Agarrar y Manipular";
+            HANDLING_HARD = "Posee dificultad de manejo";
+            HANDLING_DESCRIPTION = "Tipo de manejo";
+            HANDLING_CHECK1 = "Requiere de herramientas adicionales";
+            HANDLING_CHECK2 = "Requiere el uso de magnificacion";
+            HANDLING_CHECK3 = "No se necesitan herramientas especiales para manupulacion";
+            HANDLING_CHECK4 = "Las partes no se anidan ni son flexibles";
+            HANDLING_RBSUB1 = "Herramientas Estandar";
+            HANDLING_RBSUB2 = "Heraminetas Especiales";
+            HANDLING_RBSUB3 = "Pesa menos de 10lb";
+            HANDLING_RBSUB4 = "Pesa mas de 10lb";
+
             RESULT_TITLE = "Resultado";
             EFFICIENCY = "Eficiencia:";
             TIP = "Sugerencias:";
