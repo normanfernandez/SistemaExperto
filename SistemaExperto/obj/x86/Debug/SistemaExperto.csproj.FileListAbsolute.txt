@@ -8,3 +8,4 @@ C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Debug\SistemaE
 C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Debug\SistemaExperto.Ventanas.CantidadPiezas.resources
 C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Debug\SistemaExperto.CondicionalPieza.resources
 C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Debug\SistemaExperto.Ventanas.ResultadoPiezas.resources
+C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\bin\Debug\SistemaExperto.exe.config

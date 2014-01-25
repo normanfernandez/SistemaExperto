@@ -36,6 +36,35 @@ namespace SistemaExperto.Idiomas
             HANDLING_RBSUB3 = "Weight is less than 10P";
             HANDLING_RBSUB4 = "Weight is more than 10P";
 
+            INSERTION_RB1 = "Part added: proccess on which it ends";
+            INSERTION_RB2 = "Separated Proccess: assembly proccess where solid parts are setted";
+            INSERTION_DESTINY = "Doesn't reach destiny easily";
+            INSERTION_SECURED = "Inmediately secured";
+            INSERTION_DEFORMATION = "Plastic Deformation";
+            INSERTION_SCREW = "Needs screw";
+            INSERTION_MECHANIC = "Mechanical Proccess";
+            INSERTION_NONMECHANIC = "Non Mechanical Proccess";
+            INSERTION_NO_FASTENING = "No Fastening Process";
+            INSERTION_GBEXTRA = "Extra Data";
+            INSERTION_GBDEFORMATION = "Deformation";
+            INSERTION_RBSUB1 = "Due to obstructed access or restricted vision";
+            INSERTION_RBSUB2 = "Due to obstructed access and restricted vision";
+            INSERTION_RBSUB3 = "By torsion";
+            INSERTION_RBSUB4 = "By riveting";
+            INSERTION_RBSUB5 = "Union";
+            INSERTION_RBSUB6 = "Riveting";
+            INSERTION_RBSUB7 = "Screw Tightening";
+            INSERTION_RBSUB8 = "Soldering";
+            INSERTION_RBSUB9 = "Welding";
+            INSERTION_RBSUB10 = "Sub-Asssembly";
+            INSERTION_RBSUB11 = "Other Process";
+            INSERTION_CH1 = "Requires to be pressed";
+            INSERTION_CH2 = "Hard to aline";
+            INSERTION_CH3 = "Has resistance against insertion";
+            INSERTION_CH4 = "Plastic deformation";
+            INSERTION_CH5 = "Metal process";
+            INSERTION_CH6 = "Additional material required";
+
             DETAIL_PIECE_NAME = "Piece name";
             DETAIL_DIMENSIONS = "Dimension";
             DETAIL_WIDTH = "Width";

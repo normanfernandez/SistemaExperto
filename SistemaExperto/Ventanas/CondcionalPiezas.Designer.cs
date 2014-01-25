@@ -194,7 +194,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(581, 508);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Detalles";
+            this.tabPage3.Text = "Extra";
             // 
             // pictureBox3
             // 
@@ -402,7 +402,7 @@
             this.pictureBox1.Image = global::SistemaExperto.Properties.Resources.Piezas;
             this.pictureBox1.Location = new System.Drawing.Point(10, 225);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(402, 224);
+            this.pictureBox1.Size = new System.Drawing.Size(402, 220);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
@@ -428,9 +428,9 @@
             this.gbProcesoSeparado.Controls.Add(this.panelProceso2);
             this.gbProcesoSeparado.Controls.Add(this.panelProceso1);
             this.gbProcesoSeparado.Enabled = false;
-            this.gbProcesoSeparado.Location = new System.Drawing.Point(198, 289);
+            this.gbProcesoSeparado.Location = new System.Drawing.Point(228, 293);
             this.gbProcesoSeparado.Name = "gbProcesoSeparado";
-            this.gbProcesoSeparado.Size = new System.Drawing.Size(299, 115);
+            this.gbProcesoSeparado.Size = new System.Drawing.Size(344, 115);
             this.gbProcesoSeparado.TabIndex = 9;
             this.gbProcesoSeparado.TabStop = false;
             this.gbProcesoSeparado.Text = "Data proceso por separado";
@@ -441,9 +441,9 @@
             this.panelProceso2.Controls.Add(this.panelProceso2Sub);
             this.panelProceso2.Controls.Add(this.chMaterialAdicional);
             this.panelProceso2.Enabled = false;
-            this.panelProceso2.Location = new System.Drawing.Point(125, 20);
+            this.panelProceso2.Location = new System.Drawing.Point(141, 20);
             this.panelProceso2.Name = "panelProceso2";
-            this.panelProceso2.Size = new System.Drawing.Size(160, 79);
+            this.panelProceso2.Size = new System.Drawing.Size(196, 79);
             this.panelProceso2.TabIndex = 1;
             // 
             // panelProceso2Sub
@@ -453,15 +453,16 @@
             this.panelProceso2Sub.Enabled = false;
             this.panelProceso2Sub.Location = new System.Drawing.Point(14, 24);
             this.panelProceso2Sub.Name = "panelProceso2Sub";
-            this.panelProceso2Sub.Size = new System.Drawing.Size(112, 45);
+            this.panelProceso2Sub.Size = new System.Drawing.Size(128, 45);
             this.panelProceso2Sub.TabIndex = 3;
             // 
             // rbSoldadura2
             // 
             this.rbSoldadura2.AutoSize = true;
+            this.rbSoldadura2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbSoldadura2.Location = new System.Drawing.Point(3, 26);
             this.rbSoldadura2.Name = "rbSoldadura2";
-            this.rbSoldadura2.Size = new System.Drawing.Size(100, 21);
+            this.rbSoldadura2.Size = new System.Drawing.Size(82, 17);
             this.rbSoldadura2.TabIndex = 4;
             this.rbSoldadura2.TabStop = true;
             this.rbSoldadura2.Text = "Soldadura";
@@ -470,9 +471,10 @@
             // rbSoldadura1
             // 
             this.rbSoldadura1.AutoSize = true;
+            this.rbSoldadura1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbSoldadura1.Location = new System.Drawing.Point(3, 3);
             this.rbSoldadura1.Name = "rbSoldadura1";
-            this.rbSoldadura1.Size = new System.Drawing.Size(154, 21);
+            this.rbSoldadura1.Size = new System.Drawing.Size(124, 17);
             this.rbSoldadura1.TabIndex = 3;
             this.rbSoldadura1.TabStop = true;
             this.rbSoldadura1.Text = "Soldadura blanda";
@@ -481,9 +483,10 @@
             // chMaterialAdicional
             // 
             this.chMaterialAdicional.AutoSize = true;
+            this.chMaterialAdicional.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chMaterialAdicional.Location = new System.Drawing.Point(4, 8);
             this.chMaterialAdicional.Name = "chMaterialAdicional";
-            this.chMaterialAdicional.Size = new System.Drawing.Size(230, 21);
+            this.chMaterialAdicional.Size = new System.Drawing.Size(183, 17);
             this.chMaterialAdicional.TabIndex = 0;
             this.chMaterialAdicional.Text = "Material adicional requerido";
             this.chMaterialAdicional.UseVisualStyleBackColor = true;
@@ -496,41 +499,41 @@
             this.panelProceso1.Controls.Add(this.rbRemache2);
             this.panelProceso1.Controls.Add(this.rbUnion);
             this.panelProceso1.Enabled = false;
-            this.panelProceso1.Location = new System.Drawing.Point(7, 20);
+            this.panelProceso1.Location = new System.Drawing.Point(6, 20);
             this.panelProceso1.Name = "panelProceso1";
-            this.panelProceso1.Size = new System.Drawing.Size(111, 79);
+            this.panelProceso1.Size = new System.Drawing.Size(133, 79);
             this.panelProceso1.TabIndex = 0;
             // 
             // rbTornillo
             // 
             this.rbTornillo.AutoSize = true;
+            this.rbTornillo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbTornillo.Location = new System.Drawing.Point(4, 54);
             this.rbTornillo.Name = "rbTornillo";
-            this.rbTornillo.Size = new System.Drawing.Size(161, 21);
+            this.rbTornillo.Size = new System.Drawing.Size(129, 17);
             this.rbTornillo.TabIndex = 2;
-            this.rbTornillo.TabStop = true;
             this.rbTornillo.Text = "Apriete de Tornillo";
             this.rbTornillo.UseVisualStyleBackColor = true;
             // 
             // rbRemache2
             // 
             this.rbRemache2.AutoSize = true;
+            this.rbRemache2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbRemache2.Location = new System.Drawing.Point(4, 28);
             this.rbRemache2.Name = "rbRemache2";
-            this.rbRemache2.Size = new System.Drawing.Size(93, 21);
+            this.rbRemache2.Size = new System.Drawing.Size(78, 17);
             this.rbRemache2.TabIndex = 1;
-            this.rbRemache2.TabStop = true;
             this.rbRemache2.Text = "Remache";
             this.rbRemache2.UseVisualStyleBackColor = true;
             // 
             // rbUnion
             // 
             this.rbUnion.AutoSize = true;
+            this.rbUnion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbUnion.Location = new System.Drawing.Point(4, 4);
             this.rbUnion.Name = "rbUnion";
-            this.rbUnion.Size = new System.Drawing.Size(68, 21);
+            this.rbUnion.Size = new System.Drawing.Size(58, 17);
             this.rbUnion.TabIndex = 0;
-            this.rbUnion.TabStop = true;
             this.rbUnion.Text = "Union";
             this.rbUnion.UseVisualStyleBackColor = true;
             // 
@@ -549,9 +552,10 @@
             // rbRemache
             // 
             this.rbRemache.AutoSize = true;
+            this.rbRemache.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbRemache.Location = new System.Drawing.Point(7, 44);
             this.rbRemache.Name = "rbRemache";
-            this.rbRemache.Size = new System.Drawing.Size(118, 21);
+            this.rbRemache.Size = new System.Drawing.Size(96, 17);
             this.rbRemache.TabIndex = 1;
             this.rbRemache.TabStop = true;
             this.rbRemache.Text = "Por remache";
@@ -560,9 +564,10 @@
             // rbTorsion
             // 
             this.rbTorsion.AutoSize = true;
+            this.rbTorsion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbTorsion.Location = new System.Drawing.Point(7, 20);
             this.rbTorsion.Name = "rbTorsion";
-            this.rbTorsion.Size = new System.Drawing.Size(106, 21);
+            this.rbTorsion.Size = new System.Drawing.Size(86, 17);
             this.rbTorsion.TabIndex = 0;
             this.rbTorsion.TabStop = true;
             this.rbTorsion.Text = "Por torsion";
@@ -579,7 +584,7 @@
             this.panelInsercion2.Enabled = false;
             this.panelInsercion2.Location = new System.Drawing.Point(10, 293);
             this.panelInsercion2.Name = "panelInsercion2";
-            this.panelInsercion2.Size = new System.Drawing.Size(182, 173);
+            this.panelInsercion2.Size = new System.Drawing.Size(195, 173);
             this.panelInsercion2.TabIndex = 6;
             // 
             // panelInsercion2Sub
@@ -595,9 +600,10 @@
             // rbOtrosProcesos
             // 
             this.rbOtrosProcesos.AutoSize = true;
+            this.rbOtrosProcesos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbOtrosProcesos.Location = new System.Drawing.Point(4, 27);
             this.rbOtrosProcesos.Name = "rbOtrosProcesos";
-            this.rbOtrosProcesos.Size = new System.Drawing.Size(138, 21);
+            this.rbOtrosProcesos.Size = new System.Drawing.Size(111, 17);
             this.rbOtrosProcesos.TabIndex = 1;
             this.rbOtrosProcesos.TabStop = true;
             this.rbOtrosProcesos.Text = "Otros Procesos";
@@ -606,9 +612,10 @@
             // rbSubEnsamble
             // 
             this.rbSubEnsamble.AutoSize = true;
+            this.rbSubEnsamble.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbSubEnsamble.Location = new System.Drawing.Point(4, 3);
             this.rbSubEnsamble.Name = "rbSubEnsamble";
-            this.rbSubEnsamble.Size = new System.Drawing.Size(130, 21);
+            this.rbSubEnsamble.Size = new System.Drawing.Size(105, 17);
             this.rbSubEnsamble.TabIndex = 0;
             this.rbSubEnsamble.TabStop = true;
             this.rbSubEnsamble.Text = "Sub-Ensamble";
@@ -618,9 +625,10 @@
             // 
             this.chProcesoMetalurgico.AutoSize = true;
             this.chProcesoMetalurgico.Enabled = false;
+            this.chProcesoMetalurgico.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chProcesoMetalurgico.Location = new System.Drawing.Point(20, 71);
             this.chProcesoMetalurgico.Name = "chProcesoMetalurgico";
-            this.chProcesoMetalurgico.Size = new System.Drawing.Size(175, 21);
+            this.chProcesoMetalurgico.Size = new System.Drawing.Size(142, 17);
             this.chProcesoMetalurgico.TabIndex = 4;
             this.chProcesoMetalurgico.Text = "Proceso Metalurgico";
             this.chProcesoMetalurgico.UseVisualStyleBackColor = true;
@@ -630,9 +638,10 @@
             // 
             this.chDeformacionPlastica2.AutoSize = true;
             this.chDeformacionPlastica2.Enabled = false;
+            this.chDeformacionPlastica2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chDeformacionPlastica2.Location = new System.Drawing.Point(20, 24);
             this.chDeformacionPlastica2.Name = "chDeformacionPlastica2";
-            this.chDeformacionPlastica2.Size = new System.Drawing.Size(180, 21);
+            this.chDeformacionPlastica2.Size = new System.Drawing.Size(146, 17);
             this.chDeformacionPlastica2.TabIndex = 3;
             this.chDeformacionPlastica2.Text = "Deformacion Plastica";
             this.chDeformacionPlastica2.UseVisualStyleBackColor = true;
@@ -641,9 +650,10 @@
             // rbProcesoSinAmarre
             // 
             this.rbProcesoSinAmarre.AutoSize = true;
+            this.rbProcesoSinAmarre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbProcesoSinAmarre.Location = new System.Drawing.Point(12, 94);
             this.rbProcesoSinAmarre.Name = "rbProcesoSinAmarre";
-            this.rbProcesoSinAmarre.Size = new System.Drawing.Size(167, 21);
+            this.rbProcesoSinAmarre.Size = new System.Drawing.Size(150, 19);
             this.rbProcesoSinAmarre.TabIndex = 2;
             this.rbProcesoSinAmarre.TabStop = true;
             this.rbProcesoSinAmarre.Text = "Proceso sin amarre";
@@ -653,9 +663,10 @@
             // rbProcesoNoMecanico
             // 
             this.rbProcesoNoMecanico.AutoSize = true;
+            this.rbProcesoNoMecanico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbProcesoNoMecanico.Location = new System.Drawing.Point(12, 47);
             this.rbProcesoNoMecanico.Name = "rbProcesoNoMecanico";
-            this.rbProcesoNoMecanico.Size = new System.Drawing.Size(183, 21);
+            this.rbProcesoNoMecanico.Size = new System.Drawing.Size(165, 19);
             this.rbProcesoNoMecanico.TabIndex = 1;
             this.rbProcesoNoMecanico.TabStop = true;
             this.rbProcesoNoMecanico.Text = "Proceso No Mecanico";
@@ -665,9 +676,10 @@
             // rbProcesoMecanico
             // 
             this.rbProcesoMecanico.AutoSize = true;
+            this.rbProcesoMecanico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbProcesoMecanico.Location = new System.Drawing.Point(12, 3);
             this.rbProcesoMecanico.Name = "rbProcesoMecanico";
-            this.rbProcesoMecanico.Size = new System.Drawing.Size(158, 21);
+            this.rbProcesoMecanico.Size = new System.Drawing.Size(143, 19);
             this.rbProcesoMecanico.TabIndex = 0;
             this.rbProcesoMecanico.TabStop = true;
             this.rbProcesoMecanico.Text = "Proceso Mecanico";
@@ -690,9 +702,10 @@
             // chResistencia
             // 
             this.chResistencia.AutoSize = true;
+            this.chResistencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chResistencia.Location = new System.Drawing.Point(7, 66);
             this.chResistencia.Name = "chResistencia";
-            this.chResistencia.Size = new System.Drawing.Size(248, 21);
+            this.chResistencia.Size = new System.Drawing.Size(196, 17);
             this.chResistencia.TabIndex = 2;
             this.chResistencia.Text = "Tiene resistencia al insertarse";
             this.chResistencia.UseVisualStyleBackColor = true;
@@ -700,9 +713,10 @@
             // chDificilAlinear
             // 
             this.chDificilAlinear.AutoSize = true;
+            this.chDificilAlinear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chDificilAlinear.Location = new System.Drawing.Point(7, 43);
             this.chDificilAlinear.Name = "chDificilAlinear";
-            this.chDificilAlinear.Size = new System.Drawing.Size(145, 21);
+            this.chDificilAlinear.Size = new System.Drawing.Size(118, 17);
             this.chDificilAlinear.TabIndex = 1;
             this.chDificilAlinear.Text = "Dificil de alinear";
             this.chDificilAlinear.UseVisualStyleBackColor = true;
@@ -710,9 +724,10 @@
             // chPresion
             // 
             this.chPresion.AutoSize = true;
+            this.chPresion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chPresion.Location = new System.Drawing.Point(7, 20);
             this.chPresion.Name = "chPresion";
-            this.chPresion.Size = new System.Drawing.Size(288, 21);
+            this.chPresion.Size = new System.Drawing.Size(226, 17);
             this.chPresion.TabIndex = 0;
             this.chPresion.Text = "Se requiere mantenerse presionada";
             this.chPresion.UseVisualStyleBackColor = true;

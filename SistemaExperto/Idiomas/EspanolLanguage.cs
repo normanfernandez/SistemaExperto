@@ -36,7 +36,36 @@ namespace SistemaExperto.Idiomas
             HANDLING_RBSUB3 = "Pesa menos de 10lb";
             HANDLING_RBSUB4 = "Pesa mas de 10lb";
 
-            DETAIL_PIECE_NAME = "nombre de la pieza";
+            INSERTION_RB1 = "Parte agregada: proceso en el cual se termina";
+            INSERTION_RB2 = "Proceso por separdado: procesos de ensamble donde todas las partes solidas estan en sitio";
+            INSERTION_DESTINY = "No alcanza facilmente su destino";
+            INSERTION_SECURED = "Asegurada de inmediato";
+            INSERTION_DEFORMATION = "Deformacion Plastica";
+            INSERTION_SCREW = "Necesita apretarse con tornillo";
+            INSERTION_MECHANIC = "Proceso Mecanico";
+            INSERTION_NONMECHANIC = "Proceso No Mecanico";
+            INSERTION_NO_FASTENING = "Proceso sin amarre";
+            INSERTION_GBEXTRA = "Data Extra";
+            INSERTION_GBDEFORMATION = "Demormacion";
+            INSERTION_RBSUB1 = "Debido a acceso obstruido o vision restrigida";
+            INSERTION_RBSUB2 = "Debido a acceso obstruido y vision restrigida";
+            INSERTION_RBSUB3 = "Por torsion";
+            INSERTION_RBSUB4 = "Por remache";
+            INSERTION_RBSUB5 = "Union";
+            INSERTION_RBSUB6 = "Remache";
+            INSERTION_RBSUB7 = "Apriete de tornillo";
+            INSERTION_RBSUB8 = "Soldadura blanda";
+            INSERTION_RBSUB9 = "Soldadura";
+            INSERTION_RBSUB10 = "Sub-Ensamble";
+            INSERTION_RBSUB11 = "Otros Procesos";
+            INSERTION_CH1 = "Se requiere mantenerse presionada";
+            INSERTION_CH2 = "Dificil de alinear";
+            INSERTION_CH3 = "Tiene resistencia al insertarse";
+            INSERTION_CH4 = "Deformacion Plastica";
+            INSERTION_CH5 = "Proceso Metalurgico";
+            INSERTION_CH6 = "Material adicional requerido";
+
+            DETAIL_PIECE_NAME = "Nombre de la pieza";
             DETAIL_DIMENSIONS = "Dimensión";
             DETAIL_WIDTH = "Ancho";
             DETAIL_SIZE = "Largo";

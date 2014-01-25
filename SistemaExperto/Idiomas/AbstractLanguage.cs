@@ -45,7 +45,38 @@ namespace SistemaExperto.Idiomas
         public string HANDLING_RBSUB4;
         #endregion
 
-        #region details
+        #region Insertion Time
+        public string INSERTION_RB1;
+        public string INSERTION_RB2;
+        public string INSERTION_DESTINY;
+        public string INSERTION_SECURED;
+        public string INSERTION_DEFORMATION;
+        public string INSERTION_SCREW;
+        public string INSERTION_MECHANIC;
+        public string INSERTION_NONMECHANIC;
+        public string INSERTION_NO_FASTENING;
+        public string INSERTION_GBEXTRA;
+        public string INSERTION_GBDEFORMATION;
+        public string INSERTION_RBSUB1;
+        public string INSERTION_RBSUB2;
+        public string INSERTION_RBSUB3;
+        public string INSERTION_RBSUB4;
+        public string INSERTION_RBSUB5;
+        public string INSERTION_RBSUB6;
+        public string INSERTION_RBSUB7;
+        public string INSERTION_RBSUB8;
+        public string INSERTION_RBSUB9;
+        public string INSERTION_RBSUB10;
+        public string INSERTION_RBSUB11;
+        public string INSERTION_CH1;
+        public string INSERTION_CH2;
+        public string INSERTION_CH3;
+        public string INSERTION_CH4;
+        public string INSERTION_CH5;
+        public string INSERTION_CH6;
+        #endregion
+
+        #region Details
         public string DETAIL_PIECE_NAME;
         public string DETAIL_DIMENSIONS;
         public string DETAIL_WIDTH;

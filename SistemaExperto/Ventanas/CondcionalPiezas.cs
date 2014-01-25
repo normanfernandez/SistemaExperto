@@ -53,7 +53,33 @@ namespace SistemaExperto
             #endregion
 
             #region pagina 2
-
+            this.rbAgregada.Text = SystemLanguage.SelectedLanguage().INSERTION_RB1;
+            this.rbSeparado.Text = SystemLanguage.SelectedLanguage().INSERTION_RB2;
+            this.chDestinoNoAlcanzado.Text = SystemLanguage.SelectedLanguage().INSERTION_DESTINY;
+            this.rbObstruidoOr.Text = SystemLanguage.SelectedLanguage().INSERTION_RBSUB1;
+            this.rbObtruidoAnd.Text = SystemLanguage.SelectedLanguage().INSERTION_RBSUB2;
+            this.chAseguradaInmediato.Text = SystemLanguage.SelectedLanguage().INSERTION_SECURED;
+            this.chDeformacionPlastica.Text = SystemLanguage.SelectedLanguage().INSERTION_DEFORMATION;
+            this.chTornillo.Text = SystemLanguage.SelectedLanguage().INSERTION_SCREW;
+            this.gbExtra.Text = SystemLanguage.SelectedLanguage().INSERTION_GBEXTRA;
+            this.gbPlastico.Text = SystemLanguage.SelectedLanguage().INSERTION_GBDEFORMATION;
+            this.rbTorsion.Text = SystemLanguage.SelectedLanguage().INSERTION_RBSUB3;
+            this.rbRemache.Text = SystemLanguage.SelectedLanguage().INSERTION_RBSUB4;
+            this.rbUnion.Text = SystemLanguage.SelectedLanguage().INSERTION_RBSUB5;
+            this.rbRemache2.Text = SystemLanguage.SelectedLanguage().INSERTION_RBSUB6;
+            this.rbTornillo.Text = SystemLanguage.SelectedLanguage().INSERTION_RBSUB7;
+            this.rbSoldadura1.Text = SystemLanguage.SelectedLanguage().INSERTION_RBSUB8;
+            this.rbSoldadura2.Text = SystemLanguage.SelectedLanguage().INSERTION_RBSUB9;
+            this.rbSubEnsamble.Text = SystemLanguage.SelectedLanguage().INSERTION_RBSUB10;
+            this.rbOtrosProcesos.Text = SystemLanguage.SelectedLanguage().INSERTION_RBSUB11;
+            this.chPresion.Text = SystemLanguage.SelectedLanguage().INSERTION_CH1;
+            this.chDificilAlinear.Text = SystemLanguage.SelectedLanguage().INSERTION_CH2;
+            this.chResistencia.Text = SystemLanguage.SelectedLanguage().INSERTION_CH3;
+            this.rbProcesoMecanico.Text = SystemLanguage.SelectedLanguage().INSERTION_MECHANIC;
+            this.rbProcesoNoMecanico.Text = SystemLanguage.SelectedLanguage().INSERTION_NONMECHANIC;
+            this.rbProcesoSinAmarre.Text = SystemLanguage.SelectedLanguage().INSERTION_NO_FASTENING;
+            this.chDeformacionPlastica2.Text = SystemLanguage.SelectedLanguage().INSERTION_CH4;
+            this.chMaterialAdicional.Text = SystemLanguage.SelectedLanguage().INSERTION_CH5;
             #endregion
 
             #region pagina 3
@@ -266,7 +292,7 @@ namespace SistemaExperto
         }
         #endregion
 
-        #region Metodos
+            #region Metodos
         private void RevisarCondiciones()
         {
             #region Pagina 1
