@@ -37,7 +37,7 @@ namespace SistemaExperto.Idiomas
             HANDLING_RBSUB4 = "Pesa mas de 10lb";
 
             INSERTION_RB1 = "Parte agregada: proceso en el cual se termina";
-            INSERTION_RB2 = "Proceso por separdado: procesos de ensamble donde todas las partes solidas estan en sitio";
+            INSERTION_RB2 = "Proceso por separdado";
             INSERTION_DESTINY = "No alcanza facilmente su destino";
             INSERTION_SECURED = "Asegurada de inmediato";
             INSERTION_DEFORMATION = "Deformacion Plastica";

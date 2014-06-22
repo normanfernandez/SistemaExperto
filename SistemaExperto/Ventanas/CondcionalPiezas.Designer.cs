@@ -33,7 +33,6 @@
             this.botonAlante = new System.Windows.Forms.Button();
             this.botonAtras = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.gbEsencial = new System.Windows.Forms.GroupBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
@@ -93,7 +92,6 @@
             this.rbSeparado = new System.Windows.Forms.RadioButton();
             this.rbAgregada = new System.Windows.Forms.RadioButton();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelSeccion4 = new System.Windows.Forms.Panel();
             this.panelSeccion4Sub = new System.Windows.Forms.Panel();
             this.rbPesado = new System.Windows.Forms.RadioButton();
@@ -115,7 +113,6 @@
             this.rbHandlingSeccion1 = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.gbEsencial.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -131,7 +128,6 @@
             this.panelInsercion1.SuspendLayout();
             this.panelInsercion1Sub2.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelSeccion4.SuspendLayout();
             this.panelSeccion4Sub.SuspendLayout();
             this.panelSeccion2.SuspendLayout();
@@ -151,8 +147,8 @@
             // 
             // botonAlante
             // 
-            this.botonAlante.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonAlante.Location = new System.Drawing.Point(509, 583);
+            this.botonAlante.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonAlante.Location = new System.Drawing.Point(522, 558);
             this.botonAlante.Name = "botonAlante";
             this.botonAlante.Size = new System.Drawing.Size(107, 32);
             this.botonAlante.TabIndex = 11;
@@ -163,8 +159,8 @@
             // botonAtras
             // 
             this.botonAtras.Enabled = false;
-            this.botonAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonAtras.Location = new System.Drawing.Point(31, 583);
+            this.botonAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonAtras.Location = new System.Drawing.Point(40, 558);
             this.botonAtras.Name = "botonAtras";
             this.botonAtras.Size = new System.Drawing.Size(107, 32);
             this.botonAtras.TabIndex = 12;
@@ -175,8 +171,7 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.White;
-            this.tabPage3.Controls.Add(this.pictureBox3);
+            this.tabPage3.BackColor = System.Drawing.Color.Transparent;
             this.tabPage3.Controls.Add(this.gbEsencial);
             this.tabPage3.Controls.Add(this.groupBox1);
             this.tabPage3.Controls.Add(this.nombrePiezaText);
@@ -192,18 +187,9 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(581, 508);
+            this.tabPage3.Size = new System.Drawing.Size(581, 483);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Extra";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::SistemaExperto.Properties.Resources.akinator_4;
-            this.pictureBox3.Location = new System.Drawing.Point(421, 225);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(148, 277);
-            this.pictureBox3.TabIndex = 20;
-            this.pictureBox3.TabStop = false;
             // 
             // gbEsencial
             // 
@@ -211,9 +197,9 @@
             this.gbEsencial.Controls.Add(this.checkBox6);
             this.gbEsencial.Controls.Add(this.checkBox5);
             this.gbEsencial.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbEsencial.Location = new System.Drawing.Point(259, 17);
+            this.gbEsencial.Location = new System.Drawing.Point(262, 59);
             this.gbEsencial.Name = "gbEsencial";
-            this.gbEsencial.Size = new System.Drawing.Size(310, 117);
+            this.gbEsencial.Size = new System.Drawing.Size(310, 100);
             this.gbEsencial.TabIndex = 19;
             this.gbEsencial.TabStop = false;
             this.gbEsencial.Text = "Esencialidad";
@@ -335,7 +321,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(65, 197);
+            this.label4.Location = new System.Drawing.Point(140, 176);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(286, 24);
             this.label4.TabIndex = 15;
@@ -345,7 +331,7 @@
             // rbPieza2
             // 
             this.rbPieza2.AutoSize = true;
-            this.rbPieza2.Location = new System.Drawing.Point(111, 458);
+            this.rbPieza2.Location = new System.Drawing.Point(186, 437);
             this.rbPieza2.Name = "rbPieza2";
             this.rbPieza2.Size = new System.Drawing.Size(14, 13);
             this.rbPieza2.TabIndex = 2;
@@ -354,7 +340,7 @@
             // rbPieza6
             // 
             this.rbPieza6.AutoSize = true;
-            this.rbPieza6.Location = new System.Drawing.Point(363, 460);
+            this.rbPieza6.Location = new System.Drawing.Point(438, 439);
             this.rbPieza6.Name = "rbPieza6";
             this.rbPieza6.Size = new System.Drawing.Size(14, 13);
             this.rbPieza6.TabIndex = 6;
@@ -363,7 +349,7 @@
             // rbPieza5
             // 
             this.rbPieza5.AutoSize = true;
-            this.rbPieza5.Location = new System.Drawing.Point(298, 458);
+            this.rbPieza5.Location = new System.Drawing.Point(373, 437);
             this.rbPieza5.Name = "rbPieza5";
             this.rbPieza5.Size = new System.Drawing.Size(14, 13);
             this.rbPieza5.TabIndex = 5;
@@ -372,7 +358,7 @@
             // rbPieza4
             // 
             this.rbPieza4.AutoSize = true;
-            this.rbPieza4.Location = new System.Drawing.Point(233, 458);
+            this.rbPieza4.Location = new System.Drawing.Point(308, 437);
             this.rbPieza4.Name = "rbPieza4";
             this.rbPieza4.Size = new System.Drawing.Size(14, 13);
             this.rbPieza4.TabIndex = 4;
@@ -381,7 +367,7 @@
             // rbPieza3
             // 
             this.rbPieza3.AutoSize = true;
-            this.rbPieza3.Location = new System.Drawing.Point(174, 458);
+            this.rbPieza3.Location = new System.Drawing.Point(249, 437);
             this.rbPieza3.Name = "rbPieza3";
             this.rbPieza3.Size = new System.Drawing.Size(14, 13);
             this.rbPieza3.TabIndex = 3;
@@ -390,7 +376,7 @@
             // rbPieza1
             // 
             this.rbPieza1.AutoSize = true;
-            this.rbPieza1.Location = new System.Drawing.Point(55, 458);
+            this.rbPieza1.Location = new System.Drawing.Point(130, 437);
             this.rbPieza1.Name = "rbPieza1";
             this.rbPieza1.Size = new System.Drawing.Size(14, 13);
             this.rbPieza1.TabIndex = 1;
@@ -400,7 +386,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Image = global::SistemaExperto.Properties.Resources.Piezas;
-            this.pictureBox1.Location = new System.Drawing.Point(10, 225);
+            this.pictureBox1.Location = new System.Drawing.Point(85, 204);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(402, 220);
             this.pictureBox1.TabIndex = 8;
@@ -408,7 +394,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.White;
+            this.tabPage2.BackColor = System.Drawing.Color.Transparent;
             this.tabPage2.Controls.Add(this.gbProcesoSeparado);
             this.tabPage2.Controls.Add(this.gbPlastico);
             this.tabPage2.Controls.Add(this.panelInsercion2);
@@ -419,7 +405,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(581, 508);
+            this.tabPage2.Size = new System.Drawing.Size(581, 483);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Insertion Time";
             // 
@@ -437,7 +423,7 @@
             // 
             // panelProceso2
             // 
-            this.panelProceso2.BackColor = System.Drawing.Color.Gray;
+            this.panelProceso2.BackColor = System.Drawing.SystemColors.Control;
             this.panelProceso2.Controls.Add(this.panelProceso2Sub);
             this.panelProceso2.Controls.Add(this.chMaterialAdicional);
             this.panelProceso2.Enabled = false;
@@ -494,7 +480,7 @@
             // 
             // panelProceso1
             // 
-            this.panelProceso1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panelProceso1.BackColor = System.Drawing.SystemColors.Control;
             this.panelProceso1.Controls.Add(this.rbTornillo);
             this.panelProceso1.Controls.Add(this.rbRemache2);
             this.panelProceso1.Controls.Add(this.rbUnion);
@@ -848,8 +834,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this.pictureBox2);
+            this.tabPage1.BackColor = System.Drawing.Color.Transparent;
             this.tabPage1.Controls.Add(this.panelSeccion4);
             this.tabPage1.Controls.Add(this.panelSeccion2);
             this.tabPage1.Controls.Add(this.grupoGeneral);
@@ -861,18 +846,10 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(581, 508);
+            this.tabPage1.Size = new System.Drawing.Size(581, 483);
             this.tabPage1.TabIndex = 0;
+            this.tabPage1.Tag = "";
             this.tabPage1.Text = "Handling Time";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::SistemaExperto.Properties.Resources.akinator_2;
-            this.pictureBox2.Location = new System.Drawing.Point(377, 220);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(183, 248);
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
             // 
             // panelSeccion4
             // 
@@ -1091,20 +1068,21 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(40, 40);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(0, 0);
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(589, 537);
+            this.tabControl1.Size = new System.Drawing.Size(589, 512);
             this.tabControl1.TabIndex = 9;
             // 
             // CondicionalPieza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(649, 660);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(649, 599);
             this.Controls.Add(this.botonAtras);
             this.Controls.Add(this.botonAlante);
             this.Controls.Add(this.LabelPiezaActual);
@@ -1116,7 +1094,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.gbEsencial.ResumeLayout(false);
             this.gbEsencial.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -1145,7 +1122,6 @@
             this.panelInsercion1Sub2.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelSeccion4.ResumeLayout(false);
             this.panelSeccion4.PerformLayout();
             this.panelSeccion4Sub.ResumeLayout(false);
@@ -1247,8 +1223,6 @@
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

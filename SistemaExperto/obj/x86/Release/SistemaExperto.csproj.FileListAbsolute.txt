@@ -9,3 +9,14 @@ C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Release\Sistem
 C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Release\SistemaExperto.pdb
 C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Release\SistemaExperto.csprojResolveAssemblyReference.cache
 C:\Users\N\Documents\GitHub\SistemaExperto\SistemaExperto\bin\Release\SistemaExperto.exe.config
+C:\Users\Norman\Documents\GitHub\SistemaExperto\SistemaExperto\bin\Release\SistemaExperto.exe.config
+C:\Users\Norman\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Release\SistemaExperto.exe
+C:\Users\Norman\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Release\SistemaExperto.pdb
+C:\Users\Norman\Documents\GitHub\SistemaExperto\SistemaExperto\bin\Release\SistemaExperto.exe
+C:\Users\Norman\Documents\GitHub\SistemaExperto\SistemaExperto\bin\Release\SistemaExperto.pdb
+C:\Users\Norman\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Release\SistemaExperto.csprojResolveAssemblyReference.cache
+C:\Users\Norman\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Release\SistemaExperto.Ventanas.CantidadPiezas.resources
+C:\Users\Norman\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Release\SistemaExperto.CondicionalPieza.resources
+C:\Users\Norman\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Release\SistemaExperto.Properties.Resources.resources
+C:\Users\Norman\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Release\SistemaExperto.Ventanas.ResultadoPiezas.resources
+C:\Users\Norman\Documents\GitHub\SistemaExperto\SistemaExperto\obj\x86\Release\SistemaExperto.csproj.GenerateResource.Cache
