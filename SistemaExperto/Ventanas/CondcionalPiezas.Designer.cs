@@ -92,6 +92,7 @@
             this.rbSeparado = new System.Windows.Forms.RadioButton();
             this.rbAgregada = new System.Windows.Forms.RadioButton();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelSeccion4 = new System.Windows.Forms.Panel();
             this.panelSeccion4Sub = new System.Windows.Forms.Panel();
             this.rbPesado = new System.Windows.Forms.RadioButton();
@@ -128,6 +129,7 @@
             this.panelInsercion1.SuspendLayout();
             this.panelInsercion1Sub2.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelSeccion4.SuspendLayout();
             this.panelSeccion4Sub.SuspendLayout();
             this.panelSeccion2.SuspendLayout();
@@ -835,6 +837,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage1.Controls.Add(this.pictureBox2);
             this.tabPage1.Controls.Add(this.panelSeccion4);
             this.tabPage1.Controls.Add(this.panelSeccion2);
             this.tabPage1.Controls.Add(this.grupoGeneral);
@@ -850,6 +853,16 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Tag = "";
             this.tabPage1.Text = "Handling Time";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::SistemaExperto.Properties.Resources.download;
+            this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
+            this.pictureBox2.Location = new System.Drawing.Point(266, 319);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(139, 158);
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
             // 
             // panelSeccion4
             // 
@@ -1122,6 +1135,7 @@
             this.panelInsercion1Sub2.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelSeccion4.ResumeLayout(false);
             this.panelSeccion4.PerformLayout();
             this.panelSeccion4Sub.ResumeLayout(false);
@@ -1223,6 +1237,7 @@
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

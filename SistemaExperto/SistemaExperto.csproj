@@ -108,10 +108,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Piezas\Imagenes\akinator.png" />
-    <Content Include="Piezas\Imagenes\akinator_2.png" />
-    <Content Include="Piezas\Imagenes\akinator_3.png" />
-    <Content Include="Piezas\Imagenes\akinator_4.png" />
+    <Content Include="Piezas\Imagenes\download.jpg" />
+    <None Include="Piezas\Imagenes\initial.jpg" />
     <Content Include="Piezas\Imagenes\Piezas.png" />
     <Content Include="Piezas\Imagenes\pieza_1.png" />
     <Content Include="Piezas\Imagenes\pieza_2.png" />
