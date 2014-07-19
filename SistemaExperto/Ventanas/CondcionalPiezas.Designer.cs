@@ -818,7 +818,7 @@
             this.rbSeparado.Size = new System.Drawing.Size(546, 17);
             this.rbSeparado.TabIndex = 2;
             this.rbSeparado.Text = "Proceso por separdado: procesos de ensamble donde todas las partes solidas estan " +
-                "en sitio";
+    "en sitio";
             this.rbSeparado.UseVisualStyleBackColor = true;
             this.rbSeparado.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
@@ -1060,7 +1060,7 @@
             this.rbHandlingSeccion2.Size = new System.Drawing.Size(543, 17);
             this.rbHandlingSeccion2.TabIndex = 2;
             this.rbHandlingSeccion2.Text = "La parte se puede agarrar con una mano pero solo con el uso de herramientas como " +
-                "pinzas";
+    "pinzas";
             this.rbHandlingSeccion2.UseVisualStyleBackColor = true;
             this.rbHandlingSeccion2.CheckedChanged += new System.EventHandler(this.rbHandlingSeccion2_CheckedChanged);
             // 
@@ -1081,7 +1081,6 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(40, 40);
             this.tabControl1.Name = "tabControl1";
